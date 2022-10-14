@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<Network Name="screenApps" Revision="0.0">
+	<!-- List of Components in this network -->
+	<Components>
+		<Object
+			Name       = "_AlarmXBuffer1"
+			GUID       = "{703EBD30-D2D7-49BB-B3C2-D1D2D1C28B3F}"
+			Class      = "_AlarmXBuffer"
+			Position   = "(330,1260)"
+			Visualized = "true"
+			Remotely   = "true">
+			<Channels>
+				<Server Name="ClassSvr"/>
+				<Server Name="QuitAll"/>
+				<Server Name="QuitAllEx"/>
+				<Server Name="QuitGroup"/>
+				<Server Name="QuitGroupEx"/>
+				<Client Name="No" Value="0"/>
+			</Channels>
+		</Object>
+		<Object
+			Name           = "_SysDateTime21"
+			GUID           = "{7ED87093-7C48-46DF-96D4-563374DEA8B8}"
+			Class          = "_SysDateTime2"
+			Position       = "(2730,300)"
+			Visualized     = "true"
+			Remotely       = "true"
+			BackgroundTime = "100 ms">
+			<Channels>
+				<Server Name="Day"/>
+				<Server Name="DayOfWeek"/>
+				<Server Name="Hour"/>
+				<Server Name="Minute"/>
+				<Server Name="Month"/>
+				<Server Name="Second"/>
+				<Server Name="SysDate"/>
+				<Server Name="SysTime"/>
+				<Server Name="Year"/>
+				<Server Name="Year2Digit"/>
+				<Client Name="DoSummerTime" Value="1"/>
+				<Client Name="System"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object
+							Name           = "_base"
+							GUID           = "{792886C3-9329-4B74-A766-3A7890DA271F}"
+							Class          = "_SysDateTime"
+							BackgroundTime = "100 ms">
+							<Channels>
+								<Server Name="DayOfWeek"/>
+								<Server Name="SysDate"/>
+								<Server Name="SysTime"/>
+								<Client Name="DoSummerTime" Value="1"/>
+								<Client Name="System"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object Name="SummerTime" GUID="{8D5F918A-029E-4326-8E46-99E55244583F}" Class="Ram">
+											<Channels>
+												<Server Name="Data"/>
+											</Channels>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name       = "BlinkLampFast"
+			GUID       = "{7E8600A2-1C68-441E-A5E8-55B649A0DDFD}"
+			Class      = "BlinkLamp"
+			Position   = "(1350,990)"
+			Visualized = "false"
+			CyclicTime = "100 ms">
+			<Channels>
+				<Server Name="ClassSvr"/>
+				<Server Name="T_Interval" Value="250"/>
+			</Channels>
+		</Object>
+		<Object
+			Name       = "BlinkLampSlow"
+			GUID       = "{F2EA52AD-71A4-41AB-9EFB-A47D2A141781}"
+			Class      = "BlinkLamp"
+			Position   = "(1350,780)"
+			Visualized = "false"
+			CyclicTime = "100 ms">
+			<Channels>
+				<Server Name="ClassSvr"/>
+				<Server Name="T_Interval" Value="500"/>
+			</Channels>
+		</Object>
+		<Object
+			Name       = "Logic_And_22"
+			GUID       = "{591048B9-0CEC-4F14-86FC-81B0B55848EC}"
+			Class      = "Logic_And_2"
+			Position   = "(1770,660)"
+			Visualized = "true"
+			Remotely   = "true">
+			<Channels>
+				<Server Name="result"/>
+				<Client Name="Op1"/>
+				<Client Name="Op2"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="_base" GUID="{8009175D-DE5A-11D5-B925-0010609208D7}" Class="Logic_And_Base">
+							<Channels>
+								<Server Name="result"/>
+							</Channels>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name       = "RestartClass1"
+			GUID       = "{64346436-285A-460A-9DE9-7117045633B0}"
+			Class      = "RestartClass"
+			Position   = "(2160,660)"
+			Visualized = "true">
+			<Channels>
+				<Server Name="ClassSvr"/>
+				<Client Name="os"/>
+			</Channels>
+		</Object>
+		<Object
+			Name           = "ScreenCtrl1"
+			GUID           = "{831CBE75-1B22-4BA5-A5E2-035ECA36ED00}"
+			Class          = "ScreenCtrl"
+			Position       = "(330,300)"
+			Visualized     = "true"
+			BackgroundTime = "1000 ms">
+			<Channels>
+				<Server Name="ActScreen"/>
+				<Server Name="ActWindow"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="CloseWindow"/>
+				<Server Name="dateValue"/>
+				<Server Name="NrAlarms"/>
+				<Server Name="ProgChangeAllowed"/>
+				<Server Name="ReqScreen"/>
+				<Server Name="ReqWindow"/>
+				<Server Name="syncTime" Value="1"/>
+				<Server Name="timeValue"/>
+				<Server Name="UserLevel"/>
+				<Client Name="ctrlDateTime"/>
+				<Client Name="updateDate"/>
+				<Client Name="updateTime"/>
+			</Channels>
+		</Object>
+	</Components>
+	<Comments>
+		<Comment Position="(330,240)" Size="(480,60)" Text="Communication screen"/>
+		<Comment Position="(2160,600)" Size="(300,60)" Text="For Reset CPU"/>
+		<Comment Position="(2670,240)" Size="(510,60)" Text="System time"/>
+	</Comments>
+	<!-- List of Connections in this network -->
+	<Connections>
+		<Connection Source="Logic_And_22.Op1" Destination="ScreenCtrl1.NrAlarms" Vertices="(1770,750),(796,750),"/>
+		<Connection Source="Logic_And_22.Op2" Destination="BlinkLampSlow.ClassSvr" Vertices="(1770,810),(1650,870),"/>
+		<Connection Source="ScreenCtrl1.ctrlDateTime" Destination="_SysDateTime21.SysDate" Vertices="(330,390),(210,390),(210,90),(3240,90),(3240,390),(3030,390),"/>
+		<Connection Source="ScreenCtrl1.updateTime" Destination="_SysDateTime21.SysTime" Vertices="(330,450),(150,450),(150,60),(3270,60),(3270,450),(3030,450),"/>
+		<Connection Source="ScreenCtrl1.updateDate" Destination="_SysDateTime21.SysDate" Vertices="(330,510),(90,510),(90,90),(3240,90),(3240,390),(3030,390),"/>
+	</Connections>
+	<!-- Headerfiles -->
+	<Options>
+	</Options>
+</Network>

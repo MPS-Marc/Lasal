@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<OpenViews>
+	<View Key="emMachine" Type="0"/>
+	<View Key="cmMachine" Type="0"/>
+	<View Key="servoReleases" Type="0"/>
+	<View Key="checkReleaseXWagon" Type="2" LineNr="16"/>
+	<View Key="calculation" Type="0"/>
+	<View Key="safetyCheck" Type="0"/>
+	<View Key="CtrlCheckMachineReady" Type="2" LineNr="1"/>
+	<View Key="main" Type="0"/>
+	<View Key="calcOperationListV2" Type="2" LineNr="1"/>
+	<View Key="servoX1_InputWagon" Type="0"/>
+	<View Key="unitMachine" Type="0"/>
+	<View Key="settings" Type="0"/>
+	<View Key="DBAssemblies" Type="0"/>
+	<View Key="DBProducts" Type="0"/>
+	<View Key="emMiterSawingUnit" Type="2" LineNr="1"/>
+	<Setting Variable="OutputDebugger" Value="0"/>
+</OpenViews>

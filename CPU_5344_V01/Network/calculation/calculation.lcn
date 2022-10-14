@@ -1,0 +1,2134 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<Network Name="calculation" Revision="0.0">
+	<!-- List of Components in this network -->
+	<Components>
+		<Object
+			Name       = "Afv_Regel1"
+			GUID       = "{D5384760-666A-409C-8F7E-C8354B636059}"
+			Class      = "Uitv_Regel_C"
+			Position   = "(8970,4380)"
+			Visualized = "true">
+			<Channels>
+				<Server Name="actione"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="ClassSvr0"/>
+				<Server Name="Cmd"/>
+				<Server Name="outputRule" Value="1"/>
+				<Server Name="Rnr"/>
+				<Server Name="speed"/>
+				<Server Name="UnitData"/>
+				<Server Name="volgorde"/>
+				<Server Name="x1pos"/>
+				<Server Name="xy1Angle"/>
+				<Server Name="xz1Angle"/>
+				<Server Name="y1pos"/>
+				<Server Name="z1pos"/>
+				<Server Name="zy1Angle"/>
+				<Client Name="list"/>
+				<Client Name="nextRegel"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="RegelContent" GUID="{F208192D-3AB4-42F6-AC90-AB6DDA33CB0A}" Class="Uitv_Regel">
+							<Channels>
+								<Server Name="actione"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="Cmd"/>
+								<Server Name="outputRule" Value="1"/>
+								<Server Name="Rnr"/>
+								<Server Name="speed"/>
+								<Server Name="Units"/>
+								<Server Name="volgorde"/>
+								<Server Name="x1pos"/>
+								<Server Name="xy1Angle"/>
+								<Server Name="xz1Angle"/>
+								<Server Name="y1pos"/>
+								<Server Name="z1pos"/>
+								<Server Name="zy1Angle"/>
+								<Client Name="list"/>
+								<Client Name="nextRegel"/>
+							</Channels>
+						</Object>
+						<Object Name="tMyBDintTODint1" GUID="{5C45C772-DD18-43DF-BE99-EE916DA39F24}" Class="tMyBDintTODint">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Server Name="Data"/>
+								<Client Name="cOutput"/>
+							</Channels>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name       = "Afv_Regel10"
+			GUID       = "{BE12DE9A-B19C-455E-A46A-19A81C8A3C2F}"
+			Class      = "Uitv_Regel_C"
+			Position   = "(3540,4380)"
+			Visualized = "true">
+			<Channels>
+				<Server Name="actione"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="ClassSvr0"/>
+				<Server Name="Cmd"/>
+				<Server Name="outputRule" Value="1"/>
+				<Server Name="Rnr"/>
+				<Server Name="speed"/>
+				<Server Name="UnitData"/>
+				<Server Name="volgorde"/>
+				<Server Name="x1pos"/>
+				<Server Name="xy1Angle"/>
+				<Server Name="xz1Angle"/>
+				<Server Name="y1pos"/>
+				<Server Name="z1pos"/>
+				<Server Name="zy1Angle"/>
+				<Client Name="list"/>
+				<Client Name="nextRegel"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="RegelContent" GUID="{F208192D-3AB4-42F6-AC90-AB6DDA33CB0A}" Class="Uitv_Regel">
+							<Channels>
+								<Server Name="actione"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="Cmd"/>
+								<Server Name="outputRule" Value="1"/>
+								<Server Name="Rnr"/>
+								<Server Name="speed"/>
+								<Server Name="Units"/>
+								<Server Name="volgorde"/>
+								<Server Name="x1pos"/>
+								<Server Name="xy1Angle"/>
+								<Server Name="xz1Angle"/>
+								<Server Name="y1pos"/>
+								<Server Name="z1pos"/>
+								<Server Name="zy1Angle"/>
+								<Client Name="list"/>
+								<Client Name="nextRegel"/>
+							</Channels>
+						</Object>
+						<Object Name="tMyBDintTODint1" GUID="{5C45C772-DD18-43DF-BE99-EE916DA39F24}" Class="tMyBDintTODint">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Server Name="Data"/>
+								<Client Name="cOutput"/>
+							</Channels>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name       = "Afv_Regel11"
+			GUID       = "{79693288-F348-40DF-BA6A-9B8DC93BCB64}"
+			Class      = "Uitv_Regel_C"
+			Position   = "(2940,4380)"
+			Visualized = "true">
+			<Channels>
+				<Server Name="actione"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="ClassSvr0"/>
+				<Server Name="Cmd"/>
+				<Server Name="outputRule" Value="1"/>
+				<Server Name="Rnr"/>
+				<Server Name="speed"/>
+				<Server Name="UnitData"/>
+				<Server Name="volgorde"/>
+				<Server Name="x1pos"/>
+				<Server Name="xy1Angle"/>
+				<Server Name="xz1Angle"/>
+				<Server Name="y1pos"/>
+				<Server Name="z1pos"/>
+				<Server Name="zy1Angle"/>
+				<Client Name="list"/>
+				<Client Name="nextRegel"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="RegelContent" GUID="{F208192D-3AB4-42F6-AC90-AB6DDA33CB0A}" Class="Uitv_Regel">
+							<Channels>
+								<Server Name="actione"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="Cmd"/>
+								<Server Name="outputRule" Value="1"/>
+								<Server Name="Rnr"/>
+								<Server Name="speed"/>
+								<Server Name="Units"/>
+								<Server Name="volgorde"/>
+								<Server Name="x1pos"/>
+								<Server Name="xy1Angle"/>
+								<Server Name="xz1Angle"/>
+								<Server Name="y1pos"/>
+								<Server Name="z1pos"/>
+								<Server Name="zy1Angle"/>
+								<Client Name="list"/>
+								<Client Name="nextRegel"/>
+							</Channels>
+						</Object>
+						<Object Name="tMyBDintTODint1" GUID="{5C45C772-DD18-43DF-BE99-EE916DA39F24}" Class="tMyBDintTODint">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Server Name="Data"/>
+								<Client Name="cOutput"/>
+							</Channels>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name       = "Afv_Regel12"
+			GUID       = "{50197423-EF09-40DF-81C3-826EE49A91E9}"
+			Class      = "Uitv_Regel_C"
+			Position   = "(2250,4380)"
+			Visualized = "true">
+			<Channels>
+				<Server Name="actione"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="ClassSvr0"/>
+				<Server Name="Cmd"/>
+				<Server Name="outputRule" Value="1"/>
+				<Server Name="Rnr"/>
+				<Server Name="speed"/>
+				<Server Name="UnitData"/>
+				<Server Name="volgorde"/>
+				<Server Name="x1pos"/>
+				<Server Name="xy1Angle"/>
+				<Server Name="xz1Angle"/>
+				<Server Name="y1pos"/>
+				<Server Name="z1pos"/>
+				<Server Name="zy1Angle"/>
+				<Client Name="list"/>
+				<Client Name="nextRegel"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="RegelContent" GUID="{F208192D-3AB4-42F6-AC90-AB6DDA33CB0A}" Class="Uitv_Regel">
+							<Channels>
+								<Server Name="actione"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="Cmd"/>
+								<Server Name="outputRule" Value="1"/>
+								<Server Name="Rnr"/>
+								<Server Name="speed"/>
+								<Server Name="Units"/>
+								<Server Name="volgorde"/>
+								<Server Name="x1pos"/>
+								<Server Name="xy1Angle"/>
+								<Server Name="xz1Angle"/>
+								<Server Name="y1pos"/>
+								<Server Name="z1pos"/>
+								<Server Name="zy1Angle"/>
+								<Client Name="list"/>
+								<Client Name="nextRegel"/>
+							</Channels>
+						</Object>
+						<Object Name="tMyBDintTODint1" GUID="{5C45C772-DD18-43DF-BE99-EE916DA39F24}" Class="tMyBDintTODint">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Server Name="Data"/>
+								<Client Name="cOutput"/>
+							</Channels>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name       = "Afv_Regel13"
+			GUID       = "{7BD7182A-3DA2-4696-834D-1E1CB30FCBFD}"
+			Class      = "Uitv_Regel_C"
+			Position   = "(1650,4380)"
+			Visualized = "true">
+			<Channels>
+				<Server Name="actione"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="ClassSvr0"/>
+				<Server Name="Cmd"/>
+				<Server Name="outputRule" Value="1"/>
+				<Server Name="Rnr"/>
+				<Server Name="speed"/>
+				<Server Name="UnitData"/>
+				<Server Name="volgorde"/>
+				<Server Name="x1pos"/>
+				<Server Name="xy1Angle"/>
+				<Server Name="xz1Angle"/>
+				<Server Name="y1pos"/>
+				<Server Name="z1pos"/>
+				<Server Name="zy1Angle"/>
+				<Client Name="list"/>
+				<Client Name="nextRegel"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="RegelContent" GUID="{F208192D-3AB4-42F6-AC90-AB6DDA33CB0A}" Class="Uitv_Regel">
+							<Channels>
+								<Server Name="actione"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="Cmd"/>
+								<Server Name="outputRule" Value="1"/>
+								<Server Name="Rnr"/>
+								<Server Name="speed"/>
+								<Server Name="Units"/>
+								<Server Name="volgorde"/>
+								<Server Name="x1pos"/>
+								<Server Name="xy1Angle"/>
+								<Server Name="xz1Angle"/>
+								<Server Name="y1pos"/>
+								<Server Name="z1pos"/>
+								<Server Name="zy1Angle"/>
+								<Client Name="list"/>
+								<Client Name="nextRegel"/>
+							</Channels>
+						</Object>
+						<Object Name="tMyBDintTODint1" GUID="{5C45C772-DD18-43DF-BE99-EE916DA39F24}" Class="tMyBDintTODint">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Server Name="Data"/>
+								<Client Name="cOutput"/>
+							</Channels>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name       = "Afv_Regel14"
+			GUID       = "{0B23CE75-8437-46AE-8CAA-FFA62AD2FC29}"
+			Class      = "Uitv_Regel_C"
+			Position   = "(1050,4380)"
+			Visualized = "true">
+			<Channels>
+				<Server Name="actione"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="ClassSvr0"/>
+				<Server Name="Cmd"/>
+				<Server Name="outputRule" Value="1"/>
+				<Server Name="Rnr"/>
+				<Server Name="speed"/>
+				<Server Name="UnitData"/>
+				<Server Name="volgorde"/>
+				<Server Name="x1pos"/>
+				<Server Name="xy1Angle"/>
+				<Server Name="xz1Angle"/>
+				<Server Name="y1pos"/>
+				<Server Name="z1pos"/>
+				<Server Name="zy1Angle"/>
+				<Client Name="list"/>
+				<Client Name="nextRegel"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="RegelContent" GUID="{F208192D-3AB4-42F6-AC90-AB6DDA33CB0A}" Class="Uitv_Regel">
+							<Channels>
+								<Server Name="actione"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="Cmd"/>
+								<Server Name="outputRule" Value="1"/>
+								<Server Name="Rnr"/>
+								<Server Name="speed"/>
+								<Server Name="Units"/>
+								<Server Name="volgorde"/>
+								<Server Name="x1pos"/>
+								<Server Name="xy1Angle"/>
+								<Server Name="xz1Angle"/>
+								<Server Name="y1pos"/>
+								<Server Name="z1pos"/>
+								<Server Name="zy1Angle"/>
+								<Client Name="list"/>
+								<Client Name="nextRegel"/>
+							</Channels>
+						</Object>
+						<Object Name="tMyBDintTODint1" GUID="{5C45C772-DD18-43DF-BE99-EE916DA39F24}" Class="tMyBDintTODint">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Server Name="Data"/>
+								<Client Name="cOutput"/>
+							</Channels>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name       = "Afv_Regel2"
+			GUID       = "{8174960B-0BDD-4BBF-A583-51E140BFE94F}"
+			Class      = "Uitv_Regel_C"
+			Position   = "(8430,4380)"
+			Visualized = "true">
+			<Channels>
+				<Server Name="actione"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="ClassSvr0"/>
+				<Server Name="Cmd"/>
+				<Server Name="outputRule" Value="1"/>
+				<Server Name="Rnr"/>
+				<Server Name="speed"/>
+				<Server Name="UnitData"/>
+				<Server Name="volgorde"/>
+				<Server Name="x1pos"/>
+				<Server Name="xy1Angle"/>
+				<Server Name="xz1Angle"/>
+				<Server Name="y1pos"/>
+				<Server Name="z1pos"/>
+				<Server Name="zy1Angle"/>
+				<Client Name="list"/>
+				<Client Name="nextRegel"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="RegelContent" GUID="{F208192D-3AB4-42F6-AC90-AB6DDA33CB0A}" Class="Uitv_Regel">
+							<Channels>
+								<Server Name="actione"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="Cmd"/>
+								<Server Name="outputRule" Value="1"/>
+								<Server Name="Rnr"/>
+								<Server Name="speed"/>
+								<Server Name="Units"/>
+								<Server Name="volgorde"/>
+								<Server Name="x1pos"/>
+								<Server Name="xy1Angle"/>
+								<Server Name="xz1Angle"/>
+								<Server Name="y1pos"/>
+								<Server Name="z1pos"/>
+								<Server Name="zy1Angle"/>
+								<Client Name="list"/>
+								<Client Name="nextRegel"/>
+							</Channels>
+						</Object>
+						<Object Name="tMyBDintTODint1" GUID="{5C45C772-DD18-43DF-BE99-EE916DA39F24}" Class="tMyBDintTODint">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Server Name="Data"/>
+								<Client Name="cOutput"/>
+							</Channels>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name       = "Afv_Regel3"
+			GUID       = "{F425EADA-76D5-4B4B-A808-64F8A8B7ED4A}"
+			Class      = "Uitv_Regel_C"
+			Position   = "(7830,4380)"
+			Visualized = "true">
+			<Channels>
+				<Server Name="actione"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="ClassSvr0"/>
+				<Server Name="Cmd"/>
+				<Server Name="outputRule" Value="1"/>
+				<Server Name="Rnr"/>
+				<Server Name="speed"/>
+				<Server Name="UnitData"/>
+				<Server Name="volgorde"/>
+				<Server Name="x1pos"/>
+				<Server Name="xy1Angle"/>
+				<Server Name="xz1Angle"/>
+				<Server Name="y1pos"/>
+				<Server Name="z1pos"/>
+				<Server Name="zy1Angle"/>
+				<Client Name="list"/>
+				<Client Name="nextRegel"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="RegelContent" GUID="{F208192D-3AB4-42F6-AC90-AB6DDA33CB0A}" Class="Uitv_Regel">
+							<Channels>
+								<Server Name="actione"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="Cmd"/>
+								<Server Name="outputRule" Value="1"/>
+								<Server Name="Rnr"/>
+								<Server Name="speed"/>
+								<Server Name="Units"/>
+								<Server Name="volgorde"/>
+								<Server Name="x1pos"/>
+								<Server Name="xy1Angle"/>
+								<Server Name="xz1Angle"/>
+								<Server Name="y1pos"/>
+								<Server Name="z1pos"/>
+								<Server Name="zy1Angle"/>
+								<Client Name="list"/>
+								<Client Name="nextRegel"/>
+							</Channels>
+						</Object>
+						<Object Name="tMyBDintTODint1" GUID="{5C45C772-DD18-43DF-BE99-EE916DA39F24}" Class="tMyBDintTODint">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Server Name="Data"/>
+								<Client Name="cOutput"/>
+							</Channels>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name       = "Afv_Regel4"
+			GUID       = "{DE1F5EE3-CBD6-4C73-8012-4DE26F6D0AED}"
+			Class      = "Uitv_Regel_C"
+			Position   = "(7230,4380)"
+			Visualized = "true">
+			<Channels>
+				<Server Name="actione"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="ClassSvr0"/>
+				<Server Name="Cmd"/>
+				<Server Name="outputRule" Value="1"/>
+				<Server Name="Rnr"/>
+				<Server Name="speed"/>
+				<Server Name="UnitData"/>
+				<Server Name="volgorde"/>
+				<Server Name="x1pos"/>
+				<Server Name="xy1Angle"/>
+				<Server Name="xz1Angle"/>
+				<Server Name="y1pos"/>
+				<Server Name="z1pos"/>
+				<Server Name="zy1Angle"/>
+				<Client Name="list"/>
+				<Client Name="nextRegel"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="RegelContent" GUID="{F208192D-3AB4-42F6-AC90-AB6DDA33CB0A}" Class="Uitv_Regel">
+							<Channels>
+								<Server Name="actione"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="Cmd"/>
+								<Server Name="outputRule" Value="1"/>
+								<Server Name="Rnr"/>
+								<Server Name="speed"/>
+								<Server Name="Units"/>
+								<Server Name="volgorde"/>
+								<Server Name="x1pos"/>
+								<Server Name="xy1Angle"/>
+								<Server Name="xz1Angle"/>
+								<Server Name="y1pos"/>
+								<Server Name="z1pos"/>
+								<Server Name="zy1Angle"/>
+								<Client Name="list"/>
+								<Client Name="nextRegel"/>
+							</Channels>
+						</Object>
+						<Object Name="tMyBDintTODint1" GUID="{5C45C772-DD18-43DF-BE99-EE916DA39F24}" Class="tMyBDintTODint">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Server Name="Data"/>
+								<Client Name="cOutput"/>
+							</Channels>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name       = "Afv_Regel5"
+			GUID       = "{935AD74F-1F9A-4454-AD71-160353AC5977}"
+			Class      = "Uitv_Regel_C"
+			Position   = "(6630,4380)"
+			Visualized = "true">
+			<Channels>
+				<Server Name="actione"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="ClassSvr0"/>
+				<Server Name="Cmd"/>
+				<Server Name="outputRule" Value="1"/>
+				<Server Name="Rnr"/>
+				<Server Name="speed"/>
+				<Server Name="UnitData"/>
+				<Server Name="volgorde"/>
+				<Server Name="x1pos"/>
+				<Server Name="xy1Angle"/>
+				<Server Name="xz1Angle"/>
+				<Server Name="y1pos"/>
+				<Server Name="z1pos"/>
+				<Server Name="zy1Angle"/>
+				<Client Name="list"/>
+				<Client Name="nextRegel"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="RegelContent" GUID="{F208192D-3AB4-42F6-AC90-AB6DDA33CB0A}" Class="Uitv_Regel">
+							<Channels>
+								<Server Name="actione"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="Cmd"/>
+								<Server Name="outputRule" Value="1"/>
+								<Server Name="Rnr"/>
+								<Server Name="speed"/>
+								<Server Name="Units"/>
+								<Server Name="volgorde"/>
+								<Server Name="x1pos"/>
+								<Server Name="xy1Angle"/>
+								<Server Name="xz1Angle"/>
+								<Server Name="y1pos"/>
+								<Server Name="z1pos"/>
+								<Server Name="zy1Angle"/>
+								<Client Name="list"/>
+								<Client Name="nextRegel"/>
+							</Channels>
+						</Object>
+						<Object Name="tMyBDintTODint1" GUID="{5C45C772-DD18-43DF-BE99-EE916DA39F24}" Class="tMyBDintTODint">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Server Name="Data"/>
+								<Client Name="cOutput"/>
+							</Channels>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name       = "Afv_Regel6"
+			GUID       = "{8ACF29E6-E939-46F4-8C2E-B2DBE3AE47D6}"
+			Class      = "Uitv_Regel_C"
+			Position   = "(5940,4380)"
+			Visualized = "true">
+			<Channels>
+				<Server Name="actione"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="ClassSvr0"/>
+				<Server Name="Cmd"/>
+				<Server Name="outputRule" Value="1"/>
+				<Server Name="Rnr"/>
+				<Server Name="speed"/>
+				<Server Name="UnitData"/>
+				<Server Name="volgorde"/>
+				<Server Name="x1pos"/>
+				<Server Name="xy1Angle"/>
+				<Server Name="xz1Angle"/>
+				<Server Name="y1pos"/>
+				<Server Name="z1pos"/>
+				<Server Name="zy1Angle"/>
+				<Client Name="list"/>
+				<Client Name="nextRegel"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="RegelContent" GUID="{F208192D-3AB4-42F6-AC90-AB6DDA33CB0A}" Class="Uitv_Regel">
+							<Channels>
+								<Server Name="actione"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="Cmd"/>
+								<Server Name="outputRule" Value="1"/>
+								<Server Name="Rnr"/>
+								<Server Name="speed"/>
+								<Server Name="Units"/>
+								<Server Name="volgorde"/>
+								<Server Name="x1pos"/>
+								<Server Name="xy1Angle"/>
+								<Server Name="xz1Angle"/>
+								<Server Name="y1pos"/>
+								<Server Name="z1pos"/>
+								<Server Name="zy1Angle"/>
+								<Client Name="list"/>
+								<Client Name="nextRegel"/>
+							</Channels>
+						</Object>
+						<Object Name="tMyBDintTODint1" GUID="{5C45C772-DD18-43DF-BE99-EE916DA39F24}" Class="tMyBDintTODint">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Server Name="Data"/>
+								<Client Name="cOutput"/>
+							</Channels>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name       = "Afv_Regel7"
+			GUID       = "{4E137825-1DD0-4F5D-B227-5D066DCD0814}"
+			Class      = "Uitv_Regel_C"
+			Position   = "(5340,4380)"
+			Visualized = "true">
+			<Channels>
+				<Server Name="actione"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="ClassSvr0"/>
+				<Server Name="Cmd"/>
+				<Server Name="outputRule" Value="1"/>
+				<Server Name="Rnr"/>
+				<Server Name="speed"/>
+				<Server Name="UnitData"/>
+				<Server Name="volgorde"/>
+				<Server Name="x1pos"/>
+				<Server Name="xy1Angle"/>
+				<Server Name="xz1Angle"/>
+				<Server Name="y1pos"/>
+				<Server Name="z1pos"/>
+				<Server Name="zy1Angle"/>
+				<Client Name="list"/>
+				<Client Name="nextRegel"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="RegelContent" GUID="{F208192D-3AB4-42F6-AC90-AB6DDA33CB0A}" Class="Uitv_Regel">
+							<Channels>
+								<Server Name="actione"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="Cmd"/>
+								<Server Name="outputRule" Value="1"/>
+								<Server Name="Rnr"/>
+								<Server Name="speed"/>
+								<Server Name="Units"/>
+								<Server Name="volgorde"/>
+								<Server Name="x1pos"/>
+								<Server Name="xy1Angle"/>
+								<Server Name="xz1Angle"/>
+								<Server Name="y1pos"/>
+								<Server Name="z1pos"/>
+								<Server Name="zy1Angle"/>
+								<Client Name="list"/>
+								<Client Name="nextRegel"/>
+							</Channels>
+						</Object>
+						<Object Name="tMyBDintTODint1" GUID="{5C45C772-DD18-43DF-BE99-EE916DA39F24}" Class="tMyBDintTODint">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Server Name="Data"/>
+								<Client Name="cOutput"/>
+							</Channels>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name       = "Afv_Regel8"
+			GUID       = "{236ABFF6-6D8B-47BE-A4BD-E851D9A69ABD}"
+			Class      = "Uitv_Regel_C"
+			Position   = "(4740,4380)"
+			Visualized = "true">
+			<Channels>
+				<Server Name="actione"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="ClassSvr0"/>
+				<Server Name="Cmd"/>
+				<Server Name="outputRule" Value="1"/>
+				<Server Name="Rnr"/>
+				<Server Name="speed"/>
+				<Server Name="UnitData"/>
+				<Server Name="volgorde"/>
+				<Server Name="x1pos"/>
+				<Server Name="xy1Angle"/>
+				<Server Name="xz1Angle"/>
+				<Server Name="y1pos"/>
+				<Server Name="z1pos"/>
+				<Server Name="zy1Angle"/>
+				<Client Name="list"/>
+				<Client Name="nextRegel"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="RegelContent" GUID="{F208192D-3AB4-42F6-AC90-AB6DDA33CB0A}" Class="Uitv_Regel">
+							<Channels>
+								<Server Name="actione"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="Cmd"/>
+								<Server Name="outputRule" Value="1"/>
+								<Server Name="Rnr"/>
+								<Server Name="speed"/>
+								<Server Name="Units"/>
+								<Server Name="volgorde"/>
+								<Server Name="x1pos"/>
+								<Server Name="xy1Angle"/>
+								<Server Name="xz1Angle"/>
+								<Server Name="y1pos"/>
+								<Server Name="z1pos"/>
+								<Server Name="zy1Angle"/>
+								<Client Name="list"/>
+								<Client Name="nextRegel"/>
+							</Channels>
+						</Object>
+						<Object Name="tMyBDintTODint1" GUID="{5C45C772-DD18-43DF-BE99-EE916DA39F24}" Class="tMyBDintTODint">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Server Name="Data"/>
+								<Client Name="cOutput"/>
+							</Channels>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name       = "Afv_Regel9"
+			GUID       = "{2862DABF-CCC8-4394-A565-ACA7E7615C91}"
+			Class      = "Uitv_Regel_C"
+			Position   = "(4140,4380)"
+			Visualized = "true">
+			<Channels>
+				<Server Name="actione"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="ClassSvr0"/>
+				<Server Name="Cmd"/>
+				<Server Name="outputRule" Value="1"/>
+				<Server Name="Rnr"/>
+				<Server Name="speed"/>
+				<Server Name="UnitData"/>
+				<Server Name="volgorde"/>
+				<Server Name="x1pos"/>
+				<Server Name="xy1Angle"/>
+				<Server Name="xz1Angle"/>
+				<Server Name="y1pos"/>
+				<Server Name="z1pos"/>
+				<Server Name="zy1Angle"/>
+				<Client Name="list"/>
+				<Client Name="nextRegel"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="RegelContent" GUID="{F208192D-3AB4-42F6-AC90-AB6DDA33CB0A}" Class="Uitv_Regel">
+							<Channels>
+								<Server Name="actione"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="Cmd"/>
+								<Server Name="outputRule" Value="1"/>
+								<Server Name="Rnr"/>
+								<Server Name="speed"/>
+								<Server Name="Units"/>
+								<Server Name="volgorde"/>
+								<Server Name="x1pos"/>
+								<Server Name="xy1Angle"/>
+								<Server Name="xz1Angle"/>
+								<Server Name="y1pos"/>
+								<Server Name="z1pos"/>
+								<Server Name="zy1Angle"/>
+								<Client Name="list"/>
+								<Client Name="nextRegel"/>
+							</Channels>
+						</Object>
+						<Object Name="tMyBDintTODint1" GUID="{5C45C772-DD18-43DF-BE99-EE916DA39F24}" Class="tMyBDintTODint">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Server Name="Data"/>
+								<Client Name="cOutput"/>
+							</Channels>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name           = "calcComplete1"
+			GUID           = "{300E9806-C229-40A0-9678-84F7E7E5D184}"
+			Class          = "calcComplete"
+			Position       = "(2670,1020)"
+			Visualized     = "true"
+			CyclicTime     = "10 ms"
+			BackgroundTime = "10 ms">
+			<Channels>
+				<Server Name="calcDone"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="elapsedTime"/>
+				<Server Name="startCalc"/>
+				<Server Name="stprCalc"/>
+				<Client Name="ctrlCalc"/>
+				<Client Name="ctrlConvert"/>
+			</Channels>
+		</Object>
+		<Object
+			Name           = "calcOperationList1"
+			GUID           = "{313B2311-8CAF-4BFE-8B5C-934B6D4FF3BB}"
+			Class          = "calcOperationListV2"
+			Position       = "(1590,60)"
+			Visualized     = "true"
+			CyclicTime     = "10 ms"
+			BackgroundTime = "10 ms">
+			<Channels>
+				<Server Name="calcDone"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="cmdHMI"/>
+				<Server Name="elapsedTime"/>
+				<Server Name="ErrorNr"/>
+				<Server Name="mode"/>
+				<Server Name="restLength"/>
+				<Server Name="sParFrontEndFlipAllowed" Value="1"/>
+				<Server Name="sParMiterSaw" Value="1"/>
+				<Server Name="sParTurnPointAtOutputSide" Value="1"/>
+				<Server Name="sParUpDownFlipAllowed"/>
+				<Server Name="sParYposTurnPoint" Value="0"/>
+				<Server Name="startCalc"/>
+				<Server Name="state"/>
+				<Server Name="stprCalc"/>
+				<Server Name="stsActInputLength"/>
+				<Server Name="stsActProductHeigth"/>
+				<Server Name="stsActProductWidth"/>
+				<Server Name="stsElapsedTime"/>
+				<Server Name="stsHMI_RunsAllowed"/>
+				<Server Name="stsInAlarm"/>
+				<Server Name="stsIsInterlocked"/>
+				<Server Name="stsMaterialBehindGuiding"/>
+				<Server Name="stsUsedUnits"/>
+				<Server Name="tmpDontCombine"/>
+				<Server Name="tmpDontSort"/>
+				<Client Name="ctrlAssemblyDb"/>
+				<Client Name="ctrlMillProgDb" Value="0"/>
+				<Client Name="ctrlProductDb" Value="0"/>
+				<Client Name="ctrlSettings"/>
+				<Client Name="CtrlTool" Value="0"/>
+				<Client Name="id"/>
+				<Client Name="iMaxPosX1" Value="100000"/>
+				<Client Name="iMaxPosX2"/>
+				<Client Name="iMaxPosXMill1" Value="0"/>
+				<Client Name="iMiddleStartPosMill1X"/>
+				<Client Name="iMinPosX1"/>
+				<Client Name="iMinPosXMill1" Value="0"/>
+				<Client Name="nwEmOrUnit"/>
+				<Client Name="oRpmMill1"/>
+				<Client Name="oRpmMill2"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="_base" GUID="{C6B5A1AC-A7DB-4C69-836D-0FEBEAEAD113}" Class="cmBase">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Server Name="cmdHMI"/>
+								<Server Name="ErrorNr"/>
+								<Server Name="mode"/>
+								<Server Name="state"/>
+								<Server Name="stsHMI_RunsAllowed"/>
+								<Server Name="stsInAlarm"/>
+								<Server Name="stsIsInterlocked"/>
+								<Client Name="id"/>
+								<Client Name="nwEmOrUnit"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object
+											Name           = "_Alarm"
+											GUID           = "{28C9E53D-A6FB-4830-96BF-D8CA93851830}"
+											Class          = "_AlarmX3ParaDer"
+											BackgroundTime = "100 ms">
+											<Channels>
+												<Server Name="AlarmActief"/>
+												<Server Name="ClassSvr"/>
+												<Server Name="ErrorNr"/>
+												<Client Name="Acknow"/>
+												<Client Name="Config" Value="0"/>
+												<Client Name="Group"/>
+												<Client Name="Para1"/>
+												<Client Name="Para2"/>
+												<Client Name="Para3"/>
+											</Channels>
+											<!-- List of Networks in this component -->
+											<Networks>
+												<Network>
+													<!-- List of Components in this network -->
+													<Components>
+														<Object Name="_base" GUID="{5785EB27-1BCB-4BFE-95D3-58366FCEBDFF}" Class="_AlarmX3Para">
+															<Channels>
+																<Server Name="ClassSvr"/>
+																<Client Name="Acknow"/>
+																<Client Name="Config" Value="0"/>
+																<Client Name="Group"/>
+																<Client Name="Para1"/>
+																<Client Name="Para2"/>
+																<Client Name="Para3"/>
+															</Channels>
+															<!-- List of Networks in this component -->
+															<Networks>
+																<Network>
+																	<!-- List of Components in this network -->
+																	<Components>
+																		<Object Name="_base" GUID="{FF1586E3-7510-4496-B4A8-3A308EFCD780}" Class="_AlarmX0Para">
+																			<Channels>
+																				<Server Name="ClassSvr"/>
+																				<Client Name="Acknow"/>
+																				<Client Name="Config" Value="0"/>
+																				<Client Name="Group"/>
+																			</Channels>
+																		</Object>
+																	</Components>
+																	<Connections>
+																	</Connections>
+																</Network>
+															</Networks>
+														</Object>
+													</Components>
+													<Connections>
+													</Connections>
+												</Network>
+											</Networks>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name           = "convertOperationListToSLines1"
+			GUID           = "{44567639-9C32-4D6A-A870-ECE5D3E74CC8}"
+			Class          = "convertOperationListToSLinesV2"
+			Position       = "(1560,1860)"
+			Visualized     = "true"
+			CyclicTime     = "10 ms"
+			BackgroundTime = "10 ms">
+			<Channels>
+				<Server Name="ClassSvr"/>
+				<Server Name="cmdHMI"/>
+				<Server Name="convertDone"/>
+				<Server Name="elapsedTime"/>
+				<Server Name="ErrorNr"/>
+				<Server Name="mode"/>
+				<Server Name="parWaitForSawBeforeClampingOutput" Value="1"/>
+				<Server Name="startConvert"/>
+				<Server Name="state"/>
+				<Server Name="stprConvert"/>
+				<Server Name="stsHMI_RunsAllowed"/>
+				<Server Name="stsInAlarm"/>
+				<Server Name="stsIsInterlocked"/>
+				<Client Name="ctrlOperationList"/>
+				<Client Name="ctrlSettings"/>
+				<Client Name="ctrlSLineList"/>
+				<Client Name="id"/>
+				<Client Name="iMaxPosOutputWagon" Value="0"/>
+				<Client Name="iMinPosOutputWagon" Value="0"/>
+				<Client Name="iMinPosX1" Value="0"/>
+				<Client Name="iWorkSpeed"/>
+				<Client Name="nwEmOrUnit"/>
+				<Client Name="oUpdateList"/>
+				<Client Name="oUpdateList2"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="_base" GUID="{FE83481F-606E-40A1-9245-71E25DD3CD32}" Class="cmBase">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Server Name="cmdHMI"/>
+								<Server Name="ErrorNr"/>
+								<Server Name="mode"/>
+								<Server Name="state"/>
+								<Server Name="stsHMI_RunsAllowed"/>
+								<Server Name="stsInAlarm"/>
+								<Server Name="stsIsInterlocked"/>
+								<Client Name="id"/>
+								<Client Name="nwEmOrUnit"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object
+											Name           = "_Alarm"
+											GUID           = "{28C9E53D-A6FB-4830-96BF-D8CA93851830}"
+											Class          = "_AlarmX3ParaDer"
+											BackgroundTime = "100 ms">
+											<Channels>
+												<Server Name="AlarmActief"/>
+												<Server Name="ClassSvr"/>
+												<Server Name="ErrorNr"/>
+												<Client Name="Acknow"/>
+												<Client Name="Config" Value="0"/>
+												<Client Name="Group"/>
+												<Client Name="Para1"/>
+												<Client Name="Para2"/>
+												<Client Name="Para3"/>
+											</Channels>
+											<!-- List of Networks in this component -->
+											<Networks>
+												<Network>
+													<!-- List of Components in this network -->
+													<Components>
+														<Object Name="_base" GUID="{5785EB27-1BCB-4BFE-95D3-58366FCEBDFF}" Class="_AlarmX3Para">
+															<Channels>
+																<Server Name="ClassSvr"/>
+																<Client Name="Acknow"/>
+																<Client Name="Config" Value="0"/>
+																<Client Name="Group"/>
+																<Client Name="Para1"/>
+																<Client Name="Para2"/>
+																<Client Name="Para3"/>
+															</Channels>
+															<!-- List of Networks in this component -->
+															<Networks>
+																<Network>
+																	<!-- List of Components in this network -->
+																	<Components>
+																		<Object Name="_base" GUID="{FF1586E3-7510-4496-B4A8-3A308EFCD780}" Class="_AlarmX0Para">
+																			<Channels>
+																				<Server Name="ClassSvr"/>
+																				<Client Name="Acknow"/>
+																				<Client Name="Config" Value="0"/>
+																				<Client Name="Group"/>
+																			</Channels>
+																		</Object>
+																	</Components>
+																	<Connections>
+																	</Connections>
+																</Network>
+															</Networks>
+														</Object>
+													</Components>
+													<Connections>
+													</Connections>
+												</Network>
+											</Networks>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name       = "Uitv_Regel1"
+			GUID       = "{6622EEC5-0501-42F4-9B06-3C06EFE605C8}"
+			Class      = "Uitv_Regel_C"
+			Position   = "(8970,3270)"
+			Visualized = "true">
+			<Channels>
+				<Server Name="actione"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="ClassSvr0"/>
+				<Server Name="Cmd"/>
+				<Server Name="outputRule"/>
+				<Server Name="Rnr"/>
+				<Server Name="speed"/>
+				<Server Name="UnitData"/>
+				<Server Name="volgorde"/>
+				<Server Name="x1pos"/>
+				<Server Name="xy1Angle"/>
+				<Server Name="xz1Angle"/>
+				<Server Name="y1pos"/>
+				<Server Name="z1pos"/>
+				<Server Name="zy1Angle"/>
+				<Client Name="list"/>
+				<Client Name="nextRegel"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="RegelContent" GUID="{F208192D-3AB4-42F6-AC90-AB6DDA33CB0A}" Class="Uitv_Regel">
+							<Channels>
+								<Server Name="actione"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="Cmd"/>
+								<Server Name="outputRule"/>
+								<Server Name="Rnr"/>
+								<Server Name="speed"/>
+								<Server Name="Units"/>
+								<Server Name="volgorde"/>
+								<Server Name="x1pos"/>
+								<Server Name="xy1Angle"/>
+								<Server Name="xz1Angle"/>
+								<Server Name="y1pos"/>
+								<Server Name="z1pos"/>
+								<Server Name="zy1Angle"/>
+								<Client Name="list"/>
+								<Client Name="nextRegel"/>
+							</Channels>
+						</Object>
+						<Object Name="tMyBDintTODint1" GUID="{5C45C772-DD18-43DF-BE99-EE916DA39F24}" Class="tMyBDintTODint">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Server Name="Data"/>
+								<Client Name="cOutput"/>
+							</Channels>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name       = "Uitv_Regel10"
+			GUID       = "{BBD7106A-2C69-445D-AE24-730D9008142C}"
+			Class      = "Uitv_Regel_C"
+			Position   = "(3540,3270)"
+			Visualized = "true">
+			<Channels>
+				<Server Name="actione"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="ClassSvr0"/>
+				<Server Name="Cmd"/>
+				<Server Name="outputRule"/>
+				<Server Name="Rnr"/>
+				<Server Name="speed"/>
+				<Server Name="UnitData"/>
+				<Server Name="volgorde"/>
+				<Server Name="x1pos"/>
+				<Server Name="xy1Angle"/>
+				<Server Name="xz1Angle"/>
+				<Server Name="y1pos"/>
+				<Server Name="z1pos"/>
+				<Server Name="zy1Angle"/>
+				<Client Name="list"/>
+				<Client Name="nextRegel"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="RegelContent" GUID="{F208192D-3AB4-42F6-AC90-AB6DDA33CB0A}" Class="Uitv_Regel">
+							<Channels>
+								<Server Name="actione"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="Cmd"/>
+								<Server Name="outputRule"/>
+								<Server Name="Rnr"/>
+								<Server Name="speed"/>
+								<Server Name="Units"/>
+								<Server Name="volgorde"/>
+								<Server Name="x1pos"/>
+								<Server Name="xy1Angle"/>
+								<Server Name="xz1Angle"/>
+								<Server Name="y1pos"/>
+								<Server Name="z1pos"/>
+								<Server Name="zy1Angle"/>
+								<Client Name="list"/>
+								<Client Name="nextRegel"/>
+							</Channels>
+						</Object>
+						<Object Name="tMyBDintTODint1" GUID="{5C45C772-DD18-43DF-BE99-EE916DA39F24}" Class="tMyBDintTODint">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Server Name="Data"/>
+								<Client Name="cOutput"/>
+							</Channels>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name       = "Uitv_Regel11"
+			GUID       = "{EAFA0920-5ABB-4B7E-8991-E1D3261BA084}"
+			Class      = "Uitv_Regel_C"
+			Position   = "(2940,3270)"
+			Visualized = "true">
+			<Channels>
+				<Server Name="actione"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="ClassSvr0"/>
+				<Server Name="Cmd"/>
+				<Server Name="outputRule"/>
+				<Server Name="Rnr"/>
+				<Server Name="speed"/>
+				<Server Name="UnitData"/>
+				<Server Name="volgorde"/>
+				<Server Name="x1pos"/>
+				<Server Name="xy1Angle"/>
+				<Server Name="xz1Angle"/>
+				<Server Name="y1pos"/>
+				<Server Name="z1pos"/>
+				<Server Name="zy1Angle"/>
+				<Client Name="list"/>
+				<Client Name="nextRegel"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="RegelContent" GUID="{F208192D-3AB4-42F6-AC90-AB6DDA33CB0A}" Class="Uitv_Regel">
+							<Channels>
+								<Server Name="actione"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="Cmd"/>
+								<Server Name="outputRule"/>
+								<Server Name="Rnr"/>
+								<Server Name="speed"/>
+								<Server Name="Units"/>
+								<Server Name="volgorde"/>
+								<Server Name="x1pos"/>
+								<Server Name="xy1Angle"/>
+								<Server Name="xz1Angle"/>
+								<Server Name="y1pos"/>
+								<Server Name="z1pos"/>
+								<Server Name="zy1Angle"/>
+								<Client Name="list"/>
+								<Client Name="nextRegel"/>
+							</Channels>
+						</Object>
+						<Object Name="tMyBDintTODint1" GUID="{5C45C772-DD18-43DF-BE99-EE916DA39F24}" Class="tMyBDintTODint">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Server Name="Data"/>
+								<Client Name="cOutput"/>
+							</Channels>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name       = "Uitv_Regel12"
+			GUID       = "{8A80A623-3EB8-4F88-B0DF-1013E117419D}"
+			Class      = "Uitv_Regel_C"
+			Position   = "(2250,3270)"
+			Visualized = "true">
+			<Channels>
+				<Server Name="actione"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="ClassSvr0"/>
+				<Server Name="Cmd"/>
+				<Server Name="outputRule"/>
+				<Server Name="Rnr"/>
+				<Server Name="speed"/>
+				<Server Name="UnitData"/>
+				<Server Name="volgorde"/>
+				<Server Name="x1pos"/>
+				<Server Name="xy1Angle"/>
+				<Server Name="xz1Angle"/>
+				<Server Name="y1pos"/>
+				<Server Name="z1pos"/>
+				<Server Name="zy1Angle"/>
+				<Client Name="list" Value="0"/>
+				<Client Name="nextRegel"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="RegelContent" GUID="{F208192D-3AB4-42F6-AC90-AB6DDA33CB0A}" Class="Uitv_Regel">
+							<Channels>
+								<Server Name="actione"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="Cmd"/>
+								<Server Name="outputRule"/>
+								<Server Name="Rnr"/>
+								<Server Name="speed"/>
+								<Server Name="Units"/>
+								<Server Name="volgorde"/>
+								<Server Name="x1pos"/>
+								<Server Name="xy1Angle"/>
+								<Server Name="xz1Angle"/>
+								<Server Name="y1pos"/>
+								<Server Name="z1pos"/>
+								<Server Name="zy1Angle"/>
+								<Client Name="list" Value="0"/>
+								<Client Name="nextRegel"/>
+							</Channels>
+						</Object>
+						<Object Name="tMyBDintTODint1" GUID="{5C45C772-DD18-43DF-BE99-EE916DA39F24}" Class="tMyBDintTODint">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Server Name="Data"/>
+								<Client Name="cOutput"/>
+							</Channels>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name       = "Uitv_Regel13"
+			GUID       = "{B8201AD2-F2C5-4C88-AA8A-67E1FE969D12}"
+			Class      = "Uitv_Regel_C"
+			Position   = "(1650,3270)"
+			Visualized = "true">
+			<Channels>
+				<Server Name="actione"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="ClassSvr0"/>
+				<Server Name="Cmd"/>
+				<Server Name="outputRule"/>
+				<Server Name="Rnr"/>
+				<Server Name="speed"/>
+				<Server Name="UnitData"/>
+				<Server Name="volgorde"/>
+				<Server Name="x1pos"/>
+				<Server Name="xy1Angle"/>
+				<Server Name="xz1Angle"/>
+				<Server Name="y1pos"/>
+				<Server Name="z1pos"/>
+				<Server Name="zy1Angle"/>
+				<Client Name="list"/>
+				<Client Name="nextRegel"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="RegelContent" GUID="{F208192D-3AB4-42F6-AC90-AB6DDA33CB0A}" Class="Uitv_Regel">
+							<Channels>
+								<Server Name="actione"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="Cmd"/>
+								<Server Name="outputRule"/>
+								<Server Name="Rnr"/>
+								<Server Name="speed"/>
+								<Server Name="Units"/>
+								<Server Name="volgorde"/>
+								<Server Name="x1pos"/>
+								<Server Name="xy1Angle"/>
+								<Server Name="xz1Angle"/>
+								<Server Name="y1pos"/>
+								<Server Name="z1pos"/>
+								<Server Name="zy1Angle"/>
+								<Client Name="list"/>
+								<Client Name="nextRegel"/>
+							</Channels>
+						</Object>
+						<Object Name="tMyBDintTODint1" GUID="{5C45C772-DD18-43DF-BE99-EE916DA39F24}" Class="tMyBDintTODint">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Server Name="Data"/>
+								<Client Name="cOutput"/>
+							</Channels>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name       = "Uitv_Regel14"
+			GUID       = "{3E9315D5-FDAB-4CC6-A36B-A233328FD301}"
+			Class      = "Uitv_Regel_C"
+			Position   = "(1050,3270)"
+			Visualized = "true">
+			<Channels>
+				<Server Name="actione"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="ClassSvr0"/>
+				<Server Name="Cmd"/>
+				<Server Name="outputRule"/>
+				<Server Name="Rnr"/>
+				<Server Name="speed"/>
+				<Server Name="UnitData"/>
+				<Server Name="volgorde"/>
+				<Server Name="x1pos"/>
+				<Server Name="xy1Angle"/>
+				<Server Name="xz1Angle"/>
+				<Server Name="y1pos"/>
+				<Server Name="z1pos"/>
+				<Server Name="zy1Angle"/>
+				<Client Name="list"/>
+				<Client Name="nextRegel"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="RegelContent" GUID="{F208192D-3AB4-42F6-AC90-AB6DDA33CB0A}" Class="Uitv_Regel">
+							<Channels>
+								<Server Name="actione"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="Cmd"/>
+								<Server Name="outputRule"/>
+								<Server Name="Rnr"/>
+								<Server Name="speed"/>
+								<Server Name="Units"/>
+								<Server Name="volgorde"/>
+								<Server Name="x1pos"/>
+								<Server Name="xy1Angle"/>
+								<Server Name="xz1Angle"/>
+								<Server Name="y1pos"/>
+								<Server Name="z1pos"/>
+								<Server Name="zy1Angle"/>
+								<Client Name="list"/>
+								<Client Name="nextRegel"/>
+							</Channels>
+						</Object>
+						<Object Name="tMyBDintTODint1" GUID="{5C45C772-DD18-43DF-BE99-EE916DA39F24}" Class="tMyBDintTODint">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Server Name="Data"/>
+								<Client Name="cOutput"/>
+							</Channels>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name       = "Uitv_Regel2"
+			GUID       = "{BDF763F0-47E8-483F-860A-6442AB2C3D05}"
+			Class      = "Uitv_Regel_C"
+			Position   = "(8430,3270)"
+			Visualized = "true">
+			<Channels>
+				<Server Name="actione"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="ClassSvr0"/>
+				<Server Name="Cmd"/>
+				<Server Name="outputRule"/>
+				<Server Name="Rnr"/>
+				<Server Name="speed"/>
+				<Server Name="UnitData"/>
+				<Server Name="volgorde"/>
+				<Server Name="x1pos"/>
+				<Server Name="xy1Angle"/>
+				<Server Name="xz1Angle"/>
+				<Server Name="y1pos"/>
+				<Server Name="z1pos"/>
+				<Server Name="zy1Angle"/>
+				<Client Name="list"/>
+				<Client Name="nextRegel"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="RegelContent" GUID="{F208192D-3AB4-42F6-AC90-AB6DDA33CB0A}" Class="Uitv_Regel">
+							<Channels>
+								<Server Name="actione"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="Cmd"/>
+								<Server Name="outputRule"/>
+								<Server Name="Rnr"/>
+								<Server Name="speed"/>
+								<Server Name="Units"/>
+								<Server Name="volgorde"/>
+								<Server Name="x1pos"/>
+								<Server Name="xy1Angle"/>
+								<Server Name="xz1Angle"/>
+								<Server Name="y1pos"/>
+								<Server Name="z1pos"/>
+								<Server Name="zy1Angle"/>
+								<Client Name="list"/>
+								<Client Name="nextRegel"/>
+							</Channels>
+						</Object>
+						<Object Name="tMyBDintTODint1" GUID="{5C45C772-DD18-43DF-BE99-EE916DA39F24}" Class="tMyBDintTODint">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Server Name="Data"/>
+								<Client Name="cOutput"/>
+							</Channels>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name       = "Uitv_Regel3"
+			GUID       = "{D8FAC9DB-46F2-4C27-92D6-C54C974C4B81}"
+			Class      = "Uitv_Regel_C"
+			Position   = "(7830,3270)"
+			Visualized = "true">
+			<Channels>
+				<Server Name="actione"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="ClassSvr0"/>
+				<Server Name="Cmd"/>
+				<Server Name="outputRule"/>
+				<Server Name="Rnr"/>
+				<Server Name="speed"/>
+				<Server Name="UnitData"/>
+				<Server Name="volgorde"/>
+				<Server Name="x1pos"/>
+				<Server Name="xy1Angle"/>
+				<Server Name="xz1Angle"/>
+				<Server Name="y1pos"/>
+				<Server Name="z1pos"/>
+				<Server Name="zy1Angle"/>
+				<Client Name="list"/>
+				<Client Name="nextRegel"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="RegelContent" GUID="{F208192D-3AB4-42F6-AC90-AB6DDA33CB0A}" Class="Uitv_Regel">
+							<Channels>
+								<Server Name="actione"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="Cmd"/>
+								<Server Name="outputRule"/>
+								<Server Name="Rnr"/>
+								<Server Name="speed"/>
+								<Server Name="Units"/>
+								<Server Name="volgorde"/>
+								<Server Name="x1pos"/>
+								<Server Name="xy1Angle"/>
+								<Server Name="xz1Angle"/>
+								<Server Name="y1pos"/>
+								<Server Name="z1pos"/>
+								<Server Name="zy1Angle"/>
+								<Client Name="list"/>
+								<Client Name="nextRegel"/>
+							</Channels>
+						</Object>
+						<Object Name="tMyBDintTODint1" GUID="{5C45C772-DD18-43DF-BE99-EE916DA39F24}" Class="tMyBDintTODint">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Server Name="Data"/>
+								<Client Name="cOutput"/>
+							</Channels>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name       = "Uitv_Regel4"
+			GUID       = "{086563B8-0806-4E61-9B0D-651DDB9663AE}"
+			Class      = "Uitv_Regel_C"
+			Position   = "(7230,3270)"
+			Visualized = "true">
+			<Channels>
+				<Server Name="actione"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="ClassSvr0"/>
+				<Server Name="Cmd"/>
+				<Server Name="outputRule"/>
+				<Server Name="Rnr"/>
+				<Server Name="speed"/>
+				<Server Name="UnitData"/>
+				<Server Name="volgorde"/>
+				<Server Name="x1pos"/>
+				<Server Name="xy1Angle"/>
+				<Server Name="xz1Angle"/>
+				<Server Name="y1pos"/>
+				<Server Name="z1pos"/>
+				<Server Name="zy1Angle"/>
+				<Client Name="list"/>
+				<Client Name="nextRegel"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="RegelContent" GUID="{F208192D-3AB4-42F6-AC90-AB6DDA33CB0A}" Class="Uitv_Regel">
+							<Channels>
+								<Server Name="actione"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="Cmd"/>
+								<Server Name="outputRule"/>
+								<Server Name="Rnr"/>
+								<Server Name="speed"/>
+								<Server Name="Units"/>
+								<Server Name="volgorde"/>
+								<Server Name="x1pos"/>
+								<Server Name="xy1Angle"/>
+								<Server Name="xz1Angle"/>
+								<Server Name="y1pos"/>
+								<Server Name="z1pos"/>
+								<Server Name="zy1Angle"/>
+								<Client Name="list"/>
+								<Client Name="nextRegel"/>
+							</Channels>
+						</Object>
+						<Object Name="tMyBDintTODint1" GUID="{5C45C772-DD18-43DF-BE99-EE916DA39F24}" Class="tMyBDintTODint">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Server Name="Data"/>
+								<Client Name="cOutput"/>
+							</Channels>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name       = "Uitv_Regel5"
+			GUID       = "{67B576FB-3BA6-4AE1-AA9D-4D0F5B55B51B}"
+			Class      = "Uitv_Regel_C"
+			Position   = "(6630,3270)"
+			Visualized = "true">
+			<Channels>
+				<Server Name="actione"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="ClassSvr0"/>
+				<Server Name="Cmd"/>
+				<Server Name="outputRule"/>
+				<Server Name="Rnr"/>
+				<Server Name="speed"/>
+				<Server Name="UnitData"/>
+				<Server Name="volgorde"/>
+				<Server Name="x1pos"/>
+				<Server Name="xy1Angle"/>
+				<Server Name="xz1Angle"/>
+				<Server Name="y1pos"/>
+				<Server Name="z1pos"/>
+				<Server Name="zy1Angle"/>
+				<Client Name="list"/>
+				<Client Name="nextRegel"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="RegelContent" GUID="{F208192D-3AB4-42F6-AC90-AB6DDA33CB0A}" Class="Uitv_Regel">
+							<Channels>
+								<Server Name="actione"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="Cmd"/>
+								<Server Name="outputRule"/>
+								<Server Name="Rnr"/>
+								<Server Name="speed"/>
+								<Server Name="Units"/>
+								<Server Name="volgorde"/>
+								<Server Name="x1pos"/>
+								<Server Name="xy1Angle"/>
+								<Server Name="xz1Angle"/>
+								<Server Name="y1pos"/>
+								<Server Name="z1pos"/>
+								<Server Name="zy1Angle"/>
+								<Client Name="list"/>
+								<Client Name="nextRegel"/>
+							</Channels>
+						</Object>
+						<Object Name="tMyBDintTODint1" GUID="{5C45C772-DD18-43DF-BE99-EE916DA39F24}" Class="tMyBDintTODint">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Server Name="Data"/>
+								<Client Name="cOutput"/>
+							</Channels>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name       = "Uitv_Regel6"
+			GUID       = "{9C9762EB-6ACA-4087-B646-9522DA066A14}"
+			Class      = "Uitv_Regel_C"
+			Position   = "(5940,3270)"
+			Visualized = "true">
+			<Channels>
+				<Server Name="actione"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="ClassSvr0"/>
+				<Server Name="Cmd"/>
+				<Server Name="outputRule"/>
+				<Server Name="Rnr"/>
+				<Server Name="speed"/>
+				<Server Name="UnitData"/>
+				<Server Name="volgorde"/>
+				<Server Name="x1pos"/>
+				<Server Name="xy1Angle"/>
+				<Server Name="xz1Angle"/>
+				<Server Name="y1pos"/>
+				<Server Name="z1pos"/>
+				<Server Name="zy1Angle"/>
+				<Client Name="list"/>
+				<Client Name="nextRegel"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="RegelContent" GUID="{F208192D-3AB4-42F6-AC90-AB6DDA33CB0A}" Class="Uitv_Regel">
+							<Channels>
+								<Server Name="actione"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="Cmd"/>
+								<Server Name="outputRule"/>
+								<Server Name="Rnr"/>
+								<Server Name="speed"/>
+								<Server Name="Units"/>
+								<Server Name="volgorde"/>
+								<Server Name="x1pos"/>
+								<Server Name="xy1Angle"/>
+								<Server Name="xz1Angle"/>
+								<Server Name="y1pos"/>
+								<Server Name="z1pos"/>
+								<Server Name="zy1Angle"/>
+								<Client Name="list"/>
+								<Client Name="nextRegel"/>
+							</Channels>
+						</Object>
+						<Object Name="tMyBDintTODint1" GUID="{5C45C772-DD18-43DF-BE99-EE916DA39F24}" Class="tMyBDintTODint">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Server Name="Data"/>
+								<Client Name="cOutput"/>
+							</Channels>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name       = "Uitv_Regel7"
+			GUID       = "{1CEB2E90-BCDD-4AE4-9974-27030FD08A7D}"
+			Class      = "Uitv_Regel_C"
+			Position   = "(5340,3270)"
+			Visualized = "true">
+			<Channels>
+				<Server Name="actione"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="ClassSvr0"/>
+				<Server Name="Cmd"/>
+				<Server Name="outputRule"/>
+				<Server Name="Rnr"/>
+				<Server Name="speed"/>
+				<Server Name="UnitData"/>
+				<Server Name="volgorde"/>
+				<Server Name="x1pos"/>
+				<Server Name="xy1Angle"/>
+				<Server Name="xz1Angle"/>
+				<Server Name="y1pos"/>
+				<Server Name="z1pos"/>
+				<Server Name="zy1Angle"/>
+				<Client Name="list"/>
+				<Client Name="nextRegel"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="RegelContent" GUID="{F208192D-3AB4-42F6-AC90-AB6DDA33CB0A}" Class="Uitv_Regel">
+							<Channels>
+								<Server Name="actione"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="Cmd"/>
+								<Server Name="outputRule"/>
+								<Server Name="Rnr"/>
+								<Server Name="speed"/>
+								<Server Name="Units"/>
+								<Server Name="volgorde"/>
+								<Server Name="x1pos"/>
+								<Server Name="xy1Angle"/>
+								<Server Name="xz1Angle"/>
+								<Server Name="y1pos"/>
+								<Server Name="z1pos"/>
+								<Server Name="zy1Angle"/>
+								<Client Name="list"/>
+								<Client Name="nextRegel"/>
+							</Channels>
+						</Object>
+						<Object Name="tMyBDintTODint1" GUID="{5C45C772-DD18-43DF-BE99-EE916DA39F24}" Class="tMyBDintTODint">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Server Name="Data"/>
+								<Client Name="cOutput"/>
+							</Channels>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name       = "Uitv_Regel8"
+			GUID       = "{9BE60591-B47C-4B97-A486-35BEB183F57B}"
+			Class      = "Uitv_Regel_C"
+			Position   = "(4740,3270)"
+			Visualized = "true">
+			<Channels>
+				<Server Name="actione"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="ClassSvr0"/>
+				<Server Name="Cmd"/>
+				<Server Name="outputRule"/>
+				<Server Name="Rnr"/>
+				<Server Name="speed"/>
+				<Server Name="UnitData"/>
+				<Server Name="volgorde"/>
+				<Server Name="x1pos"/>
+				<Server Name="xy1Angle"/>
+				<Server Name="xz1Angle"/>
+				<Server Name="y1pos"/>
+				<Server Name="z1pos"/>
+				<Server Name="zy1Angle"/>
+				<Client Name="list"/>
+				<Client Name="nextRegel"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="RegelContent" GUID="{F208192D-3AB4-42F6-AC90-AB6DDA33CB0A}" Class="Uitv_Regel">
+							<Channels>
+								<Server Name="actione"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="Cmd"/>
+								<Server Name="outputRule"/>
+								<Server Name="Rnr"/>
+								<Server Name="speed"/>
+								<Server Name="Units"/>
+								<Server Name="volgorde"/>
+								<Server Name="x1pos"/>
+								<Server Name="xy1Angle"/>
+								<Server Name="xz1Angle"/>
+								<Server Name="y1pos"/>
+								<Server Name="z1pos"/>
+								<Server Name="zy1Angle"/>
+								<Client Name="list"/>
+								<Client Name="nextRegel"/>
+							</Channels>
+						</Object>
+						<Object Name="tMyBDintTODint1" GUID="{5C45C772-DD18-43DF-BE99-EE916DA39F24}" Class="tMyBDintTODint">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Server Name="Data"/>
+								<Client Name="cOutput"/>
+							</Channels>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name       = "Uitv_Regel9"
+			GUID       = "{452BC2E9-6588-4DE6-9E28-BE01B3D0DD6A}"
+			Class      = "Uitv_Regel_C"
+			Position   = "(4140,3270)"
+			Visualized = "true">
+			<Channels>
+				<Server Name="actione"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="ClassSvr0"/>
+				<Server Name="Cmd"/>
+				<Server Name="outputRule"/>
+				<Server Name="Rnr"/>
+				<Server Name="speed"/>
+				<Server Name="UnitData"/>
+				<Server Name="volgorde"/>
+				<Server Name="x1pos"/>
+				<Server Name="xy1Angle"/>
+				<Server Name="xz1Angle"/>
+				<Server Name="y1pos"/>
+				<Server Name="z1pos"/>
+				<Server Name="zy1Angle"/>
+				<Client Name="list"/>
+				<Client Name="nextRegel"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="RegelContent" GUID="{F208192D-3AB4-42F6-AC90-AB6DDA33CB0A}" Class="Uitv_Regel">
+							<Channels>
+								<Server Name="actione"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="Cmd"/>
+								<Server Name="outputRule"/>
+								<Server Name="Rnr"/>
+								<Server Name="speed"/>
+								<Server Name="Units"/>
+								<Server Name="volgorde"/>
+								<Server Name="x1pos"/>
+								<Server Name="xy1Angle"/>
+								<Server Name="xz1Angle"/>
+								<Server Name="y1pos"/>
+								<Server Name="z1pos"/>
+								<Server Name="zy1Angle"/>
+								<Client Name="list"/>
+								<Client Name="nextRegel"/>
+							</Channels>
+						</Object>
+						<Object Name="tMyBDintTODint1" GUID="{5C45C772-DD18-43DF-BE99-EE916DA39F24}" Class="tMyBDintTODint">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Server Name="Data"/>
+								<Client Name="cOutput"/>
+							</Channels>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+	</Components>
+	<Comments>
+		<Comment Position="(1050,3240)" Size="(8130,30)" Text="objects to visualize rules"/>
+		<Comment Position="(1050,4350)" Size="(8130,30)" Text="objects to visualize rules"/>
+	</Comments>
+	<!-- List of Connections in this network -->
+	<Connections>
+		<Connection Source="calcOperationList1.ctrlSettings" Destination="dbSettings1.ClassSvr"/>
+		<Connection Source="calcOperationList1.ctrlAssemblyDb" Destination="AssemblyDb.ClassSvr"/>
+		<Connection Source="calcOperationList1.ctrlProductDb" Destination="ProductsDb.ClassSvr"/>
+		<Connection Source="convertOperationListToSLines1.ctrlSLineList" Destination="GlobalListGreat1.ClassSvr0"/>
+		<Connection Source="convertOperationListToSLines1.ctrlOperationList" Destination="calcOperationList1.ClassSvr" Vertices="(1560,2130),(1020,2130),(1020,1770),(2460,1770),(2460,150),(2236,150),"/>
+		<Connection Source="convertOperationListToSLines1.ctrlSettings" Destination="dbSettings1.ClassSvr"/>
+		<Connection Source="convertOperationListToSLines1.nwEmOrUnit" Destination="unitMachine.ClassSvr"/>
+		<Connection Source="calcComplete1.ctrlCalc" Destination="calcOperationList1.ClassSvr" Vertices="(2670,1110),(2550,1110),(2550,150),(2236,150),"/>
+		<Connection Source="calcComplete1.ctrlConvert" Destination="convertOperationListToSLines1.ClassSvr" Vertices="(2670,1170),(2550,1170),(2550,1950),(2236,1950),"/>
+		<Connection Source="Uitv_Regel13.nextRegel" Destination="Uitv_Regel14.ClassSvr0" Vertices="(1650,3360),(1396,3420),"/>
+		<Connection Source="Uitv_Regel12.nextRegel" Destination="Uitv_Regel13.ClassSvr0" Vertices="(2250,3360),(1996,3420),"/>
+		<Connection Source="Uitv_Regel11.nextRegel" Destination="Uitv_Regel12.ClassSvr0" Vertices="(2940,3360),(2596,3420),"/>
+		<Connection Source="Uitv_Regel10.nextRegel" Destination="Uitv_Regel11.ClassSvr0" Vertices="(3540,3360),(3286,3420),"/>
+		<Connection Source="Uitv_Regel9.nextRegel" Destination="Uitv_Regel10.ClassSvr0" Vertices="(4140,3360),(3886,3420),"/>
+		<Connection Source="Uitv_Regel8.nextRegel" Destination="Uitv_Regel9.ClassSvr0" Vertices="(4740,3360),(4486,3420),"/>
+		<Connection Source="Uitv_Regel7.nextRegel" Destination="Uitv_Regel8.ClassSvr0" Vertices="(5340,3360),(5086,3420),"/>
+		<Connection Source="Uitv_Regel6.nextRegel" Destination="Uitv_Regel7.ClassSvr0" Vertices="(5940,3360),(5686,3420),"/>
+		<Connection Source="Uitv_Regel5.nextRegel" Destination="Uitv_Regel6.ClassSvr0" Vertices="(6630,3360),(6286,3420),"/>
+		<Connection Source="Uitv_Regel4.nextRegel" Destination="Uitv_Regel5.ClassSvr0" Vertices="(7230,3360),(6976,3420),"/>
+		<Connection Source="Uitv_Regel3.nextRegel" Destination="Uitv_Regel4.ClassSvr0" Vertices="(7830,3360),(7576,3420),"/>
+		<Connection Source="Uitv_Regel2.nextRegel" Destination="Uitv_Regel3.ClassSvr0" Vertices="(8430,3360),(8176,3420),"/>
+		<Connection Source="Uitv_Regel1.nextRegel" Destination="Uitv_Regel2.ClassSvr0" Vertices="(8970,3360),(8776,3420),"/>
+		<Connection Source="Uitv_Regel14.list" Destination="GlobalListGreat1.ClassSvr0"/>
+		<Connection Source="Uitv_Regel13.list" Destination="GlobalListGreat1.ClassSvr0"/>
+		<Connection Source="Uitv_Regel12.list" Destination="GlobalListGreat1.ClassSvr0"/>
+		<Connection Source="Uitv_Regel11.list" Destination="GlobalListGreat1.ClassSvr0"/>
+		<Connection Source="Uitv_Regel10.list" Destination="GlobalListGreat1.ClassSvr0"/>
+		<Connection Source="Uitv_Regel9.list" Destination="GlobalListGreat1.ClassSvr0"/>
+		<Connection Source="Uitv_Regel8.list" Destination="GlobalListGreat1.ClassSvr0"/>
+		<Connection Source="Uitv_Regel7.list" Destination="GlobalListGreat1.ClassSvr0"/>
+		<Connection Source="Uitv_Regel6.list" Destination="GlobalListGreat1.ClassSvr0"/>
+		<Connection Source="Uitv_Regel5.list" Destination="GlobalListGreat1.ClassSvr0"/>
+		<Connection Source="Uitv_Regel4.list" Destination="GlobalListGreat1.ClassSvr0"/>
+		<Connection Source="Uitv_Regel3.list" Destination="GlobalListGreat1.ClassSvr0"/>
+		<Connection Source="Uitv_Regel2.list" Destination="GlobalListGreat1.ClassSvr0"/>
+		<Connection Source="Uitv_Regel1.list" Destination="GlobalListGreat1.ClassSvr0"/>
+		<Connection Source="Afv_Regel13.nextRegel" Destination="Afv_Regel14.ClassSvr0" Vertices="(1650,4470),(1396,4530),"/>
+		<Connection Source="Afv_Regel12.nextRegel" Destination="Afv_Regel13.ClassSvr0" Vertices="(2250,4470),(1996,4530),"/>
+		<Connection Source="Afv_Regel11.nextRegel" Destination="Afv_Regel12.ClassSvr0" Vertices="(2940,4470),(2596,4530),"/>
+		<Connection Source="Afv_Regel10.nextRegel" Destination="Afv_Regel11.ClassSvr0" Vertices="(3540,4470),(3286,4530),"/>
+		<Connection Source="Afv_Regel9.nextRegel" Destination="Afv_Regel10.ClassSvr0" Vertices="(4140,4470),(3886,4530),"/>
+		<Connection Source="Afv_Regel8.nextRegel" Destination="Afv_Regel9.ClassSvr0" Vertices="(4740,4470),(4486,4530),"/>
+		<Connection Source="Afv_Regel7.nextRegel" Destination="Afv_Regel8.ClassSvr0" Vertices="(5340,4470),(5086,4530),"/>
+		<Connection Source="Afv_Regel6.nextRegel" Destination="Afv_Regel7.ClassSvr0" Vertices="(5940,4470),(5686,4530),"/>
+		<Connection Source="Afv_Regel5.nextRegel" Destination="Afv_Regel6.ClassSvr0" Vertices="(6630,4470),(6286,4530),"/>
+		<Connection Source="Afv_Regel4.nextRegel" Destination="Afv_Regel5.ClassSvr0" Vertices="(7230,4470),(6976,4530),"/>
+		<Connection Source="Afv_Regel3.nextRegel" Destination="Afv_Regel4.ClassSvr0" Vertices="(7830,4470),(7576,4530),"/>
+		<Connection Source="Afv_Regel2.nextRegel" Destination="Afv_Regel3.ClassSvr0" Vertices="(8430,4470),(8176,4530),"/>
+		<Connection Source="Afv_Regel1.nextRegel" Destination="Afv_Regel2.ClassSvr0" Vertices="(8970,4470),(8776,4530),"/>
+		<Connection Source="Afv_Regel14.list" Destination="GlobalListGreat1.ClassSvr0"/>
+		<Connection Source="Afv_Regel13.list" Destination="GlobalListGreat1.ClassSvr0"/>
+		<Connection Source="Afv_Regel12.list" Destination="GlobalListGreat1.ClassSvr0"/>
+		<Connection Source="Afv_Regel11.list" Destination="GlobalListGreat1.ClassSvr0"/>
+		<Connection Source="Afv_Regel10.list" Destination="GlobalListGreat1.ClassSvr0"/>
+		<Connection Source="Afv_Regel9.list" Destination="GlobalListGreat1.ClassSvr0"/>
+		<Connection Source="Afv_Regel8.list" Destination="GlobalListGreat1.ClassSvr0"/>
+		<Connection Source="Afv_Regel7.list" Destination="GlobalListGreat1.ClassSvr0"/>
+		<Connection Source="Afv_Regel6.list" Destination="GlobalListGreat1.ClassSvr0"/>
+		<Connection Source="Afv_Regel5.list" Destination="GlobalListGreat1.ClassSvr0"/>
+		<Connection Source="Afv_Regel4.list" Destination="GlobalListGreat1.ClassSvr0"/>
+		<Connection Source="Afv_Regel3.list" Destination="GlobalListGreat1.ClassSvr0"/>
+		<Connection Source="Afv_Regel2.list" Destination="GlobalListGreat1.ClassSvr0"/>
+		<Connection Source="Afv_Regel1.list" Destination="GlobalListGreat1.ClassSvr0"/>
+		<Connection Source="convertOperationListToSLines1.oUpdateList" Destination="Uitv_Regel1.ClassSvr0" Vertices="(1560,2310),(390,2310),(390,3210),(9390,3210),(9390,3420),(9316,3420),"/>
+		<Connection Source="convertOperationListToSLines1.oUpdateList2" Destination="Afv_Regel1.ClassSvr0" Vertices="(1560,2250),(360,2250),(360,4290),(9390,4290),(9390,4530),(9316,4530),"/>
+		<Connection Source="calcOperationList1.iMinPosX1" Destination="cmServoX1.parMinPos"/>
+		<Connection Source="calcOperationList1.iMaxPosX1" Destination="cmServoX1.parMaxPos"/>
+		<Connection Source="convertOperationListToSLines1.iMinPosX1" Destination="cmServoX1.parMinPos"/>
+		<Connection Source="calcOperationList1.nwEmOrUnit" Destination="unitMachine.ClassSvr"/>
+	</Connections>
+	<!-- Headerfiles -->
+	<Options>
+	</Options>
+</Network>

@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<Network Name="safetyCheck" Revision="0.0">
+	<!-- List of Components in this network -->
+	<Components>
+		<Object
+			Name       = "checkEmergencyStops"
+			GUID       = "{D9B3C086-B10F-484C-AB9E-68FDF35D6644}"
+			Class      = "Lees10Ingangenin"
+			Position   = "(990,1050)"
+			Visualized = "false">
+			<Channels>
+				<Server Name="ClassSVR"/>
+				<Client Name="ingang1"/>
+				<Client Name="ingang10"/>
+				<Client Name="ingang2"/>
+				<Client Name="ingang3"/>
+				<Client Name="ingang4"/>
+				<Client Name="ingang5"/>
+				<Client Name="ingang6"/>
+				<Client Name="ingang7"/>
+				<Client Name="ingang8"/>
+				<Client Name="ingang9"/>
+				<Client Name="Invert" Value="0"/>
+			</Channels>
+		</Object>
+		<Object
+			Name       = "CtrlCheckMachineReadyMain"
+			GUID       = "{86F4A2C8-E3F2-429B-BA7E-89225D3B3D6A}"
+			Class      = "CtrlCheckMachineReady"
+			Position   = "(1980,390)"
+			Visualized = "true"
+			CyclicTime = "50 ms">
+			<Channels>
+				<Server Name="AlarmActiefCommon"/>
+				<Server Name="AlarmActiefSafety"/>
+				<Server Name="AlarmLubr"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="ErrorNrCommon"/>
+				<Server Name="ErrorNrLubr"/>
+				<Server Name="ErrorNrSafety"/>
+				<Server Name="ResetAlarms"/>
+				<Server Name="result"/>
+				<Server Name="sStartUpTime" Value="10000"/>
+				<Server Name="Status_Controlcurrent"/>
+				<Server Name="Status_SafeCompleet"/>
+				<Client Name="iBlink"/>
+				<Client Name="iBTBs"/>
+				<Client Name="iControlCurrent" Value="1"/>
+				<Client Name="iEmergencyStops"/>
+				<Client Name="iIsafeCompleet" Value="1"/>
+				<Client Name="iLuchtdrukOK" Value="1"/>
+				<Client Name="iNrLubrs"/>
+				<Client Name="iSimulateMode"/>
+				<Client Name="iSmeerSystemenLeeg"/>
+				<Client Name="iStatusCanComm" Value="1"/>
+				<Client Name="iStuurstroomIn" Value="1"/>
+				<Client Name="iThermUits"/>
+				<Client Name="nrBTBinUse"/>
+				<Client Name="nrEmergencyStops" Value="6"/>
+				<Client Name="nrThermUitinUse" Value="1"/>
+				<Client Name="oLightControlCurrent"/>
+				<Client Name="StatusIOlinkComm" Value="1"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object
+							Name           = "_AlarmCommon"
+							GUID           = "{C243C8D8-BF14-4A42-85DA-1D6FB841C4EB}"
+							Class          = "_AlarmX3ParaDer"
+							BackgroundTime = "100 ms">
+							<Channels>
+								<Server Name="AlarmActief"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="ErrorNr"/>
+								<Client Name="Acknow"/>
+								<Client Name="Config" Value="0"/>
+								<Client Name="Group"/>
+								<Client Name="Para1"/>
+								<Client Name="Para2"/>
+								<Client Name="Para3"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object Name="_base" GUID="{5785EB27-1BCB-4BFE-95D3-58366FCEBDFF}" Class="_AlarmX3Para">
+											<Channels>
+												<Server Name="ClassSvr"/>
+												<Client Name="Acknow"/>
+												<Client Name="Config" Value="0"/>
+												<Client Name="Group"/>
+												<Client Name="Para1"/>
+												<Client Name="Para2"/>
+												<Client Name="Para3"/>
+											</Channels>
+											<!-- List of Networks in this component -->
+											<Networks>
+												<Network>
+													<!-- List of Components in this network -->
+													<Components>
+														<Object Name="_base" GUID="{FF1586E3-7510-4496-B4A8-3A308EFCD780}" Class="_AlarmX0Para">
+															<Channels>
+																<Server Name="ClassSvr"/>
+																<Client Name="Acknow"/>
+																<Client Name="Config" Value="0"/>
+																<Client Name="Group"/>
+															</Channels>
+														</Object>
+													</Components>
+													<Connections>
+													</Connections>
+												</Network>
+											</Networks>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+						<Object
+							Name           = "_AlarmLubr"
+							GUID           = "{B51CF6EB-70D0-4242-9B50-DBD03B428C72}"
+							Class          = "_AlarmX3ParaDer"
+							BackgroundTime = "100 ms">
+							<Channels>
+								<Server Name="AlarmActief"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="ErrorNr"/>
+								<Client Name="Acknow"/>
+								<Client Name="Config" Value="0"/>
+								<Client Name="Group"/>
+								<Client Name="Para1"/>
+								<Client Name="Para2"/>
+								<Client Name="Para3"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object Name="_base" GUID="{5785EB27-1BCB-4BFE-95D3-58366FCEBDFF}" Class="_AlarmX3Para">
+											<Channels>
+												<Server Name="ClassSvr"/>
+												<Client Name="Acknow"/>
+												<Client Name="Config" Value="0"/>
+												<Client Name="Group"/>
+												<Client Name="Para1"/>
+												<Client Name="Para2"/>
+												<Client Name="Para3"/>
+											</Channels>
+											<!-- List of Networks in this component -->
+											<Networks>
+												<Network>
+													<!-- List of Components in this network -->
+													<Components>
+														<Object Name="_base" GUID="{FF1586E3-7510-4496-B4A8-3A308EFCD780}" Class="_AlarmX0Para">
+															<Channels>
+																<Server Name="ClassSvr"/>
+																<Client Name="Acknow"/>
+																<Client Name="Config"/>
+																<Client Name="Group"/>
+															</Channels>
+														</Object>
+													</Components>
+													<Connections>
+													</Connections>
+												</Network>
+											</Networks>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+						<Object
+							Name           = "_AlarmSafety"
+							GUID           = "{DAE82440-BB63-4077-849A-D94CC47523C6}"
+							Class          = "_AlarmX3ParaDer"
+							BackgroundTime = "100 ms">
+							<Channels>
+								<Server Name="AlarmActief"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="ErrorNr"/>
+								<Client Name="Acknow"/>
+								<Client Name="Config" Value="0"/>
+								<Client Name="Group"/>
+								<Client Name="Para1"/>
+								<Client Name="Para2"/>
+								<Client Name="Para3"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object Name="_base" GUID="{5785EB27-1BCB-4BFE-95D3-58366FCEBDFF}" Class="_AlarmX3Para">
+											<Channels>
+												<Server Name="ClassSvr"/>
+												<Client Name="Acknow"/>
+												<Client Name="Config" Value="0"/>
+												<Client Name="Group"/>
+												<Client Name="Para1"/>
+												<Client Name="Para2"/>
+												<Client Name="Para3"/>
+											</Channels>
+											<!-- List of Networks in this component -->
+											<Networks>
+												<Network>
+													<!-- List of Components in this network -->
+													<Components>
+														<Object Name="_base" GUID="{FF1586E3-7510-4496-B4A8-3A308EFCD780}" Class="_AlarmX0Para">
+															<Channels>
+																<Server Name="ClassSvr"/>
+																<Client Name="Acknow"/>
+																<Client Name="Config" Value="0"/>
+																<Client Name="Group"/>
+															</Channels>
+														</Object>
+													</Components>
+													<Connections>
+													</Connections>
+												</Network>
+											</Networks>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+						<Object Name="Logic_Or_23" GUID="{25B0B27E-4200-4C92-9AFE-4F7DA948C2A3}" Class="Logic_Or_2">
+							<Channels>
+								<Server Name="Result"/>
+								<Client Name="Op1"/>
+								<Client Name="Op2"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object Name="_base" GUID="{8009179B-DE5A-11D5-B925-0010609208D7}" Class="Logic_Or_Base">
+											<Channels>
+												<Server Name="Result"/>
+											</Channels>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+						<Object Name="Logic_Or_24" GUID="{2CC37DC2-B936-4D9F-A3EF-6982A83F6E98}" Class="Logic_Or_2">
+							<Channels>
+								<Server Name="Result"/>
+								<Client Name="Op1"/>
+								<Client Name="Op2"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object Name="_base" GUID="{8009179B-DE5A-11D5-B925-0010609208D7}" Class="Logic_Or_Base">
+											<Channels>
+												<Server Name="Result"/>
+											</Channels>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name       = "lampControlCurrentTwoZones1"
+			GUID       = "{05601A88-1FA9-4141-8BC1-32F6CD7E4FD7}"
+			Class      = "lampControlCurrentTwoZones"
+			Position   = "(990,1860)"
+			Visualized = "false"
+			CyclicTime = "10 ms">
+			<Channels>
+				<Server Name="ClassSvr"/>
+				<Server Name="zone2" Value="1"/>
+				<Server Name="zone3" Value="1"/>
+				<Server Name="zoneMain"/>
+				<Client Name="iBlinkMain" Value="0"/>
+				<Client Name="iBlinkZone2" Value="0"/>
+				<Client Name="oLight"/>
+			</Channels>
+		</Object>
+		<Object
+			Name       = "Lees10Ingangenin1"
+			GUID       = "{6C41BE6A-7B77-4722-807A-2210BA64B33E}"
+			Class      = "Lees10Ingangenin"
+			Position   = "(990,300)"
+			Visualized = "false">
+			<Channels>
+				<Server Name="ClassSVR"/>
+				<Client Name="ingang1"/>
+				<Client Name="ingang10"/>
+				<Client Name="ingang2"/>
+				<Client Name="ingang3"/>
+				<Client Name="ingang4"/>
+				<Client Name="ingang5"/>
+				<Client Name="ingang6"/>
+				<Client Name="ingang7"/>
+				<Client Name="ingang8"/>
+				<Client Name="ingang9"/>
+				<Client Name="Invert" Value="1"/>
+			</Channels>
+		</Object>
+	</Components>
+	<Comments>
+	</Comments>
+	<!-- List of Connections in this network -->
+	<Connections>
+		<Connection Source="CtrlCheckMachineReadyMain.iStuurstroomIn" Destination="__NOcontrolCurrent1" Vertices="(1980,600),(1860,600)," IOObject="NOcontrolCurrent"/>
+		<Connection Source="Lees10Ingangenin1.ingang1" Destination="__ThermicalOut1" Vertices="(990,390),(930,390)," IOObject="ThermicalOut"/>
+		<Connection Source="checkEmergencyStops.ingang1" Destination="__eStopControlPanel1" Vertices="(990,1140),(930,1140)," IOObject="eStopControlPanel"/>
+		<Connection Source="checkEmergencyStops.ingang2" Destination="__eStopSaw1" Vertices="(990,1200),(930,1200)," IOObject="eStopSaw"/>
+		<Connection Source="CtrlCheckMachineReadyMain.iThermUits" Destination="Lees10Ingangenin1.ClassSVR" Vertices="(1980,780),(1470,780),(1470,390),(1290,390),"/>
+		<Connection Source="CtrlCheckMachineReadyMain.iEmergencyStops" Destination="checkEmergencyStops.ClassSVR" Vertices="(1980,1020),(1440,1020),(1440,1140),(1290,1140),"/>
+		<Connection Source="CtrlCheckMachineReadyMain.iSimulateMode" Destination="mainControl1.oActSimuMode"/>
+		<Connection Source="CtrlCheckMachineReadyMain.iBlink" Destination="BlinkLampSlow.ClassSvr"/>
+		<Connection Source="checkEmergencyStops.ingang3" Destination="__pullCordOutput1" Vertices="(990,1260),(930,1260)," IOObject="pullCordOutput"/>
+		<Connection Source="lampControlCurrentTwoZones1.oLight" Destination="__LampCurrent1" Vertices="(990,2070),(870,2070)," IOObject="LampCurrent"/>
+		<Connection Source="lampControlCurrentTwoZones1.iBlinkMain" Destination="BlinkLampSlow.ClassSvr"/>
+		<Connection Source="lampControlCurrentTwoZones1.iBlinkZone2" Destination="BlinkLampFast.ClassSvr"/>
+		<Connection Source="CtrlCheckMachineReadyMain.oLightControlCurrent" Destination="lampControlCurrentTwoZones1.zoneMain" Vertices="(1980,1140),(1560,1140),(1560,2010),(1426,2010),"/>
+		<Connection Source="checkEmergencyStops.ingang4" Destination="__IO_Element4" Vertices="(990,1320),(930,1320)," IOObject="pullCordInput"/>
+		<Connection Source="checkEmergencyStops.ingang5" Destination="__IO_Element5" Vertices="(990,1380),(930,1380)," IOObject="holdContactSawCover"/>
+		<Connection Source="checkEmergencyStops.ingang6" Destination="__IO_Element6" Vertices="(990,1440),(930,1440)," IOObject="stopPlateEnd"/>
+	</Connections>
+	<!-- List of temp data objects in this network -->
+	<IOObjects>
+		<IOObject KeyName="__eStopControlPanel1" Name="eStopControlPanel" Position="(630,1110)" Client="checkEmergencyStops.ingang1"/>
+		<IOObject KeyName="__eStopSaw1" Name="eStopSaw" Position="(630,1170)" Client="checkEmergencyStops.ingang2"/>
+		<IOObject KeyName="__IO_Element4" Name="pullCordInput" Position="(630,1290)" Client="checkEmergencyStops.ingang4"/>
+		<IOObject KeyName="__IO_Element5" Name="holdContactSawCover" Position="(630,1350)" Client="checkEmergencyStops.ingang5"/>
+		<IOObject KeyName="__IO_Element6" Name="stopPlateEnd" Position="(630,1410)" Client="checkEmergencyStops.ingang6"/>
+		<IOObject KeyName="__LampCurrent1" Name="LampCurrent" Position="(570,2040)" Client="lampControlCurrentTwoZones1.oLight"/>
+		<IOObject KeyName="__NOcontrolCurrent1" Name="NOcontrolCurrent" Position="(1560,570)" Client="CtrlCheckMachineReadyMain.iStuurstroomIn"/>
+		<IOObject KeyName="__pullCordOutput1" Name="pullCordOutput" Position="(630,1230)" Client="checkEmergencyStops.ingang3"/>
+		<IOObject KeyName="__ThermicalOut1" Name="ThermicalOut" Position="(630,360)" Client="Lees10Ingangenin1.ingang1"/>
+	</IOObjects>
+	<!-- Headerfiles -->
+	<Options>
+	</Options>
+</Network>

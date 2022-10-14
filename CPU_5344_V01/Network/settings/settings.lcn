@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<Network Name="settings" Revision="0.0">
+	<!-- List of Components in this network -->
+	<Components>
+		<Object
+			Name       = "dbSettings1"
+			GUID       = "{13EC7C9B-8519-4CC9-88BE-CD50152F95A0}"
+			Class      = "dbSettings"
+			Position   = "(1110,330)"
+			Visualized = "true">
+			<Channels>
+				<Server Name="allWasteAtFront"/>
+				<Server Name="AutoActive"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="clsBU1"/>
+				<Server Name="clsBU10"/>
+				<Server Name="clsBU2"/>
+				<Server Name="clsBU3"/>
+				<Server Name="clsBU4"/>
+				<Server Name="clsBU5"/>
+				<Server Name="clsBU6"/>
+				<Server Name="clsBU7"/>
+				<Server Name="clsBU8"/>
+				<Server Name="clsBU9"/>
+				<Server Name="combineOperations"/>
+				<Server Name="DoEndWaste"/>
+				<Server Name="doFrontWaste"/>
+				<Server Name="freeSpaceLoadMaterial"/>
+				<Server Name="lengthBetweenPiece"/>
+				<Server Name="lengthGripProfile"/>
+				<Server Name="magazinPositionBigWaste"/>
+				<Server Name="maxLengthForWasteBin"/>
+				<Server Name="maxLengthWaste"/>
+				<Server Name="maxPosCl1"/>
+				<Server Name="maxPosCl2"/>
+				<Server Name="maxPosCl3"/>
+				<Server Name="maxPosCl4"/>
+				<Server Name="maxPosCl5"/>
+				<Server Name="maxPosCl6"/>
+				<Server Name="maxPosCl7"/>
+				<Server Name="maxPosCl8"/>
+				<Server Name="maxPosCl9"/>
+				<Server Name="maxTakeOverPos"/>
+				<Server Name="minEndWaste"/>
+				<Server Name="minEndWasteAngle"/>
+				<Server Name="minFrontWaste"/>
+				<Server Name="minLengthForOutputMagazines"/>
+				<Server Name="minLengthProdInGripperX2"/>
+				<Server Name="minLengthRollersOutputWithoutMove"/>
+				<Server Name="minPosCl1"/>
+				<Server Name="minPosCl2"/>
+				<Server Name="minPosCl3"/>
+				<Server Name="minPosCl4"/>
+				<Server Name="minPosCl5"/>
+				<Server Name="minPosCl6"/>
+				<Server Name="minPosCl7"/>
+				<Server Name="minPosCl8"/>
+				<Server Name="minPosCl9"/>
+				<Server Name="minPosLeftSawClampClosed"/>
+				<Server Name="minPosWagonUp"/>
+				<Server Name="minTakeOverPos"/>
+				<Server Name="moveBigWasteToMagazin"/>
+				<Server Name="noWasteStop"/>
+				<Server Name="offsetBu3"/>
+				<Server Name="offsetBu6"/>
+				<Server Name="offsetBu7"/>
+				<Server Name="offsetOutput"/>
+				<Server Name="offsetPressureRol"/>
+				<Server Name="offsetTakeIn"/>
+				<Server Name="offsetWasteStop"/>
+				<Server Name="openPressureRollAtFirstOperation"/>
+				<Server Name="optimumTakeOverPos"/>
+				<Server Name="overTakeActive"/>
+				<Server Name="parMaxForceWagonX1"/>
+				<Server Name="PushMaterialToMinPos"/>
+				<Server Name="safeDistanceToMaterialMill"/>
+				<Server Name="sawWidth"/>
+				<Server Name="slowXSpeed"/>
+				<Server Name="speedDrill1"/>
+				<Server Name="speedDrill2"/>
+				<Server Name="speedDrill3"/>
+				<Server Name="speedDrill4"/>
+				<Server Name="toolDiamMill1"/>
+				<Server Name="toolDiamMill2"/>
+				<Server Name="toolDiamMill3"/>
+				<Server Name="toolDiamMill4"/>
+				<Server Name="toolLengthMill1"/>
+				<Server Name="toolLengthMill2"/>
+				<Server Name="toolLengthMill3"/>
+				<Server Name="toolLengthMill4"/>
+				<Server Name="usedUnitsCl1"/>
+				<Server Name="usedUnitsCl2"/>
+				<Server Name="usedUnitsCl3"/>
+				<Server Name="usedUnitsCl4"/>
+				<Server Name="usedUnitsCl5"/>
+				<Server Name="usedUnitsCl6"/>
+				<Server Name="usedUnitsCl7"/>
+				<Server Name="usedUnitsCl8"/>
+				<Server Name="usedUnitsCl9"/>
+				<Server Name="UsePressureroll"/>
+				<Server Name="waitPosX2"/>
+				<Server Name="wasteStopForEndWaste" Value="1"/>
+				<Server Name="widthBu6"/>
+				<Server Name="workingXSpeed"/>
+			</Channels>
+		</Object>
+	</Components>
+	<Comments>
+		<Comment Position="(2040,810)" Size="(960,420)" Text="magazinPositionBigWaste:&#13;&#10;posible options: 1 magazin 1&#13;&#10;  2 magazin 2&#13;&#10;  3 let machine choose 1 or 2&#13;&#10;  11 take out manually"/>
+	</Comments>
+	<!-- List of Connections in this network -->
+	<Connections>
+	</Connections>
+	<!-- Headerfiles -->
+	<Options>
+	</Options>
+</Network>

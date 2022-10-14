@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<Network Name="settingsMpsControl" Revision="0.0">
+	<!-- List of Components in this network -->
+	<Components>
+		<Object
+			Name       = "generalMPScontrolSettings1"
+			GUID       = "{EF5B7ED5-B0F9-437E-AD5B-791C20115124}"
+			Class      = "generalMPScontrolSettings"
+			Position   = "(510,300)"
+			Visualized = "true">
+			<Channels>
+				<Server Name="addOutputOperations"/>
+				<Server Name="amountOfUnits" Value="5"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="combineOperations"/>
+				<Server Name="freeLoadDistance"/>
+				<Server Name="gripDistanceInputWagon"/>
+				<Server Name="lengthBetweenPieces"/>
+				<Server Name="machineName" Value="MPS5286"/>
+				<Server Name="maxProductLength"/>
+				<Server Name="maxScrapLength"/>
+				<Server Name="maxTakeOverPos"/>
+				<Server Name="minPosWagonUp"/>
+				<Server Name="minProductLength" Value="100"/>
+				<Server Name="minScrapLengthEnd"/>
+				<Server Name="minScrapLengthFront"/>
+				<Server Name="minTakeOverPos"/>
+				<Server Name="moveBigWasteToMagazine"/>
+				<Server Name="moveToMinPosAfterProduction"/>
+				<Server Name="MPS_nr" Value="5286"/>
+				<Server Name="noEndSaw"/>
+				<Server Name="noFrontSaw"/>
+				<Server Name="noWasteStop"/>
+				<Server Name="optimumTakeOverPos"/>
+				<Server Name="overtakeActive"/>
+				<Server Name="turnPointSawAtOutputSide"/>
+				<Server Name="wasteAtFront"/>
+				<Server Name="wasteStopForEndWaste"/>
+				<Server Name="yPosTurnPointSaw"/>
+				<Client Name="ctrlCalc"/>
+				<Client Name="ctrlSettings"/>
+				<Client Name="iMaxPosWagon"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="typeMachine" GUID="{A2A15072-FB33-4DA3-9FB4-62D986583918}" Class="StringRAM">
+							<Channels>
+								<Server Name="Data"/>
+								<Client Name="SingleRealloc" Value="1"/>
+								<Client Name="UseFile" Value="1"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object Name="_base" GUID="{1F69B880-FAA2-42FA-9D00-85265E1C4A69}" Class="StringInternal">
+											<Channels>
+												<Server Name="Data"/>
+												<Client Name="DataBuffer"/>
+												<Client Name="SingleRealloc" Value="1"/>
+											</Channels>
+											<!-- List of Networks in this component -->
+											<Networks>
+												<Network>
+													<!-- List of Components in this network -->
+													<Components>
+														<Object Name="_base" GUID="{6CBDDE57-D222-420A-BC45-D2266096244E}" Class="VirtualBaseInit">
+															<Channels>
+																<Server Name="Data"/>
+															</Channels>
+														</Object>
+													</Components>
+													<Connections>
+													</Connections>
+												</Network>
+											</Networks>
+										</Object>
+										<Object Name="DataBuffer" GUID="{167807E4-6D9F-4D9F-A980-81FF93F0EFE0}" Class="RAMex">
+											<Channels>
+												<Server Name="m_udLength"/>
+												<Client Name="MultiTask"/>
+												<Client Name="ThreadSafe" Value="0"/>
+												<Client Name="UseFile" Value="1"/>
+											</Channels>
+											<!-- List of Networks in this component -->
+											<Networks>
+												<Network>
+													<!-- List of Components in this network -->
+													<Components>
+														<Object Name="_base" GUID="{69FA3C23-B049-4F83-B4BC-D30F993C8C98}" Class="MerkerEx">
+															<Channels>
+																<Server Name="m_udLength"/>
+																<Client Name="ThreadSafe" Value="0"/>
+															</Channels>
+														</Object>
+													</Components>
+													<Connections>
+													</Connections>
+												</Network>
+											</Networks>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name       = "MPScontrolMessage"
+			GUID       = "{2751426A-F2BA-4AC9-8AD0-8E10C22EB965}"
+			Class      = "MPScontrolMessage"
+			Position   = "(3180,1020)"
+			Visualized = "true"
+			Remotely   = "true">
+			<Channels>
+				<Server Name="ClassSvr"/>
+				<Server Name="Data"/>
+				<Server Name="responseTag"/>
+				<Server Name="show"/>
+				<Server Name="typeTag"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="text" GUID="{0E7640F0-3DF8-4C33-9D5A-6BD633D6BB71}" Class="String">
+							<Channels>
+								<Server Name="Data"/>
+								<Client Name="SingleRealloc" Value="1"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object Name="_base" GUID="{B9D2D328-1416-469A-BE13-9F6CBBB1958D}" Class="StringInternal">
+											<Channels>
+												<Server Name="Data"/>
+												<Client Name="DataBuffer"/>
+												<Client Name="SingleRealloc" Value="1"/>
+											</Channels>
+											<!-- List of Networks in this component -->
+											<Networks>
+												<Network>
+													<!-- List of Components in this network -->
+													<Components>
+														<Object Name="_base" GUID="{6CBDDE57-D222-420A-BC45-D2266096244E}" Class="VirtualBaseInit">
+															<Channels>
+																<Server Name="Data"/>
+															</Channels>
+														</Object>
+													</Components>
+													<Connections>
+													</Connections>
+												</Network>
+											</Networks>
+										</Object>
+										<Object Name="MerkerEx0" GUID="{53955FF7-8ABE-4B49-B914-227100C3FDEF}" Class="MerkerEx">
+											<Channels>
+												<Server Name="m_udLength"/>
+												<Client Name="ThreadSafe" Value="0"/>
+											</Channels>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name       = "Unit1"
+			GUID       = "{B4DD2F08-3F3A-4304-9AE9-4D15E4116C32}"
+			Class      = "positionSettingMpsControl"
+			Position   = "(1740,300)"
+			Visualized = "true">
+			<Channels>
+				<Server Name="amountOfSettings" Value="2"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="Name"/>
+				<Server Name="plane" Value="all"/>
+				<Server Name="setting1"/>
+				<Server Name="setting2"/>
+				<Server Name="setting3"/>
+				<Server Name="toolType" Value="positionUnit"/>
+				<Client Name="iMaxPos"/>
+				<Client Name="iMinPos"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="_base" GUID="{522FD806-10C0-4A05-895F-B87553273A39}" Class="baseToolSettingsMpsControl">
+							<Channels>
+								<Server Name="amountOfSettings" Value="2"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="Name"/>
+								<Server Name="plane" Value="all"/>
+								<Server Name="toolType" Value="positionUnit"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object Name="unitName" GUID="{06CC166D-5B5C-4A81-B449-71EBE249B56D}" Class="StringRAM">
+											<Channels>
+												<Server Name="Data"/>
+												<Client Name="SingleRealloc" Value="1"/>
+												<Client Name="UseFile" Value="1"/>
+											</Channels>
+											<!-- List of Networks in this component -->
+											<Networks>
+												<Network>
+													<!-- List of Components in this network -->
+													<Components>
+														<Object Name="_base" GUID="{1F69B880-FAA2-42FA-9D00-85265E1C4A69}" Class="StringInternal">
+															<Channels>
+																<Server Name="Data"/>
+																<Client Name="DataBuffer"/>
+																<Client Name="SingleRealloc" Value="1"/>
+															</Channels>
+															<!-- List of Networks in this component -->
+															<Networks>
+																<Network>
+																	<!-- List of Components in this network -->
+																	<Components>
+																		<Object Name="_base" GUID="{6CBDDE57-D222-420A-BC45-D2266096244E}" Class="VirtualBaseInit">
+																			<Channels>
+																				<Server Name="Data"/>
+																			</Channels>
+																		</Object>
+																	</Components>
+																	<Connections>
+																	</Connections>
+																</Network>
+															</Networks>
+														</Object>
+														<Object Name="DataBuffer" GUID="{167807E4-6D9F-4D9F-A980-81FF93F0EFE0}" Class="RAMex">
+															<Channels>
+																<Server Name="m_udLength"/>
+																<Client Name="MultiTask"/>
+																<Client Name="ThreadSafe" Value="0"/>
+																<Client Name="UseFile"/>
+															</Channels>
+															<!-- List of Networks in this component -->
+															<Networks>
+																<Network>
+																	<!-- List of Components in this network -->
+																	<Components>
+																		<Object Name="_base" GUID="{69FA3C23-B049-4F83-B4BC-D30F993C8C98}" Class="MerkerEx">
+																			<Channels>
+																				<Server Name="m_udLength"/>
+																				<Client Name="ThreadSafe"/>
+																			</Channels>
+																		</Object>
+																	</Components>
+																	<Connections>
+																	</Connections>
+																</Network>
+															</Networks>
+														</Object>
+													</Components>
+													<Connections>
+													</Connections>
+												</Network>
+											</Networks>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name       = "Unit2"
+			GUID       = "{E4F58829-C539-4D51-8773-190FD9C49BB4}"
+			Class      = "loaderUnitSettingsMpsControl"
+			Position   = "(2460,300)"
+			Visualized = "true">
+			<Channels>
+				<Server Name="amountOfSettings" Value="3"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="Name"/>
+				<Server Name="plane" Value="all"/>
+				<Server Name="setting1"/>
+				<Server Name="setting2" Value="1"/>
+				<Server Name="setting3"/>
+				<Server Name="setting4"/>
+				<Server Name="toolType" Value="loaderUnit"/>
+				<Client Name="iAmountOfPositions" Value="6"/>
+				<Client Name="iOffset"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="_base" GUID="{6D37EF5C-E7D4-4887-929D-7A80F8B564FB}" Class="baseToolSettingsMpsControl">
+							<Channels>
+								<Server Name="amountOfSettings" Value="3"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="Name"/>
+								<Server Name="plane" Value="all"/>
+								<Server Name="toolType" Value="loaderUnit"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object Name="unitName" GUID="{06CC166D-5B5C-4A81-B449-71EBE249B56D}" Class="StringRAM">
+											<Channels>
+												<Server Name="Data"/>
+												<Client Name="SingleRealloc" Value="1"/>
+												<Client Name="UseFile" Value="1"/>
+											</Channels>
+											<!-- List of Networks in this component -->
+											<Networks>
+												<Network>
+													<!-- List of Components in this network -->
+													<Components>
+														<Object Name="_base" GUID="{1F69B880-FAA2-42FA-9D00-85265E1C4A69}" Class="StringInternal">
+															<Channels>
+																<Server Name="Data"/>
+																<Client Name="DataBuffer"/>
+																<Client Name="SingleRealloc" Value="1"/>
+															</Channels>
+															<!-- List of Networks in this component -->
+															<Networks>
+																<Network>
+																	<!-- List of Components in this network -->
+																	<Components>
+																		<Object Name="_base" GUID="{6CBDDE57-D222-420A-BC45-D2266096244E}" Class="VirtualBaseInit">
+																			<Channels>
+																				<Server Name="Data"/>
+																			</Channels>
+																		</Object>
+																	</Components>
+																	<Connections>
+																	</Connections>
+																</Network>
+															</Networks>
+														</Object>
+														<Object Name="DataBuffer" GUID="{167807E4-6D9F-4D9F-A980-81FF93F0EFE0}" Class="RAMex">
+															<Channels>
+																<Server Name="m_udLength"/>
+																<Client Name="MultiTask"/>
+																<Client Name="ThreadSafe" Value="0"/>
+																<Client Name="UseFile"/>
+															</Channels>
+															<!-- List of Networks in this component -->
+															<Networks>
+																<Network>
+																	<!-- List of Components in this network -->
+																	<Components>
+																		<Object Name="_base" GUID="{69FA3C23-B049-4F83-B4BC-D30F993C8C98}" Class="MerkerEx">
+																			<Channels>
+																				<Server Name="m_udLength"/>
+																				<Client Name="ThreadSafe"/>
+																			</Channels>
+																		</Object>
+																	</Components>
+																	<Connections>
+																	</Connections>
+																</Network>
+															</Networks>
+														</Object>
+													</Components>
+													<Connections>
+													</Connections>
+												</Network>
+											</Networks>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name       = "Unit3"
+			GUID       = "{795B0A8E-94E4-445F-9771-6E464EB54121}"
+			Class      = "sawToolSettingsMpsControl"
+			Position   = "(3180,300)"
+			Visualized = "true">
+			<Channels>
+				<Server Name="amountOfSettings" Value="2"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="Name"/>
+				<Server Name="plane" Value="all"/>
+				<Server Name="setting1"/>
+				<Server Name="setting2"/>
+				<Server Name="toolType" Value="sawUnit"/>
+				<Client Name="iMaxAngle" Value="1350"/>
+				<Client Name="iMinAngle" Value="450"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="_base" GUID="{5079A314-12F9-4345-99FA-3B8F35A7E727}" Class="baseToolSettingsMpsControl">
+							<Channels>
+								<Server Name="amountOfSettings" Value="2"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="Name"/>
+								<Server Name="plane" Value="all"/>
+								<Server Name="toolType" Value="sawUnit"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object Name="unitName" GUID="{06CC166D-5B5C-4A81-B449-71EBE249B56D}" Class="StringRAM">
+											<Channels>
+												<Server Name="Data"/>
+												<Client Name="SingleRealloc" Value="1"/>
+												<Client Name="UseFile" Value="1"/>
+											</Channels>
+											<!-- List of Networks in this component -->
+											<Networks>
+												<Network>
+													<!-- List of Components in this network -->
+													<Components>
+														<Object Name="_base" GUID="{1F69B880-FAA2-42FA-9D00-85265E1C4A69}" Class="StringInternal">
+															<Channels>
+																<Server Name="Data"/>
+																<Client Name="DataBuffer"/>
+																<Client Name="SingleRealloc" Value="1"/>
+															</Channels>
+															<!-- List of Networks in this component -->
+															<Networks>
+																<Network>
+																	<!-- List of Components in this network -->
+																	<Components>
+																		<Object Name="_base" GUID="{6CBDDE57-D222-420A-BC45-D2266096244E}" Class="VirtualBaseInit">
+																			<Channels>
+																				<Server Name="Data"/>
+																			</Channels>
+																		</Object>
+																	</Components>
+																	<Connections>
+																	</Connections>
+																</Network>
+															</Networks>
+														</Object>
+														<Object Name="DataBuffer" GUID="{167807E4-6D9F-4D9F-A980-81FF93F0EFE0}" Class="RAMex">
+															<Channels>
+																<Server Name="m_udLength"/>
+																<Client Name="MultiTask"/>
+																<Client Name="ThreadSafe" Value="0"/>
+																<Client Name="UseFile"/>
+															</Channels>
+															<!-- List of Networks in this component -->
+															<Networks>
+																<Network>
+																	<!-- List of Components in this network -->
+																	<Components>
+																		<Object Name="_base" GUID="{69FA3C23-B049-4F83-B4BC-D30F993C8C98}" Class="MerkerEx">
+																			<Channels>
+																				<Server Name="m_udLength"/>
+																				<Client Name="ThreadSafe"/>
+																			</Channels>
+																		</Object>
+																	</Components>
+																	<Connections>
+																	</Connections>
+																</Network>
+															</Networks>
+														</Object>
+													</Components>
+													<Connections>
+													</Connections>
+												</Network>
+											</Networks>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name       = "Unit4"
+			GUID       = "{B0529E41-EDAC-410A-B563-82200945D979}"
+			Class      = "loaderUnitSettingsMpsControl"
+			Position   = "(1740,1020)"
+			Visualized = "true">
+			<Channels>
+				<Server Name="amountOfSettings" Value="3"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="Name"/>
+				<Server Name="plane" Value="all"/>
+				<Server Name="setting1"/>
+				<Server Name="setting2" Value="0"/>
+				<Server Name="setting3" Value="1"/>
+				<Server Name="setting4"/>
+				<Server Name="toolType" Value="loaderUnit"/>
+				<Client Name="iAmountOfPositions"/>
+				<Client Name="iOffset"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="_base" GUID="{6D37EF5C-E7D4-4887-929D-7A80F8B564FB}" Class="baseToolSettingsMpsControl">
+							<Channels>
+								<Server Name="amountOfSettings" Value="3"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="Name"/>
+								<Server Name="plane" Value="all"/>
+								<Server Name="toolType" Value="loaderUnit"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object Name="unitName" GUID="{06CC166D-5B5C-4A81-B449-71EBE249B56D}" Class="StringRAM">
+											<Channels>
+												<Server Name="Data"/>
+												<Client Name="SingleRealloc" Value="1"/>
+												<Client Name="UseFile" Value="1"/>
+											</Channels>
+											<!-- List of Networks in this component -->
+											<Networks>
+												<Network>
+													<!-- List of Components in this network -->
+													<Components>
+														<Object Name="_base" GUID="{1F69B880-FAA2-42FA-9D00-85265E1C4A69}" Class="StringInternal">
+															<Channels>
+																<Server Name="Data"/>
+																<Client Name="DataBuffer"/>
+																<Client Name="SingleRealloc" Value="1"/>
+															</Channels>
+															<!-- List of Networks in this component -->
+															<Networks>
+																<Network>
+																	<!-- List of Components in this network -->
+																	<Components>
+																		<Object Name="_base" GUID="{6CBDDE57-D222-420A-BC45-D2266096244E}" Class="VirtualBaseInit">
+																			<Channels>
+																				<Server Name="Data"/>
+																			</Channels>
+																		</Object>
+																	</Components>
+																	<Connections>
+																	</Connections>
+																</Network>
+															</Networks>
+														</Object>
+														<Object Name="DataBuffer" GUID="{167807E4-6D9F-4D9F-A980-81FF93F0EFE0}" Class="RAMex">
+															<Channels>
+																<Server Name="m_udLength"/>
+																<Client Name="MultiTask"/>
+																<Client Name="ThreadSafe" Value="0"/>
+																<Client Name="UseFile"/>
+															</Channels>
+															<!-- List of Networks in this component -->
+															<Networks>
+																<Network>
+																	<!-- List of Components in this network -->
+																	<Components>
+																		<Object Name="_base" GUID="{69FA3C23-B049-4F83-B4BC-D30F993C8C98}" Class="MerkerEx">
+																			<Channels>
+																				<Server Name="m_udLength"/>
+																				<Client Name="ThreadSafe"/>
+																			</Channels>
+																		</Object>
+																	</Components>
+																	<Connections>
+																	</Connections>
+																</Network>
+															</Networks>
+														</Object>
+													</Components>
+													<Connections>
+													</Connections>
+												</Network>
+											</Networks>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name       = "Unit5"
+			GUID       = "{AB4F9477-02D5-4D50-A436-DE5C8DEA66A5}"
+			Class      = "punchToolSettingsMpsControl"
+			Position   = "(2460,1020)"
+			Visualized = "true"
+			Remotely   = "true">
+			<Channels>
+				<Server Name="amountOfSettings" Value="1"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="Name"/>
+				<Server Name="plane" Value="top"/>
+				<Server Name="setting1"/>
+				<Server Name="toolType" Value="punchUnit"/>
+				<Client Name="offset" Value="0"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="_base" GUID="{93EB0CF8-A23A-4EAB-98FA-65BE75E07B94}" Class="baseToolSettingsMpsControl">
+							<Channels>
+								<Server Name="amountOfSettings" Value="1"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="Name"/>
+								<Server Name="plane" Value="top"/>
+								<Server Name="toolType" Value="punchUnit"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object Name="unitName" GUID="{06CC166D-5B5C-4A81-B449-71EBE249B56D}" Class="StringRAM">
+											<Channels>
+												<Server Name="Data"/>
+												<Client Name="SingleRealloc" Value="1"/>
+												<Client Name="UseFile" Value="1"/>
+											</Channels>
+											<!-- List of Networks in this component -->
+											<Networks>
+												<Network>
+													<!-- List of Components in this network -->
+													<Components>
+														<Object Name="_base" GUID="{1F69B880-FAA2-42FA-9D00-85265E1C4A69}" Class="StringInternal">
+															<Channels>
+																<Server Name="Data"/>
+																<Client Name="DataBuffer"/>
+																<Client Name="SingleRealloc" Value="1"/>
+															</Channels>
+															<!-- List of Networks in this component -->
+															<Networks>
+																<Network>
+																	<!-- List of Components in this network -->
+																	<Components>
+																		<Object Name="_base" GUID="{6CBDDE57-D222-420A-BC45-D2266096244E}" Class="VirtualBaseInit">
+																			<Channels>
+																				<Server Name="Data"/>
+																			</Channels>
+																		</Object>
+																	</Components>
+																	<Connections>
+																	</Connections>
+																</Network>
+															</Networks>
+														</Object>
+														<Object Name="DataBuffer" GUID="{167807E4-6D9F-4D9F-A980-81FF93F0EFE0}" Class="RAMex">
+															<Channels>
+																<Server Name="m_udLength"/>
+																<Client Name="MultiTask"/>
+																<Client Name="ThreadSafe" Value="0"/>
+																<Client Name="UseFile" Value="1"/>
+															</Channels>
+															<!-- List of Networks in this component -->
+															<Networks>
+																<Network>
+																	<!-- List of Components in this network -->
+																	<Components>
+																		<Object Name="_base" GUID="{69FA3C23-B049-4F83-B4BC-D30F993C8C98}" Class="MerkerEx">
+																			<Channels>
+																				<Server Name="m_udLength"/>
+																				<Client Name="ThreadSafe" Value="0"/>
+																			</Channels>
+																		</Object>
+																	</Components>
+																	<Connections>
+																	</Connections>
+																</Network>
+															</Networks>
+														</Object>
+													</Components>
+													<Connections>
+													</Connections>
+												</Network>
+											</Networks>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+	</Components>
+	<Comments>
+	</Comments>
+	<!-- List of Connections in this network -->
+	<Connections>
+		<Connection Source="Unit5.offset" Destination="dbSettings1.offsetBu3"/>
+		<Connection Source="Unit1.iMinPos" Destination="cmServoX1.parMinPos"/>
+		<Connection Source="Unit1.iMaxPos" Destination="cmServoX1.parMaxPos"/>
+		<Connection Source="Unit2.iOffset" Destination="dbSettings1.offsetTakeIn"/>
+		<Connection Source="generalMPScontrolSettings1.ctrlSettings" Destination="dbSettings1.ClassSvr"/>
+		<Connection Source="generalMPScontrolSettings1.iMaxPosWagon" Destination="cmServoX1.parMaxPos"/>
+		<Connection Source="generalMPScontrolSettings1.ctrlCalc" Destination="calcOperationList1.ClassSvr"/>
+		<Connection Source="Unit4.iOffset" Destination="dbSettings1.offsetWasteStop"/>
+	</Connections>
+	<!-- Headerfiles -->
+	<Options>
+	</Options>
+</Network>

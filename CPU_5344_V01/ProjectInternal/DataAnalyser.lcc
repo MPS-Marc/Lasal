@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<DataAnalyser
+	VerSet        = "0.01"
+	Samplerate    = "1000"
+	DA_Type       = "0"
+	MaxMemTime    = "0"
+	MaxMem        = "20"
+	TimeRangeStr  = "10000 ms"
+	TimeOffsetStr = "0 ms"
+	TimeRange     = "10000"
+	TimeOffset    = "0"
+	ScreenView    = "TREND">
+	<DA_TriggerStart Active="false" Type="Start" Condition="Greater or Equal">
+	</DA_TriggerStart>
+	<DA_TriggerStop Active="false" Type="Stop" Condition="Greater or Equal">
+	</DA_TriggerStop>
+	<DA_Channels>
+		<DA_Channel
+			Name          = "cmServoX1.stsPos"
+			Type          = "DINT"
+			ChannelInfo   = "cmServoX1.stsPos"
+			ChannelSize   = "4"
+			BitIndex      = "0"
+			Color         = "886118"
+			Active        = "true"
+			LimitHi       = "79415"
+			LimitLo       = "70300"
+			IsServer      = "true"
+			ChannelMemOff = "288">
+		</DA_Channel>
+		<DA_Channel
+			Name          = "emOperationSawUnit.stprAction"
+			Type          = "DINT"
+			ChannelInfo   = "emOperationSawUnit.stprAction"
+			ChannelSize   = "4"
+			BitIndex      = "0"
+			Color         = "1331655"
+			Active        = "true"
+			LimitHi       = "1"
+			LimitLo       = "-1"
+			IsServer      = "true"
+			ChannelMemOff = "240">
+		</DA_Channel>
+		<DA_Channel
+			Name          = "emOperationSawUnit.oStartSawCycle"
+			Type          = "DINT"
+			ChannelInfo   = "emOperationSawUnit.oStartSawCycle"
+			ChannelSize   = "4"
+			BitIndex      = "0"
+			Color         = "15487800"
+			Active        = "true"
+			LimitHi       = "1"
+			LimitLo       = "-1"
+			IsServer      = "false"
+			ChannelMemOff = "1048">
+		</DA_Channel>
+	</DA_Channels>
+	<DA_AuxLines>
+	</DA_AuxLines>
+</DataAnalyser>

@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<HWClassInfo>
+<HWDevice ModuleID="0x14" SubModuleID="0x1" ModType="M_CDIAS" Desc="">	
+	<Types>
+		<Device Name="CSI021" ClassName="CSI021_IM" DisplayGroup="Communication"/>	
+	</Types>
+</HWDevice>
+<Class Name="CSI021_IM" Path="Communication;Serial">
+  <Uplink Name="MasterConnect" BusType="CDIAS" PlaceName="Place" Desc="This client is used to communicate with the (DiasMasterC) hardware class and must therefore be connected to its (Control) server of the (Control) server of the (CICXXX_IM) hardware class.&#13;&#10;More information can be found in the DiasMasterC and CICXXX_IM hardware class documentation" />
+  <Interface Name="Serial Interface 1" Channel="Com1_CommandInterface" Desc="RS232/485/422 Interface" Type="Serial" />
+  <Interface Name="Serial Interface 2" Channel="Com2_CommandInterface" Desc="RS232/485/422 Interface" Type="Serial" />
+  <IOState Name="State" Channel="State" Desc="This Server shows the state of the Modul" />
+  <Property Name="Com1_Baudrate" Channel="Com1_Baudrate" Desc="Inits Com with Init-Value&#13;&#10;&#13;&#10;1......300 Bd&#13;&#10;2......600 Bd&#13;&#10;3.....1200 Bd&#13;&#10;4.....2400 Bd&#13;&#10;5.....4800 Bd&#13;&#10;6.....9600 Bd&#13;&#10;7....14400 Bd&#13;&#10;8....19200 Bd&#13;&#10;9....38400 Bd&#13;&#10;10...56000 Bd&#13;&#10;11..115200 Bd&#13;&#10;&#13;&#10;-1..Com not initialized&#13;&#10;" Editor="Combo:-1=Com not initialized;0=300Bd;1=600Bd;2=1200Bd;3=2400Bd;4=4800Bd;5=9600Bd;6=14400Bd;7=19200Bd;8=38400Bd;9=56000Bd;10=115200Bd;" />
+  <Property Name="Com1_FifoControl" Channel="Com1_FifoControl" Desc="Inits Com with Init-Value&#13;&#10;&#13;&#10;0..Fifo Off&#13;&#10;1..Fifo On&#13;&#10;&#13;&#10;-1..Com not initialized&#13;&#10;" Editor="Combo:-1=Com not initialized;0=Fifo Off;1=Fifo On;" />
+  <Property Name="Com1_Parity" Channel="Com1_Parity" Desc="Inits Com with Init-Value&#13;&#10;&#13;&#10;0..No Parity&#13;&#10;1..Odd Parity&#13;&#10;2..Even Parity&#13;&#10;3..Mark&#13;&#10;4..Space&#13;&#10;&#13;&#10;-1..Com not initialized&#13;&#10;" Editor="Combo:-1=Com not initialized;0=No Parity;1=Even Parity;2=Odd Parity;3=Mark;4=Space;" />
+  <Property Name="Com1_RSMode" Channel="Com1_RSMode" Desc="Inits Com with Init-Value&#13;&#10;&#13;&#10;0..232&#13;&#10;1..422&#13;&#10;2..485&#13;&#10;&#13;&#10;-1..Com not initialized&#13;&#10;" Editor="Combo:-1=Com not initialized;0=RS232;1=RS422;3=RS485" />
+  <Property Name="Com1_StopBit" Channel="Com1_StopBit" Desc="Inits Com with Init-Value&#13;&#10;&#13;&#10;1..One StopBit&#13;&#10;2..Two StopBits&#13;&#10;&#13;&#10;-1..Com not initialized" Editor="Combo:-1=Com not initialized;1=One Stop Bit;2=Two Stop Bits;" />
+  <Property Name="Com1_WordLength" Channel="Com1_WordLength" Desc="Inits Com with Init-Value&#13;&#10;&#13;&#10;WordLength 5..8&#13;&#10;&#13;&#10;-1..Com not initialized" Editor="Range:-1..8" />
+  <Property Name="Com2_Baudrate" Channel="Com2_Baudrate" Desc="Inits Com with Init-Value&#13;&#10;&#13;&#10;1......300Bd&#13;&#10;2......600 Bd&#13;&#10;3.....1200 Bd&#13;&#10;4.....2400 Bd&#13;&#10;5.....4800 Bd&#13;&#10;6.....9600 Bd&#13;&#10;7....14400 Bd&#13;&#10;8....19200 Bd&#13;&#10;9....38400 Bd&#13;&#10;10...56000 Bd&#13;&#10;11..115200 Bd&#13;&#10;&#13;&#10;-1..Com not initialized&#13;&#10;" Editor="Combo:-1=Com not initialized;0=300Bd;1=600Bd;2=1200Bd;3=2400Bd;4=4800Bd;5=9600Bd;6=14400Bd;7=19200Bd;8=38400Bd;9=56000Bd;10=115200Bd;" />
+  <Property Name="Com2_FifoControl" Channel="Com2_FifoControl" Desc="Inits Com with Init-Value&#13;&#10;&#13;&#10;0..Fifo Off&#13;&#10;1..Fifo On&#13;&#10;&#13;&#10;-1..Com not initialized&#13;&#10;" Editor="Combo:-1=Com not initialized;0=Fifo Off;1=Fifo On;" />
+  <Property Name="Com2_Parity" Channel="Com2_Parity" Desc="Inits Com with Init-Value&#13;&#10;&#13;&#10;0..No Parity&#13;&#10;1..Odd Parity&#13;&#10;2..Even Parity&#13;&#10;3..Mark&#13;&#10;4..Space&#13;&#10;&#13;&#10;-1..Com not initialized&#13;&#10;" Editor="Combo:-1=Com not initialized;0=No Parity;1=Even Parity;2=Odd Parity;3=Mark;4=Space;" />
+  <Property Name="Com2_RSMode" Channel="Com2_RSMode" Desc="Inits Com with Init-Value&#13;&#10;&#13;&#10;0..232&#13;&#10;1..422&#13;&#10;2..485&#13;&#10;&#13;&#10;-1..Com not initialized&#13;&#10;" Editor="Combo:-1=Com not initialized;0=RS232;1=RS422;3=RS485" />
+  <Property Name="Com2_StopBit" Channel="Com2_StopBit" Desc="Inits Com with Init-Value&#13;&#10;&#13;&#10;1..One StopBit&#13;&#10;2..Two StopBits&#13;&#10;&#13;&#10;-1..Com not initialized" Editor="Combo:-1=Com not initialized;1=One Stop Bit;2=Two Stop Bits;" />
+  <Property Name="Com2_WordLength" Channel="Com2_WordLength" Desc="Inits Com with Init-Value&#13;&#10;&#13;&#10;WordLength 5..8&#13;&#10;&#13;&#10;-1..Com not initialized" Editor="Range:-1..8" />
+  <IOState Name="State" Channel="State" Desc="This Server shows the state of the Modul"/>
+  <Property Name="Required" Channel="Required" Editor="Combo:1=Module is required;0=Module is not required" />
+  <Property Name="Com1_IRQ" Channel="Com1_IRQ" Desc="Client increments with every IRQ on Port.&#13;&#10;Write method of connected Client is called, when&#13;&#10;RX-Data is available, Input-Variable is pointer to the RX-Buffer." Type="Analog" Editor="Editnumber:Signed;Dec"/>
+  <Property Name="Com2_IRQ" Channel="Com2_IRQ" Desc="Client increments with every IRQ on Port.&#13;&#10;Write method of connected Client is called, when&#13;&#10;RX-Data is available, Input-Variable is pointer to the RX-Buffer." Type="Analog" Editor="Editnumber:Signed;Dec"/>
+  <Property Name="TimeBase" Channel="TimeBase" Type="Analog" Editor="EditNumber:Unsigned;Dec" Desc="Defines the period of time during which the
+   Isochrone Varan data objects are transferred over the bus. This time must be a mutiple of the Varan ManagerTime."/>
+  <Property Name="TimeBaseOffset" Channel="TimeBaseOffset" Type="Analog" Editor="EditNumber:Unsigned;Dec" Desc="Defines the offset within the
+   TimeBase. "/>
+
+  </Class>
+</HWClassInfo>

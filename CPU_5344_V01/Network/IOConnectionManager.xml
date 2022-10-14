@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<IOConnectionManager Version="2" Detail="1" PLC="">
+	<!-- List of Entries -->
+	<Entry Name="**IOCONN_EMPTY**" Objectsize="284">
+		<!-- List of Connections -->
+		<IOConnections>
+			<IOConnection ObjSrv="_DriveX1" Server="SetSpeed" ObjClt="KV_controller1" Client="oOutputSignal" IOI="Output" Type="Analog" SortIndex="740" KeyName="000001"/>
+			<IOConnection ObjSrv="_DriveX1" Server="AxEnable" ObjClt="KV_controller1" Client="oActive" IOI="Output" Type="Digital" SortIndex="741" KeyName="000003"/>
+			<IOConnection ObjSrv="_DriveX1" Server="AxError" ObjClt="KV_controller1" Client="iHWErrors" IOI="Input" Type="Digital" SortIndex="742" KeyName="000007"/>
+			<IOConnection ObjSrv="_DriveX1" Server="Online" ObjClt="_LMC_X1" Client="HWReady" IOI="IOState" Type="Digital" SortIndex="714" KeyName="000016"/>
+			<IOConnection ObjSrv="_DriveX1" Server="AxError" ObjClt="_LMC_X1" Client="HWError" IOI="Input" Type="Digital" SortIndex="716" KeyName="000018"/>
+			<IOConnection ObjSrv="_DriveX1" Server="AxErrorQuit" ObjClt="cmServoX1" Client="oResetHW" IOI="Output" Type="Digital" SortIndex="717" KeyName="000019"/>
+			<IOConnection ObjSrv="_DriveX1" Server="AxTorqueControl" ObjClt="emWagonX1Input" Client="oTorqueControl" IOI="Output" Type="Analog" SortIndex="747" KeyName="000037"/>
+			<IOConnection ObjSrv="A6" Server="Counter1" ObjClt="_LMC_X1" Client="ActPosition" SortIndex="732" KeyName="000055"/>
+		</IOConnections>
+	</Entry>
+	<Entry Name="BlowingSaw" Objectsize="284" TempObj="true">
+		<!-- List of Connections -->
+		<IOConnections>
+			<IOConnection ObjClt="cmBlowerSaw" Client="oBlowValve" SortIndex="699" KeyName="000039"/>
+		</IOConnections>
+	</Entry>
+	<Entry Name="ControlCurrent" Objectsize="284" TempObj="true">
+		<!-- List of Connections -->
+		<IOConnections>
+			<IOConnection ObjSrv="A5" Server="Safe_Output2" ObjClt="stopSafetyAndOpenDoor1" Client="iSafetyState" IOI="Input" Type="Digital" SortIndex="738" KeyName="000057"/>
+		</IOConnections>
+	</Entry>
+	<Entry Name="esMaxPosX1" Objectsize="284" TempObj="true">
+		<!-- List of Connections -->
+		<IOConnections>
+			<IOConnection ObjSrv="A6" Server="Input10" ObjClt="switchesAxisX1" Client="iEsMaxSwitch" IOI="Input" Type="Digital" SortIndex="750" KeyName="000012"/>
+		</IOConnections>
+	</Entry>
+	<Entry Name="esMinPosX1" Objectsize="284" TempObj="true">
+		<!-- List of Connections -->
+		<IOConnections>
+			<IOConnection ObjSrv="A6" Server="Input9" ObjClt="switchesAxisX1" Client="iEsMinSwitch" IOI="Input" Type="Digital" SortIndex="749" KeyName="000009"/>
+		</IOConnections>
+	</Entry>
+	<Entry Name="esPressureRoll" Objectsize="284" TempObj="true">
+		<!-- List of Connections -->
+		<IOConnections>
+			<IOConnection ObjSrv="A6" Server="Input11" ObjClt="cmPressureRol" Client="iEsIn" IOI="Input" Type="Digital" SortIndex="683" KeyName="000030"/>
+		</IOConnections>
+	</Entry>
+	<Entry Name="EsSawDown" Objectsize="390" TempObj="true">
+		<!-- List of Connections -->
+		<IOConnections>
+			<IOConnection ObjSrv="A6" Server="Input13" ObjClt="checkReleaseXWagon1" Client="iOperationsDone" IOI="Input" Type="Digital" SortIndex="686" KeyName="000000"/>
+			<IOConnection ObjSrv="A6" Server="Input13" ObjClt="emOperationSawUnit" Client="iSawReady" IOI="Input" Type="Digital" SortIndex="669" KeyName="000010"/>
+		</IOConnections>
+	</Entry>
+	<Entry Name="eStopControlPanel" Objectsize="284" TempObj="true">
+		<!-- List of Connections -->
+		<IOConnections>
+			<IOConnection ObjSrv="A3" Server="Safe_Input3" ObjClt="checkEmergencyStops" Client="ingang1" IOI="Input" Type="Digital" SortIndex="733" KeyName="000052"/>
+		</IOConnections>
+	</Entry>
+	<Entry Name="eStopSaw" Objectsize="284" TempObj="true">
+		<!-- List of Connections -->
+		<IOConnections>
+			<IOConnection ObjSrv="A3" Server="Safe_Input7" ObjClt="checkEmergencyStops" Client="ingang2" IOI="Input" Type="Digital" SortIndex="734" KeyName="000054"/>
+		</IOConnections>
+	</Entry>
+	<Entry Name="FCmatDetection" Objectsize="284" TempObj="true">
+		<!-- List of Connections -->
+		<IOConnections>
+			<IOConnection ObjSrv="A6" Server="Input12" ObjClt="emPressureRoll" Client="iFcMatDetected" IOI="Input" Type="Digital" SortIndex="684" KeyName="000031"/>
+		</IOConnections>
+	</Entry>
+	<Entry Name="holdContactSawCover" Objectsize="284" TempObj="true">
+		<!-- List of Connections -->
+		<IOConnections>
+			<IOConnection ObjSrv="A3" Server="Safe_Input9" ObjClt="checkEmergencyStops" Client="ingang5" IOI="Input" Type="Digital" SortIndex="752" KeyName="000017"/>
+		</IOConnections>
+	</Entry>
+	<Entry Name="LampAlarm" Objectsize="284" TempObj="true">
+		<!-- List of Connections -->
+		<IOConnections>
+			<IOConnection ObjSrv="A7" Server="Output9" ObjClt="mainControl1" Client="oAlarmLamp" IOI="Output" Type="Digital" SortIndex="710" KeyName="000033"/>
+		</IOConnections>
+	</Entry>
+	<Entry Name="LampCurrent" Objectsize="284" TempObj="true">
+		<!-- List of Connections -->
+		<IOConnections>
+			<IOConnection ObjSrv="A7" Server="Output11" ObjClt="lampControlCurrentTwoZones1" Client="oLight" IOI="Output" Type="Digital" SortIndex="711" KeyName="000036"/>
+		</IOConnections>
+	</Entry>
+	<Entry Name="LampStartCycle" Objectsize="284" TempObj="true">
+		<!-- List of Connections -->
+		<IOConnections>
+			<IOConnection ObjSrv="A7" Server="Output10" ObjClt="mainControl1" Client="oCycleLamp" IOI="Output" Type="Digital" SortIndex="709" KeyName="000011"/>
+		</IOConnections>
+	</Entry>
+	<Entry Name="LiftingRolls" Objectsize="284" TempObj="true">
+		<!-- List of Connections -->
+		<IOConnections>
+			<IOConnection ObjSrv="A7" Server="Output5" ObjClt="cmLiftingRols" Client="oOut" IOI="Output" Type="Digital" SortIndex="748" KeyName="000008"/>
+		</IOConnections>
+	</Entry>
+	<Entry Name="NOcontrolCurrent" Objectsize="284" TempObj="true">
+		<!-- List of Connections -->
+		<IOConnections>
+			<IOConnection ObjSrv="A3" Server="Safe_Input1" ObjClt="CtrlCheckMachineReadyMain" Client="iStuurstroomIn" IOI="Input" Type="Digital" SortIndex="731" KeyName="000051"/>
+		</IOConnections>
+	</Entry>
+	<Entry Name="PbControlCurrent" Objectsize="284" TempObj="true">
+		<!-- List of Connections -->
+		<IOConnections>
+			<IOConnection ObjSrv="A6" Server="Input5" ObjClt="Logic_Or_21" Client="Op1" IOI="Input" Type="Digital" SortIndex="678" KeyName="000025"/>
+		</IOConnections>
+	</Entry>
+	<Entry Name="PbStartCyclus" Objectsize="284" TempObj="true">
+		<!-- List of Connections -->
+		<IOConnections>
+			<IOConnection ObjSrv="A6" Server="Input3" ObjClt="andServerClient2" Client="input" IOI="Input" Type="Digital" SortIndex="676" KeyName="000004"/>
+		</IOConnections>
+	</Entry>
+	<Entry Name="PbStopCyclus" Objectsize="284" TempObj="true">
+		<!-- List of Connections -->
+		<IOConnections>
+			<IOConnection ObjSrv="A6" Server="Input4" ObjClt="multipleTrigger2" Client="input" IOI="Input" Type="Digital" SortIndex="677" KeyName="000005"/>
+		</IOConnections>
+	</Entry>
+	<Entry Name="PressureRoll" Objectsize="284" TempObj="true">
+		<!-- List of Connections -->
+		<IOConnections>
+			<IOConnection ObjSrv="A7" Server="Output4" ObjClt="cmPressureRol" Client="oOut" IOI="Output" Type="Digital" SortIndex="698" KeyName="000038"/>
+		</IOConnections>
+	</Entry>
+	<Entry Name="pullCordInput" Objectsize="284" TempObj="true">
+		<!-- List of Connections -->
+		<IOConnections>
+			<IOConnection ObjSrv="A3" Server="Safe_Input5" ObjClt="checkEmergencyStops" Client="ingang4" IOI="Input" Type="Digital" SortIndex="751" KeyName="000013"/>
+		</IOConnections>
+	</Entry>
+	<Entry Name="pullCordOutput" Objectsize="284" TempObj="true">
+		<!-- List of Connections -->
+		<IOConnections>
+			<IOConnection ObjSrv="A4" Server="Safe_Input1" ObjClt="checkEmergencyStops" Client="ingang3" IOI="Input" Type="Digital" SortIndex="735" KeyName="000053"/>
+		</IOConnections>
+	</Entry>
+	<Entry Name="ReleySawMotor" Objectsize="390" TempObj="true">
+		<!-- List of Connections -->
+		<IOConnections>
+			<IOConnection ObjClt="Invert1" Client="Client" SortIndex="687" KeyName="000021"/>
+		</IOConnections>
+	</Entry>
+	<Entry Name="SawClamps" Objectsize="360" TempObj="true">
+		<!-- List of Connections -->
+		<IOConnections>
+			<IOConnection ObjSrv="A7" Server="Output1" ObjClt="emOperationSawUnit" Client="oPulseSawClamp" IOI="Output" Type="Digital" SortIndex="695" KeyName="000014"/>
+		</IOConnections>
+	</Entry>
+	<Entry Name="SawInAutoMode" Objectsize="360" TempObj="true">
+		<!-- List of Connections -->
+		<IOConnections>
+			<IOConnection ObjSrv="A7" Server="Output2" ObjClt="emOperationSawUnit" Client="oMpsAutoMode" IOI="Output" Type="Digital" SortIndex="696" KeyName="000015"/>
+		</IOConnections>
+	</Entry>
+	<Entry Name="StartSawCycle" Objectsize="360" TempObj="true">
+		<!-- List of Connections -->
+		<IOConnections>
+			<IOConnection ObjSrv="A7" Server="Output3" ObjClt="emOperationSawUnit" Client="oStartSawCycle" IOI="Output" Type="Digital" SortIndex="697" KeyName="000020"/>
+		</IOConnections>
+	</Entry>
+	<Entry Name="stopPlateEnd" Objectsize="284" TempObj="true">
+		<!-- List of Connections -->
+		<IOConnections>
+			<IOConnection ObjSrv="A4" Server="Safe_Input3" ObjClt="checkEmergencyStops" Client="ingang6" IOI="Input" Type="Digital" SortIndex="753" KeyName="000022"/>
+		</IOConnections>
+	</Entry>
+	<Entry Name="ThermicalOut" Objectsize="284" TempObj="true">
+		<!-- List of Connections -->
+		<IOConnections>
+			<IOConnection ObjSrv="A6" Server="Input20" ObjClt="Lees10Ingangenin1" Client="ingang1" IOI="Input" Type="Digital" SortIndex="692" KeyName="000035"/>
+		</IOConnections>
+	</Entry>
+	<!-- List of Folders -->
+</IOConnectionManager>

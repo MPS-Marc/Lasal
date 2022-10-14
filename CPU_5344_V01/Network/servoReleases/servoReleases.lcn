@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<Network Name="servoReleases" Revision="0.0">
+	<!-- List of Components in this network -->
+	<Components>
+		<Object
+			Name       = "checkReleaseXWagon1"
+			GUID       = "{5B577210-BBAF-4D06-8F0D-720DB8447891}"
+			Class      = "checkReleaseXWagon"
+			Position   = "(1080,120)"
+			Visualized = "true"
+			CyclicTime = "10 ms">
+			<Channels>
+				<Server Name="ClassSvr"/>
+				<Server Name="cmdHMI"/>
+				<Server Name="ErrorNr"/>
+				<Server Name="mode"/>
+				<Server Name="overruleCheck" Value="0"/>
+				<Server Name="releaseXWagon"/>
+				<Server Name="state"/>
+				<Server Name="stsHMI_RunsAllowed"/>
+				<Server Name="stsInAlarm"/>
+				<Server Name="stsIsInterlocked"/>
+				<Client Name="ctrlServo"/>
+				<Client Name="id"/>
+				<Client Name="iMaxPosPressureRollers"/>
+				<Client Name="iOperationsDone"/>
+				<Client Name="iStsPressureRollers" Value="cilUnKnown"/>
+				<Client Name="nwEmOrUnit"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="_base" GUID="{06483260-70AF-45FB-BE17-8DB64BD81D48}" Class="cmBase">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Server Name="cmdHMI"/>
+								<Server Name="ErrorNr"/>
+								<Server Name="mode"/>
+								<Server Name="state"/>
+								<Server Name="stsHMI_RunsAllowed"/>
+								<Server Name="stsInAlarm"/>
+								<Server Name="stsIsInterlocked"/>
+								<Client Name="id"/>
+								<Client Name="nwEmOrUnit"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object
+											Name           = "_Alarm"
+											GUID           = "{28C9E53D-A6FB-4830-96BF-D8CA93851830}"
+											Class          = "_AlarmX3ParaDer"
+											BackgroundTime = "100 ms">
+											<Channels>
+												<Server Name="AlarmActief"/>
+												<Server Name="ClassSvr"/>
+												<Server Name="ErrorNr"/>
+												<Client Name="Acknow"/>
+												<Client Name="Config" Value="0"/>
+												<Client Name="Group"/>
+												<Client Name="Para1"/>
+												<Client Name="Para2"/>
+												<Client Name="Para3"/>
+											</Channels>
+											<!-- List of Networks in this component -->
+											<Networks>
+												<Network>
+													<!-- List of Components in this network -->
+													<Components>
+														<Object Name="_base" GUID="{5785EB27-1BCB-4BFE-95D3-58366FCEBDFF}" Class="_AlarmX3Para">
+															<Channels>
+																<Server Name="ClassSvr"/>
+																<Client Name="Acknow"/>
+																<Client Name="Config" Value="0"/>
+																<Client Name="Group"/>
+																<Client Name="Para1"/>
+																<Client Name="Para2"/>
+																<Client Name="Para3"/>
+															</Channels>
+															<!-- List of Networks in this component -->
+															<Networks>
+																<Network>
+																	<!-- List of Components in this network -->
+																	<Components>
+																		<Object Name="_base" GUID="{FF1586E3-7510-4496-B4A8-3A308EFCD780}" Class="_AlarmX0Para">
+																			<Channels>
+																				<Server Name="ClassSvr"/>
+																				<Client Name="Acknow"/>
+																				<Client Name="Config" Value="0"/>
+																				<Client Name="Group"/>
+																			</Channels>
+																		</Object>
+																	</Components>
+																	<Connections>
+																	</Connections>
+																</Network>
+															</Networks>
+														</Object>
+													</Components>
+													<Connections>
+													</Connections>
+												</Network>
+											</Networks>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+	</Components>
+	<Comments>
+	</Comments>
+	<!-- List of Connections in this network -->
+	<Connections>
+		<Connection Source="checkReleaseXWagon1.ctrlServo" Destination="cmServoX1.ClassSvr"/>
+		<Connection Source="checkReleaseXWagon1.nwEmOrUnit" Destination="emWagonX1Input.ClassSvr"/>
+		<Connection Source="checkReleaseXWagon1.iMaxPosPressureRollers" Destination="dbSettings1.offsetPressureRol"/>
+		<Connection Source="checkReleaseXWagon1.iOperationsDone" Destination="__S2_EsSawDown10" Vertices="(1080,450),(916,450)," IOObject="EsSawDown"/>
+		<Connection Source="checkReleaseXWagon1.iStsPressureRollers" Destination="cmPressureRol.stsPos"/>
+	</Connections>
+	<!-- List of temp data objects in this network -->
+	<IOObjects>
+		<IOObject KeyName="__S2_EsSawDown10" Name="EsSawDown" Position="(510,420)" Client="checkReleaseXWagon1.iOperationsDone"/>
+	</IOObjects>
+	<!-- Headerfiles -->
+	<Options>
+	</Options>
+</Network>

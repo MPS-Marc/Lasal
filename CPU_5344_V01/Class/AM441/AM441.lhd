@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HWClassInfo>
+  <HWDevice ModuleID="1017" SubModuleID="0x0" ModType="M_SDIAS" Desc="SDIAS Analog Mixed Module&#xD;&#xA;4x Analog In +- 10V&#xD;&#xA;4x Analog In +- 10V" OrderNr="20-017-441">
+    <Types>
+      <Device Name="AM441" ClassName="AM441" DisplayGroup="Analog" Default="true" PowerLoss="2500">
+        <Power Voltage="5000" Supply="0" Drain="55"/>
+        <Power Voltage="24000" Supply="0" Drain="95"/>
+      </Device>
+    </Types>
+    <VisualData>
+      <VisualView TypeId="0" Size="10,120">
+        <VisualModule ImgPath=".\S-Dias\S-DIAS Grundmodul.xaml" Position="0,0" Width="12.5" Height="101.8">
+          <!-- Texte -->
+          <VisualTexts>
+            <VisualText Text="AM 441" FontFamily="ARIAL" Italic="true" FontSize="12" ClrForeground="4294967295" FontWeight="1" LineHeight="10" Width="7.94" Height="5.82" Left="4.76" Top="10.05" />
+            <VisualText Text="S" FontFamily="ARIAL" ClrForeground="4294967295" Width="1.59" Height="2.65" Left="0.26" Top="9" />
+            <VisualText Text="U" FontFamily="ARIAL" ClrForeground="4294967295" Width="1.59" Height="2.65" Left="0.26" Top="11.64" />
+            <VisualText Text="X1" FontFamily="ARIAL" ClrForeground="4291330563" ClrBackground="4294967295" Width="3.17" Height="2.38" Left="0.26" Top="15.61" />
+            <VisualText Text="1+" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.81" Left="0.26" Top="17.99" />
+            <VisualText Text="1-" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="21.17" />
+            <VisualText Text="2+" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="24.34" />
+            <VisualText Text="2-" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="27.52" />
+            <VisualText Text="X2" FontFamily="ARIAL" ClrForeground="4291330563" ClrBackground="4294967295" Width="3.17" Height="2.38" Left="0.26" Top="30.96" />
+            <VisualText Text="3+" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="33.34" />
+            <VisualText Text="3-" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="36.51" />
+            <VisualText Text="4+" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="39.69" />
+            <VisualText Text="4-" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="42.86" />
+            <VisualText Text="X3" FontFamily="ARIAL" ClrForeground="4291330563" ClrBackground="4294967295" Width="3.17" Height="2.38" Left="0.26" Top="46.3" />
+            <VisualText Text="R" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="48.68" />
+            <VisualText Text="R" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="51.86" />
+            <VisualText Text="R" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="55.03" />
+            <VisualText Text="R" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="58.21" />
+            <VisualText Text="X4" FontFamily="ARIAL" ClrForeground="4291330563" ClrBackground="4294967295" Width="3.17" Height="2.38" Left="0.26" Top="61.65" />
+            <VisualText Text="1+" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="64.03" />
+            <VisualText Text="-" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="67.2" />
+            <VisualText Text="2+" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="70.38" />
+            <VisualText Text="-" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="73.55" />
+            <VisualText Text="X5" FontFamily="ARIAL" ClrForeground="4291330563" ClrBackground="4294967295" Width="3.17" Height="2.38" Left="0.26" Top="76.99" />
+            <VisualText Text="3+" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="79.38" />
+            <VisualText Text="-" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="82.55" />
+            <VisualText Text="4+" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="85.72" />
+            <VisualText Text="-" FontFamily="ARIAL" ClrForeground="4294967295" Width="3" Height="2.65" Left="0.26" Top="88.9" />
+          </VisualTexts>
+          <!-- Leds -->
+          <VisualLeds>
+            <VisualLed Description="Module state" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="10.32">
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="4">
+                  <Activator TypeId="1" Value="1" />
+                  <Activator TypeId="3" DataString="AM441.ClassState" Value="0" />
+                </Activator>
+              </Behaviour>
+              <Behaviour ClrForeground="4278255360" Interval="200">
+                <Activator TypeId="4">
+                  <Activator TypeId="1" Value="1" />
+                  <Activator TypeId="3" Negate="true" DataString="AM441.ClassState" Value="0" />
+                </Activator>
+              </Behaviour>
+            </VisualLed>
+            <VisualLed DataString="AM441.LedControl" Description="User" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342216703" Width="1.32" Height="1.32" Left="2.12" Top="12.96">
+              <Behaviour ClrForeground="4278229503">
+                <Activator TypeId="3" DataString="AM441.LedControl" Value="1" />
+              </Behaviour>
+              <Behaviour ClrForeground="4278229503" Interval="500">
+                <Activator TypeId="3" DataString="AM441.LedControl" Value="2" />
+              </Behaviour>
+              <Behaviour ClrForeground="4278229503" Interval="250">
+                <Activator TypeId="3" DataString="AM441.LedControl" Value="3" />
+              </Behaviour>
+            </VisualLed>
+            <!-- X1-->
+            <!-- X2-->
+            <!-- X3-->
+            <VisualLed Description="Error Reference" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342177535" Width="1.32" Height="1.32" Left="2.12" Top="50.01">
+              <Behaviour ClrForeground="4278190335">
+                <Activator TypeId="3" DataString="AM441.ErrorBits.AM_Errors.5" Value="1" />
+              </Behaviour>
+              <Behaviour ClrForeground="4278190335" Interval="50">
+                <Activator TypeId="3" DataString="AM441.ErrorBits.AM_Errors.6" Value="1" />
+              </Behaviour>
+            </VisualLed>
+            <!-- X4-->
+            <!-- X5-->
+          </VisualLeds>
+          <!-- Stecker -->
+          <VisualConnectors>
+            <VisualConnector Description="X1" ImgPath=".\S-Dias\S-DIAS Phoenix 4-polig.xaml" Width="7.86" Height="15" Left="3.7" Top="16.93">
+              <ConnectorPin DataString="AM441.AI1" Description="Analog Input 1+" TypeId="1" />
+              <ConnectorPin DataString="AM441.AI1" Description="Analog Input 1-" TypeId="1" />
+              <ConnectorPin DataString="AM441.AI2" Description="Analog Input 2+" TypeId="1" />
+              <ConnectorPin DataString="AM441.AI2" Description="Analog Input 2-" TypeId="1" />
+            </VisualConnector>
+            <VisualConnector Description="X2" ImgPath=".\S-Dias\S-DIAS Phoenix 4-polig.xaml" Width="7.86" Height="15" Left="3.7" Top="32.28">
+              <ConnectorPin DataString="AM441.AI3" Description="Analog Input 3+" TypeId="1" />
+              <ConnectorPin DataString="AM441.AI3" Description="Analog Input 3-" TypeId="1" />
+              <ConnectorPin DataString="AM441.AI4" Description="Analog Input 4+" TypeId="1" />
+              <ConnectorPin DataString="AM441.AI4" Description="Analog Input 4-" TypeId="1" />
+            </VisualConnector>
+            <VisualConnector Description="X3" ImgPath=".\S-Dias\S-DIAS Phoenix 4-polig.xaml" Width="7.86" Height="15" Left="3.7" Top="47.62">
+              <ConnectorPin DataString="AM441.RefVoltageOK" Description="Reference 10 Volt" TypeId="1" />
+              <ConnectorPin DataString="AM441.RefVoltageOK" Description="Reference 10 Volt" TypeId="1" />
+              <ConnectorPin DataString="AM441.RefVoltageOK" Description="Reference 10 Volt" TypeId="1" />
+              <ConnectorPin DataString="AM441.RefVoltageOK" Description="Reference 10 Volt" TypeId="1" />
+            </VisualConnector>
+            <VisualConnector Description="X4" ImgPath=".\S-Dias\S-DIAS Phoenix 4-polig.xaml" Width="7.86" Height="15" Left="3.7" Top="62.97">
+              <ConnectorPin DataString="AM441.AO1" Description="Analog Output 1+" TypeId="1" />
+              <ConnectorPin DataString="AM441.AO1" Description="Analog Output 1-" TypeId="1" />
+              <ConnectorPin DataString="AM441.AO2" Description="Analog Output 2+" TypeId="1" />
+              <ConnectorPin DataString="AM441.AO2" Description="Analog Output 2-" TypeId="1" />
+            </VisualConnector>
+            <VisualConnector Description="X5" ImgPath=".\S-Dias\S-DIAS Phoenix 4-polig.xaml" Width="7.86" Height="15" Left="3.7" Top="78.32">
+              <ConnectorPin DataString="AM441.AO3" Description="Analog Output 3+" TypeId="1" />
+              <ConnectorPin DataString="AM441.AO3" Description="Analog Output 3-" TypeId="1" />
+              <ConnectorPin DataString="AM441.AO4" Description="Analog Output 4+" TypeId="1" />
+              <ConnectorPin DataString="AM441.AO4" Description="Analog Output 4-" TypeId="1" />
+            </VisualConnector>
+          </VisualConnectors>
+        </VisualModule>
+      </VisualView>
+    </VisualData>
+  </HWDevice>
+  <Class Name="AM441">
+    <Uplink Name="SdiasIn" BusType="SDIAS" PlaceName="Place" />
+	<Downlink Name="ClassState" Port="0" BusType="Hardwarealarme" Desc="Hardwarealarme" />
+    <!-- General -->
+    <Property Name="Required" Channel="Required" Editor="Combo:1=Module is required;0=Module is not required" Desc="0=module is not required 1=module is required (CPU will crash if module is missing)" />
+    <IOState Name="Class State" Channel="ClassState" Desc="This server shows the status of the hardware class. If the state is not equal than _ClassOK, an error has occurred " Type="" />
+    <IOState Name="Device ID" Channel="DeviceID" IsInfo="true" Type="" Desc="This server shows the device ID  of the hardware module" />
+    <IOState Name="FPGA Version" Channel="FPGAVersion" Format="V{5-8}.{1-4}" IsInfo="true" Desc="Shows the actual FPGA version of the module in the format x.y (e.g. 16#10 means v1.0)" />
+    <IOState Name="Hardware Version" Channel="HwVersion" IsInfo="true" Format="V{9-16}.{5-8}{1-4}" Type="" Desc="Shows the hardware version of the module" /> 
+    <IOState Name="Serial Number" Channel="SerialNo" IsInfo="true" Type="" Desc="Shows the Serial Number of the hardware module" />
+    <IOState Name="Retry Counter" Channel="RetryCounter" Desc="Is incremented in case of incorrect data transfer." />
+    <Output Name="LED Control" Channel="LEDControl" Type="Digital" Desc="Sets a LED on hardware, to detect module. (0=LED off; 1=LED on; 2=blinking slowly; 3=blinking fast)" />
+    <IOState Name="Firmware Version" Channel="FirmwareVersion" Format="V{13-16}{9-12}.{5-8}{1-4}" IsInfo="true" Type="" Desc="This server shows the firmware version of the hardware module" />
+    <IOState Name="Error Status" Channel="ErrorBits" Type="Analog" Desc="Error Bits:&#xD;&#xA;Bit1...Reserved&#xD;&#xA;Bit2...No Sync&#xD;&#xA;Bit3...Flash data CRC error&#xD;&#xA;Bit4...Ram data CRC error&#xD;&#xA;Bit5...No valid EEPROM Version&#xD;&#xA;....&#xD;&#xA;Bit17...Cable break on AI1&#xD;&#xA;Bit18...Cable break on AI2&#xD;&#xA;Bit19...Cable break on AI3&#xD;&#xA;Bit20...Cable break on AI4&#xD;&#xA;Bit21...Reference supply voltage too low&#xD;&#xA;Bit22...Current on analog input is too high&#xD;&#xA;Bit23...+24V from SDIAS bus is not OK&#xD;&#xA;Bit26...Underrange on AI1&#xD;&#xA;Bit27...Underrange on AI2&#xD;&#xA;Bit28...Underrange on AI3&#xD;&#xA;Bit29...Underrange on AI4" />
+    <IOState Name="Reference Voltage OK" Channel="RefVoltageOK" Type="Digital" Desc="0=Reference voltage error | 1=Reference voltage ok" />
+    <!-- State of Time Offset Feature -->
+    <IOState Name="Time Offset Error Bits" Channel="TimeOffsetErrorBits" Desc="Shows the state of the timeoffset feature &#13;&#10;of the firmware. &#13;&#10;&#13;&#10;Bit1...Time offsets were corrected by &#13;&#10;firmware due to invalid settings &#13;&#10;(difference between two Time offsets too &#13;&#10;small, 2 Time offsets have the same value or&#13;&#10;at least one time offset is out of allowed range)&#13;&#10;&#13;&#10;Bit2...Time offsets could not be corrected by &#13;&#10;firmware." Type="Digital" Editor="EditNumber:Signed;Dec"/>
+    
+    <!-- Sample/Time Offset Configuration-->
+    <Property Name="Analog In Time Offset" Channel="AI_TimeOffset" Desc="Use this client to activate the TimeOffset feature for the analog inputs. (Needs FW Version 2.00 or higher)&#xD;&#xA;0 .. TimeOffset feature inactive&#xD;&#xA;1 .. TimeOffset feature active" Editor="Combo:0=Inactive; 1=Active" />
+    <Property Name="Analog Out Time Offset" Channel="AO_TimeOffset" Desc="Use this client to activate the TimeOffset feature for the analog inputs. (Needs FW Version 2.00 or higher)&#xD;&#xA;0 .. TimeOffset feature inactive&#xD;&#xA;1 .. TimeOffset feature active" Editor="Combo:0=Inactive; 1=Active" />
+    
+    <!-- Full Resolution 16 Bit Mode-->
+    <Property Name="Full Resolution 16 Bit" Channel="FullRes16Bit" Desc="This setting is used to set the full resolution mode.If the setting is 1 and an old firmware is used the class state is set to _ClientNotReady." Editor="Combo:0=-10/+10V 1mV LSB; 1=-10/+10V 0.3mV LSB (real 16 bit resolution)(available with FW Version 2.0 or higher) " />
+
+    <IOComment Name="---------------------- Analog Inputs -----------------------" IsInfo="true" Desc=""/>
+
+    <!-- Analog Input 1 -->
+    <Input Name="Analog Input 1" Channel="AI1" IsConfig="true" Desc="Analog Input 1. Invalid value is 16#80000010." Type="Analog" Editor="EditNumber:Signed;Dec">
+      <Property Name="AI1 Config" Channel="AI1Config" Desc="Analog Input 1" Editor="Combo:0=analog in (Range: -10V...+10V);1=analog in with ground reference (Range: -10V...+10V)" />
+      <Property Name="AI1 minimal value" Channel="AI1_Min" Desc="The scale of analog input can be selected by this client (corresponds to +/-10V) as initvalue." Editor="EditNumber:Signed;Dec" />
+      <Property Name="AI1 maximal value" Channel="AI1_Max" Desc="The scale of analog input can be selected by this client (corresponds to +/-10V) as initvalue." Editor="EditNumber:Signed;Dec" />
+      <Property Name="AI1 cut off frequency" Channel="AI1_Freq" Editor="Combo:0=1000 Hz; 1=500 Hz; 2=250 Hz; 3=100 Hz; 4=50 Hz; 5=25 Hz; 6=10 Hz" Desc="Cut off frequency for low pass filter&#xD;&#xA;0... 1000 Hz&#xD;&#xA;1...  500 Hz&#xD;&#xA;2...  250 Hz&#xD;&#xA;3...  100 Hz&#xD;&#xA;4...   50 Hz&#xD;&#xA;5...   25 Hz&#xD;&#xA;6...   10 Hz&#xD;&#xA;&#xD;&#xA;Values greater or equal to 10 will be set directly to the firmware. e.g. 125 ... 125 Hz&#xD;&#xA;&#xD;&#xA;If the timeoffset mode for the analog inputs is active and the set value would violate the sampling theorem of shannon, the frequency value will be automatically corrected by the class.&#xD;&#xA;The new frequency will be written to the client and in addition a debugger trace message will be displayed." />
+      <Property Name="Analog Input 1 Time Offset" Channel="AI1TimeOffset" Desc="The Time Offset of the respective analog input in µs can be set with this server.&#xD;&#xA;The value will be transmitted each cycle to the Firmware.&#xD;&#xA;&#xD;&#xA;e.g. Time Offset '150' means that the respective channel will be sampled exactly 150µs after the SDIAS sync.&#xD;&#xA;Valid range: (130µs to (CycleTime - 160µs))&#xD;&#xA;-1 .. Feature not available or inactive. FW Version must be higher than 2.00 or feature not activated with client AO_TimeOffset&#xD;&#xA;-2 .. Invalid input parameter. Value must be between valid range." Type="Analog" Editor="EditNumber:Signed;Dec"/>
+    </Input>
+    <Output Name="Analog Input 1 Time Offset" Channel="AI1TimeOffset" Desc="The Time Offset of the respective analog input in µs can be set with this server.&#xD;&#xA;The value will be transmitted each cycle to the Firmware.&#xD;&#xA;&#xD;&#xA;e.g. Time Offset '150' means that the respective channel will be sampled exactly 150µs after the SDIAS sync.&#xD;&#xA;Valid range: (130µs to (CycleTime - 160µs))&#xD;&#xA;-1 .. Feature not available or inactive. FW Version must be higher than 2.00 or feature not activated with client AO_TimeOffset&#xD;&#xA;-2 .. Invalid input parameter. Value must be between valid range." Type="Analog" Editor="EditNumber:Signed;Dec"/>
+    
+    <!-- Analog Input 2 -->
+    <Input Name="Analog Input 2" Channel="AI2" IsConfig="true" Desc="Analog Input 2. Invalid value is 16#80000010." Type="Analog" Editor="EditNumber:Signed;Dec">
+      <Property Name="AI2 Config" Channel="AI2Config" Desc="Analog Input 2" Editor="Combo:0=analog in (Range: -10V...+10V);1=analog in with ground reference (Range: -10V...+10V)" />
+      <Property Name="AI2 minimal value" Channel="AI2_Min" Desc="The scale of analog input can be selected by this client (corresponds to +/-10V) as initvalue." Editor="EditNumber:Signed;Dec" />
+      <Property Name="AI2 maximal value" Channel="AI2_Max" Desc="The scale of analog input can be selected by this client (corresponds to +/-10V) as initvalue." Editor="EditNumber:Signed;Dec" />
+      <Property Name="AI2 cut off frequency" Channel="AI2_Freq" Editor="Combo:0=1000 Hz; 1=500 Hz; 2=250 Hz; 3=100 Hz; 4=50 Hz; 5=25 Hz; 6=10 Hz" Desc="Cut off frequency for low pass filter&#xD;&#xA;0... 1000 Hz&#xD;&#xA;1...  500 Hz&#xD;&#xA;2...  250 Hz&#xD;&#xA;3...  100 Hz&#xD;&#xA;4...   50 Hz&#xD;&#xA;5...   25 Hz&#xD;&#xA;6...   10 Hz&#xD;&#xA;&#xD;&#xA;Values greater or equal to 10 will be set directly to the firmware. e.g. 125 ... 125 Hz&#xD;&#xA;&#xD;&#xA;If the timeoffset mode for the analog inputs is active and the set value would violate the sampling theorem of shannon, the frequency value will be automatically corrected by the class.&#xD;&#xA;The new frequency will be written to the client and in addition a debugger trace message will be displayed." />
+      <Property Name="Analog Input 2 Time Offset" Channel="AI2TimeOffset" Desc="The Time Offset of the respective analog input in µs can be set with this server.&#xD;&#xA;The value will be transmitted each cycle to the Firmware.&#xD;&#xA;&#xD;&#xA;e.g. Time Offset '150' means that the respective channel will be sampled exactly 150µs after the SDIAS sync.&#xD;&#xA;Valid range: (130µs to (CycleTime - 160µs))&#xD;&#xA;-1 .. Feature not available or inactive. FW Version must be higher than 2.00 or feature not activated with client AO_TimeOffset&#xD;&#xA;-2 .. Invalid input parameter. Value must be between valid range." Type="Analog" Editor="EditNumber:Signed;Dec"/>
+    </Input>
+    <Output Name="Analog Input 2 Time Offset" Channel="AI2TimeOffset" Desc="The Time Offset of the respective analog input in µs can be set with this server.&#xD;&#xA;The value will be transmitted each cycle to the Firmware.&#xD;&#xA;&#xD;&#xA;e.g. Time Offset '150' means that the respective channel will be sampled exactly 150µs after the SDIAS sync.&#xD;&#xA;Valid range: (130µs to (CycleTime - 160µs))&#xD;&#xA;-1 .. Feature not available or inactive. FW Version must be higher than 2.00 or feature not activated with client AO_TimeOffset&#xD;&#xA;-2 .. Invalid input parameter. Value must be between valid range." Type="Analog" Editor="EditNumber:Signed;Dec"/>
+    
+    <!-- Analog Input 3 -->
+    <Input Name="Analog Input 3" Channel="AI3" IsConfig="true" Desc="Analog Input 3. Invalid value is 16#80000010." Type="Analog" Editor="EditNumber:Signed;Dec">
+      <Property Name="AI3 Config" Channel="AI3Config" Desc="Analog Input 3" Editor="Combo:0=analog in (Range: -10V...+10V);1=analog in with ground reference (Range: -10V...+10V)" />
+      <Property Name="AI3 minimal value" Channel="AI3_Min" Desc="The scale of analog input can be selected by this client (corresponds to +/-10V) as initvalue." Editor="EditNumber:Signed;Dec" />
+      <Property Name="AI3 maximal value" Channel="AI3_Max" Desc="The scale of analog input can be selected by this client (corresponds to +/-10V) as initvalue." Editor="EditNumber:Signed;Dec" />
+      <Property Name="AI3 cut off frequency" Channel="AI3_Freq" Editor="Combo:0=1000 Hz; 1=500 Hz; 2=250 Hz; 3=100 Hz; 4=50 Hz; 5=25 Hz; 6=10 Hz" Desc="Cut off frequency for low pass filter&#xD;&#xA;0... 1000 Hz&#xD;&#xA;1...  500 Hz&#xD;&#xA;2...  250 Hz&#xD;&#xA;3...  100 Hz&#xD;&#xA;4...   50 Hz&#xD;&#xA;5...   25 Hz&#xD;&#xA;6...   10 Hz&#xD;&#xA;&#xD;&#xA;Values greater or equal to 10 will be set directly to the firmware. e.g. 125 ... 125 Hz&#xD;&#xA;&#xD;&#xA;If the timeoffset mode for the analog inputs is active and the set value would violate the sampling theorem of shannon, the frequency value will be automatically corrected by the class.&#xD;&#xA;The new frequency will be written to the client and in addition a debugger trace message will be displayed." />
+      <Property Name="Analog Input 3 Time Offset" Channel="AI3TimeOffset" Desc="The Time Offset of the respective analog input in µs can be set with this server.&#xD;&#xA;The value will be transmitted each cycle to the Firmware.&#xD;&#xA;&#xD;&#xA;e.g. Time Offset '150' means that the respective channel will be sampled exactly 150µs after the SDIAS sync.&#xD;&#xA;Valid range: (130µs to (CycleTime - 160µs))&#xD;&#xA;-1 .. Feature not available or inactive. FW Version must be higher than 2.00 or feature not activated with client AO_TimeOffset&#xD;&#xA;-2 .. Invalid input parameter. Value must be between valid range." Type="Analog" Editor="EditNumber:Signed;Dec"/>
+    </Input>
+    <Output Name="Analog Input 3 Time Offset" Channel="AI3TimeOffset" Desc="The Time Offset of the respective analog input in µs can be set with this server.&#xD;&#xA;The value will be transmitted each cycle to the Firmware.&#xD;&#xA;&#xD;&#xA;e.g. Time Offset '150' means that the respective channel will be sampled exactly 150µs after the SDIAS sync.&#xD;&#xA;Valid range: (130µs to (CycleTime - 160µs))&#xD;&#xA;-1 .. Feature not available or inactive. FW Version must be higher than 2.00 or feature not activated with client AO_TimeOffset&#xD;&#xA;-2 .. Invalid input parameter. Value must be between valid range." Type="Analog" Editor="EditNumber:Signed;Dec"/>
+    
+    <!-- Analog Input 4 -->
+    <Input Name="Analog Input 4" Channel="AI4" IsConfig="true" Desc="Analog Input 4. Invalid value is 16#80000010." Type="Analog" Editor="EditNumber:Signed;Dec">
+      <Property Name="AI4 Config" Channel="AI4Config" Desc="Analog Input 4" Editor="Combo:0=analog in (Range: -10V...+10V);1=analog in with ground reference (Range: -10V...+10V)" />
+      <Property Name="AI4 minimal value" Channel="AI4_Min" Desc="The scale of analog input can be selected by this client (corresponds to +/-10V) as initvalue." Editor="EditNumber:Signed;Dec" />
+      <Property Name="AI4 maximal value" Channel="AI4_Max" Desc="The scale of analog input can be selected by this client (corresponds to +/-10V) as initvalue." Editor="EditNumber:Signed;Dec" />
+      <Property Name="AI4 cut off frequency" Channel="AI4_Freq" Editor="Combo:0=1000 Hz; 1=500 Hz; 2=250 Hz; 3=100 Hz; 4=50 Hz; 5=25 Hz; 6=10 Hz" Desc="Cut off frequency for low pass filter&#xD;&#xA;0... 1000 Hz&#xD;&#xA;1...  500 Hz&#xD;&#xA;2...  250 Hz&#xD;&#xA;3...  100 Hz&#xD;&#xA;4...   50 Hz&#xD;&#xA;5...   25 Hz&#xD;&#xA;6...   10 Hz&#xD;&#xA;&#xD;&#xA;Values greater or equal to 10 will be set directly to the firmware. e.g. 125 ... 125 Hz&#xD;&#xA;&#xD;&#xA;If the timeoffset mode for the analog inputs is active and the set value would violate the sampling theorem of shannon, the frequency value will be automatically corrected by the class.&#xD;&#xA;The new frequency will be written to the client and in addition a debugger trace message will be displayed." />
+      <Property Name="Analog Input 4 Time Offset" Channel="AI4TimeOffset" Desc="The Time Offset of the respective analog input in µs can be set with this server.&#xD;&#xA;The value will be transmitted each cycle to the Firmware.&#xD;&#xA;&#xD;&#xA;e.g. Time Offset '150' means that the respective channel will be sampled exactly 150µs after the SDIAS sync.&#xD;&#xA;Valid range: (130µs to (CycleTime - 160µs))&#xD;&#xA;-1 .. Feature not available or inactive. FW Version must be higher than 2.00 or feature not activated with client AO_TimeOffset&#xD;&#xA;-2 .. Invalid input parameter. Value must be between valid range." Type="Analog" Editor="EditNumber:Signed;Dec"/>
+    </Input>
+    <Output Name="Analog Input 4 Time Offset" Channel="AI4TimeOffset" Desc="The Time Offset of the respective analog input in µs can be set with this server.&#xD;&#xA;The value will be transmitted each cycle to the Firmware.&#xD;&#xA;&#xD;&#xA;e.g. Time Offset '150' means that the respective channel will be sampled exactly 150µs after the SDIAS sync.&#xD;&#xA;Valid range: (130µs to (CycleTime - 160µs))&#xD;&#xA;-1 .. Feature not available or inactive. FW Version must be higher than 2.00 or feature not activated with client AO_TimeOffset&#xD;&#xA;-2 .. Invalid input parameter. Value must be between valid range." Type="Analog" Editor="EditNumber:Signed;Dec"/>
+    
+    <IOState Name="Range Detection" Channel="Range" Type="Analog" Desc="high range detection (cablebreak):&#xD;&#xA;Bit 1 ... high range on AI1&#xD;&#xA;Bit 2 ... high range on AI2&#xD;&#xA;&#xD;&#xA;Bit 3 ... high range on AI3&#xD;&#xA;Bit 4 ... high range on AI4&#xD;&#xA;cable break is detected if value >10,25 V.&#xD;&#xA;&#xD;&#xA;Low range detection is supported with FW Version 2.00 or higher.&#xD;&#xA;&#xD;&#xA;Low range detection:&#xD;&#xA;Bit 5 ... low range on AI1&#xD;&#xA;Bit 6 ... low range on AI2&#xD;&#xA;&#xD;&#xA;Bit 7 ... low range on AI3&#xD;&#xA;Bit 8 ... low range on AI4&#xD;&#xA;The high range is detected if the value is lower than -10,25 V. "/>
+
+    <IOComment Name="---------------------- Analog Outputs ----------------------" IsInfo="true" Desc=""/>
+   
+    <!-- Analog Output 1 -->
+    <Output Name="Analog Output 1" Channel="AO1" IsConfig="true" Desc="Analog Output" Type="Analog" Editor="EditNumber:Signed;Dec">
+      <Property Name="AO1 minimal value" Channel="AO1_Min" Desc="The scale of analog output can be selected by this client (corresponds to +/-10V) as initvalue. Must be different to maximal value" Editor="EditNumber:Signed;Dec" />
+      <Property Name="AO1 maximal value" Channel="AO1_Max" Desc="The scale of analog output can be selected by this client (corresponds to +/-10V) as initvalue. Must be different to minimal value" Editor="EditNumber:Signed;Dec" />
+      <Property Name="Analog Output 1 Time Offset" Channel="AO1TimeOffset" Desc="The Time Offset of the respective analog output in µs can be set with this server.&#xD;&#xA;The value will be transmitted each cycle to the Firmware.&#xD;&#xA;&#xD;&#xA;e.g. Time Offset '150' means that the respective channel will be written exactly 150µs after the SDIAS sync.&#xD;&#xA;Valid range: (130µs to (CycleTime - 160µs))&#xD;&#xA;-1 .. Feature not available or inactive. FW Version must be higher than 2.00 or feature not activated with client AO_TimeOffset&#xD;&#xA;-2 .. Invalid input parameter. Value must be between valid range." Type="Analog" Editor="EditNumber:Signed;Dec"/>
+    </Output>
+    <Output Name="Analog Output 1 Time Offset" Channel="AO1TimeOffset" Desc="The Time Offset of the respective analog output in µs can be set with this server.&#xD;&#xA;The value will be transmitted each cycle to the Firmware.&#xD;&#xA;&#xD;&#xA;e.g. Time Offset '150' means that the respective channel will be written exactly 150µs after the SDIAS sync.&#xD;&#xA;Valid range: (130µs to (CycleTime - 160µs))&#xD;&#xA;-1 .. Feature not available or inactive. FW Version must be higher than 2.00 or feature not activated with client AO_TimeOffset&#xD;&#xA;-2 .. Invalid input parameter. Value must be between valid range." Type="Analog" Editor="EditNumber:Signed;Dec"/>
+    
+    <!-- Analog Output 2 -->
+    <Output Name="Analog Output 2" Channel="AO2" IsConfig="true" Desc="Analog Output" Type="Analog" Editor="EditNumber:Signed;Dec">
+      <Property Name="AO2 minimal value" Channel="AO2_Min" Desc="The scale of analog output can be selected by this client (corresponds to +/-10V) as initvalue. Must be different to maximal value" Editor="EditNumber:Signed;Dec" />
+      <Property Name="AO2 maximal value" Channel="AO2_Max" Desc="The scale of analog output can be selected by this client (corresponds to +/-10V) as initvalue. Must be different to minimal value" Editor="EditNumber:Signed;Dec" />
+      <Property Name="Analog Output 2 Time Offset" Channel="AO2TimeOffset" Desc="The Time Offset of the respective analog output in µs can be set with this server.&#xD;&#xA;The value will be transmitted each cycle to the Firmware.&#xD;&#xA;&#xD;&#xA;e.g. Time Offset '150' means that the respective channel will be written exactly 150µs after the SDIAS sync.&#xD;&#xA;Valid range: (130µs to (CycleTime - 160µs))&#xD;&#xA;-1 .. Feature not available or inactive. FW Version must be higher than 2.00 or feature not activated with client AO_TimeOffset&#xD;&#xA;-2 .. Invalid input parameter. Value must be between valid range." Type="Analog" Editor="EditNumber:Signed;Dec"/>
+    </Output>
+    <Output Name="Analog Output 2 Time Offset" Channel="AO2TimeOffset" Desc="The Time Offset of the respective analog output in µs can be set with this server.&#xD;&#xA;The value will be transmitted each cycle to the Firmware.&#xD;&#xA;&#xD;&#xA;e.g. Time Offset '150' means that the respective channel will be written exactly 150µs after the SDIAS sync.&#xD;&#xA;Valid range: (130µs to (CycleTime - 160µs))&#xD;&#xA;-1 .. Feature not available or inactive. FW Version must be higher than 2.00 or feature not activated with client AO_TimeOffset&#xD;&#xA;-2 .. Invalid input parameter. Value must be between valid range." Type="Analog" Editor="EditNumber:Signed;Dec"/>
+    
+    <!-- Analog Output 3 -->
+    <Output Name="Analog Output 3" Channel="AO3" IsConfig="true" Desc="Analog Output" Type="Analog" Editor="EditNumber:Signed;Dec">
+      <Property Name="AO3 minimal value" Channel="AO3_Min" Desc="The scale of analog output can be selected by this client (corresponds to +/-10V) as initvalue. Must be different to maximal value" Editor="EditNumber:Signed;Dec" />
+      <Property Name="AO3 maximal value" Channel="AO3_Max" Desc="The scale of analog output can be selected by this client (corresponds to +/-10V) as initvalue. Must be different to minimal value" Editor="EditNumber:Signed;Dec" />
+      <Property Name="Analog Output 3 Time Offset" Channel="AO3TimeOffset" Desc="The Time Offset of the respective analog output in µs can be set with this server.&#xD;&#xA;The value will be transmitted each cycle to the Firmware.&#xD;&#xA;&#xD;&#xA;e.g. Time Offset '150' means that the respective channel will be written exactly 150µs after the SDIAS sync.&#xD;&#xA;Valid range: (130µs to (CycleTime - 160µs))&#xD;&#xA;-1 .. Feature not available or inactive. FW Version must be higher than 2.00 or feature not activated with client AO_TimeOffset&#xD;&#xA;-2 .. Invalid input parameter. Value must be between valid range." Type="Analog" Editor="EditNumber:Signed;Dec"/>
+    </Output>
+    <Output Name="Analog Output 3 Time Offset" Channel="AO3TimeOffset" Desc="The Time Offset of the respective analog output in µs can be set with this server.&#xD;&#xA;The value will be transmitted each cycle to the Firmware.&#xD;&#xA;&#xD;&#xA;e.g. Time Offset '150' means that the respective channel will be written exactly 150µs after the SDIAS sync.&#xD;&#xA;Valid range: (130µs to (CycleTime - 160µs))&#xD;&#xA;-1 .. Feature not available or inactive. FW Version must be higher than 2.00 or feature not activated with client AO_TimeOffset&#xD;&#xA;-2 .. Invalid input parameter. Value must be between valid range." Type="Analog" Editor="EditNumber:Signed;Dec"/>
+    
+    <!-- Analog Output 4 -->
+    <Output Name="Analog Output 4" Channel="AO4" IsConfig="true" Desc="Analog Output" Type="Analog" Editor="EditNumber:Signed;Dec">
+      <Property Name="AO4 minimal value" Channel="AO4_Min" Desc="The scale of analog output can be selected by this client (corresponds to +/-10V) as initvalue. Must be different to maximal value" Editor="EditNumber:Signed;Dec" />
+      <Property Name="AO4 maximal value" Channel="AO4_Max" Desc="The scale of analog output can be selected by this client (corresponds to +/-10V) as initvalue. Must be different to minimal value" Editor="EditNumber:Signed;Dec" />
+      <Property Name="Analog Output 4 Time Offset" Channel="AO4TimeOffset" Desc="The Time Offset of the respective analog output in µs can be set with this server.&#xD;&#xA;The value will be transmitted each cycle to the Firmware.&#xD;&#xA;&#xD;&#xA;e.g. Time Offset '150' means that the respective channel will be written exactly 150µs after the SDIAS sync.&#xD;&#xA;Valid range: (130µs to (CycleTime - 160µs))&#xD;&#xA;-1 .. Feature not available or inactive. FW Version must be higher than 2.00 or feature not activated with client AO_TimeOffset&#xD;&#xA;-2 .. Invalid input parameter. Value must be between valid range." Type="Analog" Editor="EditNumber:Signed;Dec"/>
+    </Output>  
+    <Output Name="Analog Output 4 Time Offset" Channel="AO4TimeOffset" Desc="The Time Offset of the respective analog output in µs can be set with this server.&#xD;&#xA;The value will be transmitted each cycle to the Firmware.&#xD;&#xA;&#xD;&#xA;e.g. Time Offset '150' means that the respective channel will be written exactly 150µs after the SDIAS sync.&#xD;&#xA;Valid range: (130µs to (CycleTime - 160µs))&#xD;&#xA;-1 .. Feature not available or inactive. FW Version must be higher than 2.00 or feature not activated with client AO_TimeOffset&#xD;&#xA;-2 .. Invalid input parameter. Value must be between valid range." Type="Analog" Editor="EditNumber:Signed;Dec"/>      
+  
+    <Script Name="AM441">
+    <Parameter Name="AI_TimeOffset" Type="Client" Channel="AI_TimeOffset" Desc="" />    
+    <Parameter Name="AO_TimeOffset" Type="Client" Channel="AO_TimeOffset" Desc="" />        
+<Code>
+def compPost_AM441(element, parameters):
+  
+  if parameters['varanBridge']:
+    parameters['AddToSDiasTime'] = True
+    element['result']['optional'] =  {'PDO': {'Wr':[], 'Rd':[], 'WrDyn':[], 'RdDyn':[]}}    
+    SDIASPDORdAdd(0xC,element)
+    
+    if operator.gt(element['options']['AI_TimeOffset'], 0) or operator.gt(element['options']['AO_TimeOffset'], 0) :
+      SDIASPDOWrAdd(0x18,element)
+    else:
+      SDIASPDOWrAdd(0x8,element)      
+
+</Code>
+    </Script>      
+  </Class>    
+</HWClassInfo>

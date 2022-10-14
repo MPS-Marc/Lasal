@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<Network Name="unitMachine" Revision="0.0">
+	<!-- List of Components in this network -->
+	<Components>
+		<Object
+			Name       = "unitMachine"
+			GUID       = "{5F6C82E9-A248-49B9-A44A-87BCBFD732F8}"
+			Class      = "uMachine"
+			Position   = "(1080,180)"
+			Visualized = "true"
+			CyclicTime = "10 ms">
+			<Channels>
+				<Server Name="abortButton"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="cmdCompleted"/>
+				<Server Name="cmdHMI"/>
+				<Server Name="cmdWaitReset"/>
+				<Server Name="ErrorNr"/>
+				<Server Name="holdButton"/>
+				<Server Name="includesUnit" Value="1090524163"/>
+				<Server Name="mode"/>
+				<Server Name="reqMode"/>
+				<Server Name="resetButton"/>
+				<Server Name="simulation"/>
+				<Server Name="startButton"/>
+				<Server Name="state"/>
+				<Server Name="stopButton"/>
+				<Server Name="stprAction"/>
+				<Server Name="stprMoving"/>
+				<Server Name="stprState"/>
+				<Server Name="stsHMI_RunsAllowed"/>
+				<Server Name="stsInAlarm"/>
+				<Server Name="stsIsInterlocked"/>
+				<Server Name="stsStateCompleted"/>
+				<Server Name="suspendButton"/>
+				<Server Name="testSline"/>
+				<Server Name="thisIsUnit" Value="0"/>
+				<Server Name="unHoldButton"/>
+				<Server Name="unsuspendButton"/>
+				<Client Name="ctrlBu1Saw"/>
+				<Client Name="ctrlManualInput"/>
+				<Client Name="ctrlPressureRollers"/>
+				<Client Name="ctrlPu1"/>
+				<Client Name="ctrlSuspend"/>
+				<Client Name="iBlinkFast"/>
+				<Client Name="iBlinkSlow"/>
+				<Client Name="iSafe" Value="0"/>
+				<Client Name="oCycleLight"/>
+				<Client Name="oResetAlarm"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="_base" GUID="{0A57FB88-B566-443B-A468-D6066F8B0E7A}" Class="unitBase">
+							<Channels>
+								<Server Name="abortButton"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="cmdCompleted"/>
+								<Server Name="cmdHMI"/>
+								<Server Name="cmdWaitReset"/>
+								<Server Name="ErrorNr"/>
+								<Server Name="holdButton"/>
+								<Server Name="includesUnit" Value="1090524163"/>
+								<Server Name="mode"/>
+								<Server Name="reqMode"/>
+								<Server Name="resetButton"/>
+								<Server Name="simulation"/>
+								<Server Name="startButton"/>
+								<Server Name="state"/>
+								<Server Name="stopButton"/>
+								<Server Name="stprAction"/>
+								<Server Name="stprMoving"/>
+								<Server Name="stprState"/>
+								<Server Name="stsHMI_RunsAllowed"/>
+								<Server Name="stsInAlarm"/>
+								<Server Name="stsIsInterlocked"/>
+								<Server Name="stsProgChangesAllowed"/>
+								<Server Name="stsStateCompleted"/>
+								<Server Name="suspendButton"/>
+								<Server Name="testSline"/>
+								<Server Name="thisIsUnit" Value="0"/>
+								<Server Name="unHoldButton"/>
+								<Server Name="unsuspendButton"/>
+								<Client Name="iBlinkFast"/>
+								<Client Name="iBlinkSlow"/>
+								<Client Name="id"/>
+								<Client Name="iSafe" Value="0"/>
+								<Client Name="oCycleLight"/>
+								<Client Name="oResetAlarm"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object Name="_base" GUID="{4C589833-D166-472E-8BF3-71E2F3F5D701}" Class="emBase">
+											<Channels>
+												<Server Name="ClassSvr"/>
+												<Server Name="cmdHMI"/>
+												<Server Name="cmdWaitReset"/>
+												<Server Name="ErrorNr"/>
+												<Server Name="includesUnit" Value="1090524163"/>
+												<Server Name="mode"/>
+												<Server Name="state"/>
+												<Server Name="stprAction"/>
+												<Server Name="stprMoving"/>
+												<Server Name="stprState"/>
+												<Server Name="stsHMI_RunsAllowed"/>
+												<Server Name="stsInAlarm"/>
+												<Server Name="stsIsInterlocked"/>
+												<Server Name="stsStateCompleted"/>
+												<Server Name="thisIsUnit" Value="0"/>
+												<Client Name="id"/>
+												<Client Name="nwEmOrUnit"/>
+											</Channels>
+											<!-- List of Networks in this component -->
+											<Networks>
+												<Network>
+													<!-- List of Components in this network -->
+													<Components>
+														<Object Name="_base" GUID="{20958F90-4A77-4659-80AB-E914C8759617}" Class="cmBase">
+															<Channels>
+																<Server Name="ClassSvr"/>
+																<Server Name="cmdHMI"/>
+																<Server Name="ErrorNr"/>
+																<Server Name="mode"/>
+																<Server Name="state"/>
+																<Server Name="stsHMI_RunsAllowed"/>
+																<Server Name="stsInAlarm"/>
+																<Server Name="stsIsInterlocked"/>
+																<Client Name="id"/>
+																<Client Name="nwEmOrUnit"/>
+															</Channels>
+															<!-- List of Networks in this component -->
+															<Networks>
+																<Network>
+																	<!-- List of Components in this network -->
+																	<Components>
+																		<Object
+																			Name           = "_Alarm"
+																			GUID           = "{28C9E53D-A6FB-4830-96BF-D8CA93851830}"
+																			Class          = "_AlarmX3ParaDer"
+																			BackgroundTime = "100 ms">
+																			<Channels>
+																				<Server Name="AlarmActief"/>
+																				<Server Name="ClassSvr"/>
+																				<Server Name="ErrorNr"/>
+																				<Client Name="Acknow"/>
+																				<Client Name="Config" Value="0"/>
+																				<Client Name="Group"/>
+																				<Client Name="Para1"/>
+																				<Client Name="Para2"/>
+																				<Client Name="Para3"/>
+																			</Channels>
+																			<!-- List of Networks in this component -->
+																			<Networks>
+																				<Network>
+																					<!-- List of Components in this network -->
+																					<Components>
+																						<Object Name="_base" GUID="{5785EB27-1BCB-4BFE-95D3-58366FCEBDFF}" Class="_AlarmX3Para">
+																							<Channels>
+																								<Server Name="ClassSvr"/>
+																								<Client Name="Acknow"/>
+																								<Client Name="Config" Value="0"/>
+																								<Client Name="Group"/>
+																								<Client Name="Para1"/>
+																								<Client Name="Para2"/>
+																								<Client Name="Para3"/>
+																							</Channels>
+																							<!-- List of Networks in this component -->
+																							<Networks>
+																								<Network>
+																									<!-- List of Components in this network -->
+																									<Components>
+																										<Object Name="_base" GUID="{FF1586E3-7510-4496-B4A8-3A308EFCD780}" Class="_AlarmX0Para">
+																											<Channels>
+																												<Server Name="ClassSvr"/>
+																												<Client Name="Acknow"/>
+																												<Client Name="Config" Value="0"/>
+																												<Client Name="Group"/>
+																											</Channels>
+																										</Object>
+																									</Components>
+																									<Connections>
+																									</Connections>
+																								</Network>
+																							</Networks>
+																						</Object>
+																					</Components>
+																					<Connections>
+																					</Connections>
+																				</Network>
+																			</Networks>
+																		</Object>
+																	</Components>
+																	<Connections>
+																	</Connections>
+																</Network>
+															</Networks>
+														</Object>
+													</Components>
+													<Connections>
+													</Connections>
+												</Network>
+											</Networks>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+	</Components>
+	<Comments>
+	</Comments>
+	<!-- List of Connections in this network -->
+	<Connections>
+		<Connection Source="unitMachine.ctrlBu1Saw" Destination="emOperationSawUnit.ClassSvr"/>
+		<Connection Source="unitMachine.ctrlManualInput" Destination="emSemiManualActionPlaceMaterial1.ClassSvr"/>
+		<Connection Source="unitMachine.ctrlPu1" Destination="emWagonX1Input.ClassSvr"/>
+		<Connection Source="unitMachine.ctrlPressureRollers" Destination="emPressureRoll.ClassSvr"/>
+		<Connection Source="unitMachine.iSafe" Destination="CtrlCheckMachineReadyMain.Status_SafeCompleet"/>
+		<Connection Source="unitMachine.ctrlSuspend" Destination="EmSuspend.ClassSvr"/>
+	</Connections>
+	<!-- Headerfiles -->
+	<Options>
+	</Options>
+</Network>

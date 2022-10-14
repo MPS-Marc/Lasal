@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HWClassInfo>
+  <HWDevice ModuleID="1077" SubModuleID="0x0" ModType="M_SDIAS" Desc="SDCI Master" OrderNr="20-104-041">
+    <Types>
+      <Device Name="IIO041" ClassName="IIO041" DisplayGroup="Communication" Default="true" >
+        <Power Voltage="5000" Supply="0" Drain="0"/>
+        <Power Voltage="24000" Supply="0" Drain="30"/> 
+	  </Device>
+    </Types>
+    <VisualData>
+      <VisualView TypeId="0" Size="10,120">
+        <VisualModule ImgPath=".\S-Dias\S-DIAS Grundmodul.xaml" Position="0,0" Width="12.5" Height="101.8">
+          <!-- Texte -->
+          <VisualTexts>
+            <VisualText Text="IIO 041" FontFamily="ARIAL" Italic="true" FontSize="12" ClrForeground="4294967295" FontWeight="700" LineHeight="10" Width="7.94" Height="5.82" Left="4.76" Top="10.05" ClrBackground="16777215" />
+            <VisualText Text="S" FontFamily="ARIAL" ClrForeground="4294967295" Width="1.59" Height="2.65" Left="0.26" Top="9" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="U" FontFamily="ARIAL" ClrForeground="4294967295" Width="1.59" Height="2.65" Left="0.26" Top="11.64" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="X1" FontFamily="ARIAL" ClrForeground="4291330563" ClrBackground="4294967295" Width="3.17" Height="2.38" Left="0.26" Top="15.61" FontWeight="400" />
+            <VisualText Text="1+" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.18" Height="2.65" Left="0.26" Top="17.99" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="IQ" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.18" Height="2.65" Left="0.26" Top="21.17" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="0V" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.18" Height="2.65" Left="0.26" Top="24.84" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="CQ" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.18" Height="2.65" Left="0.26" Top="28.22" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="X2" FontFamily="ARIAL" ClrForeground="4291330563" ClrBackground="4294967295" Width="3.17" Height="2.38" Left="0.26" Top="30.96" FontWeight="400" />
+            <VisualText Text="2+" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.18" Height="2.65" Left="0.26" Top="33.34" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="IQ" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.18" Height="2.65" Left="0.26" Top="36.51" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="0V" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.18" Height="2.65" Left="0.26" Top="40.19" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="CQ" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.18" Height="2.65" Left="0.26" Top="43.46" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="X3" FontFamily="ARIAL" ClrForeground="4291330563" ClrBackground="4294967295" Width="3.17" Height="2.38" Left="0.26" Top="46.3" FontWeight="400" />
+            <VisualText Text="3+" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.18" Height="2.65" Left="0.26" Top="48.68" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="IQ" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.18" Height="2.65" Left="0.26" Top="51.86" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="0V" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.18" Height="2.65" Left="0.26" Top="55.46" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="CQ" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.18" Height="2.65" Left="0.26" Top="58.71" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="X4" FontFamily="ARIAL" ClrForeground="4291330563" ClrBackground="4294967295" Width="3.17" Height="2.38" Left="0.26" Top="61.65" FontWeight="400" />
+            <VisualText Text="4+" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.18" Height="2.65" Left="0.26" Top="64.03" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="IQ" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.18" Height="2.65" Left="0.26" Top="67.2" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="0V" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.18" Height="2.65" Left="0.26" Top="71.18" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="CQ" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.18" Height="2.65" Left="0.26" Top="74.45" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="X5" FontFamily="ARIAL" ClrForeground="4291330563" ClrBackground="4294967295" Width="3.17" Height="2.38" Left="0.26" Top="76.99" FontWeight="400" />
+            <VisualText Text="24" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.18" Height="2.65" Left="0.26" Top="79.38" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="24" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.18" Height="2.65" Left="0.26" Top="82.55" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="0V" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.18" Height="2.65" Left="0.26" Top="86.42" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="0V" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.18" Height="2.65" Left="0.26" Top="90" ClrBackground="16777215" FontWeight="400" />
+          </VisualTexts>
+          <!-- Leds -->
+          <VisualLeds>
+            <VisualLed Description="Module state" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="10.32">
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="4">
+                  <Activator TypeId="1" Value="1" />
+                  <Activator TypeId="3" DataString="IIO041.ClassState" Value="0" />
+                </Activator>
+              </Behaviour>
+              <Behaviour ClrForeground="4278255360" Interval="200">
+                <Activator TypeId="4">
+                  <Activator TypeId="1" Value="1" />
+                  <Activator TypeId="3" DataString="IIO041.ClassState" Value="0" Negate="true" />
+                </Activator>
+              </Behaviour>
+            </VisualLed>
+            <VisualLed DataString="IIO041.LedControl" Description="User" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342216703" Width="1.32" Height="1.32" Left="2.12" Top="12.96">
+              <Behaviour ClrForeground="4278229503">
+                <Activator TypeId="3" DataString="IIO041.LedControl" Value="1" />
+              </Behaviour>
+              <Behaviour ClrForeground="4278229503" Interval="500">
+                <Activator TypeId="3" DataString="IIO041.LedControl" Value="2" />
+              </Behaviour>
+              <Behaviour ClrForeground="4278229503" Interval="250">
+                <Activator TypeId="3" DataString="IIO041.LedControl" Value="3" />
+              </Behaviour>
+            </VisualLed>
+            <!-- X1-->
+            <VisualLed Description="SDCI Master 1 Supply" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="18.39">
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="4">
+                  <Activator TypeId="3" DataString="IIO041.PowerSupply.5" Value="1" />
+                  <Activator TypeId="3" DataString="IIO041.PowerSupply.1" Value="1" />
+                </Activator>
+              </Behaviour>
+            </VisualLed>
+            <VisualLed Description="IQ" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="21.69">
+              <!-- zugriff auf objekte von Klassen die erst der Anwender erstellt ist schwierig <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="3" DataString="IIO041.PowerSupply.1" Value="1" />
+              </Behaviour> -->
+            </VisualLed>
+            <VisualLed Description="CQ" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342216703" Width="1.32" Height="1.32" Left="2.12" Top="29.06">
+              <!-- zugriff auf objekte von Klassen die erst der Anwender erstellt ist schwierig <Behaviour ClrForeground="4278229503">
+                <Activator TypeId="3" DataString="IIO041" Value="1" />
+              </Behaviour> -->
+            </VisualLed>
+            <!-- X2-->
+            <VisualLed Description="SDCI Master 1 Supply" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="33.79">
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="4">
+                  <Activator TypeId="3" DataString="IIO041.PowerSupply.5" Value="1" />
+                  <Activator TypeId="3" DataString="IIO041.PowerSupply.2" Value="1" />
+                </Activator>
+              </Behaviour>
+            </VisualLed>
+            <VisualLed Description="IQ" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="37.19">
+              <!-- zugriff auf objekte von Klassen die erst der Anwender erstellt ist schwierig <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="3" DataString="IIO041.PowerSupply.1" Value="1" />
+              </Behaviour> -->
+            </VisualLed>
+            <VisualLed Description="CQ" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342216703" Width="1.32" Height="1.32" Left="2.12" Top="44.36">
+              <!-- zugriff auf objekte von Klassen die erst der Anwender erstellt ist schwierig <Behaviour ClrForeground="4278229503">
+                <Activator TypeId="3" DataString="IIO041" Value="1" />
+              </Behaviour> -->
+            </VisualLed>
+            <!-- X3-->
+            <VisualLed Description="SDCI Master 1 Supply" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="49.19">
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="4">
+                  <Activator TypeId="3" DataString="IIO041.PowerSupply.5" Value="1" />
+                  <Activator TypeId="3" DataString="IIO041.PowerSupply.3" Value="1" />
+                </Activator>
+              </Behaviour>
+            </VisualLed>
+            <VisualLed Description="IQ" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="52.49">
+              <!-- zugriff auf objekte von Klassen die erst der Anwender erstellt ist schwierig <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="3" DataString="IIO041.PowerSupply.1" Value="1" />
+              </Behaviour> -->
+            </VisualLed>
+            <VisualLed Description="CQ" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342216703" Width="1.32" Height="1.32" Left="2.12" Top="59.66">
+              <!-- zugriff auf objekte von Klassen die erst der Anwender erstellt ist schwierig <Behaviour ClrForeground="4278229503">
+                <Activator TypeId="3" DataString="IIO041" Value="1" />
+              </Behaviour> -->
+            </VisualLed>
+            <!-- X4-->
+            <VisualLed Description="SDCI Master 1 Supply" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="64.49">
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="4">
+                  <Activator TypeId="3" DataString="IIO041.PowerSupply.5" Value="1" />
+                  <Activator TypeId="3" DataString="IIO041.PowerSupply.4" Value="1" />
+                </Activator>
+              </Behaviour>
+            </VisualLed>
+            <VisualLed Description="IQ" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="67.79">
+              <!-- zugriff auf objekte von Klassen die erst der Anwender erstellt ist schwierig <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="3" DataString="IIO041.PowerSupply.1" Value="1" />
+              </Behaviour> -->
+            </VisualLed>
+            <VisualLed Description="CQ" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342216703" Width="1.32" Height="1.32" Left="2.12" Top="75.16">
+              <!-- zugriff auf objekte von Klassen die erst der Anwender erstellt ist schwierig <Behaviour ClrForeground="4278229503">
+                <Activator TypeId="3" DataString="IIO041" Value="1" />
+              </Behaviour> -->
+            </VisualLed>
+            <!-- X5-->
+            <VisualLed ImgPath=".\S-Dias\S-DIAS Led.xaml" Description="24V" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.14" Top="79.86">
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="3" DataString="IIO041.PowerSupply.5" Value="1" />
+              </Behaviour>
+            </VisualLed>
+          </VisualLeds>
+          <!-- Stecker -->
+          <VisualConnectors>
+            <VisualConnector ImgPath=".\S-DIAS\S-DIAS Phoenix 4-polig SDCI.xaml" Description="S-DIAS Phoenix 4-polig SDCI.xaml" Width="7.86" Height="15" Left="3.7" Top="16.93">
+              <ConnectorPin Description="L+" TypeId="3" DataString="SDCI::00"/>
+              <ConnectorPin Description="IQ" TypeId="3" DataString="SDCI::00"/>
+              <ConnectorPin Description="L-" TypeId="3" DataString="SDCI::00"/> 
+              <ConnectorPin Description="C/Q" TypeId="3" DataString="SDCI::00"/>
+            </VisualConnector>
+            <VisualConnector ImgPath=".\S-DIAS\S-DIAS Phoenix 4-polig SDCI.xaml" Description="S-DIAS Phoenix 4-polig SDCI.xaml" Width="7.86" Height="15" Left="3.7" Top="32.28">
+              <ConnectorPin Description="L+" TypeId="3" DataString="SDCI::01"/>
+              <ConnectorPin Description="IQ" TypeId="3" DataString="SDCI::01"/>
+              <ConnectorPin Description="L-" TypeId="3" DataString="SDCI::01"/> 
+              <ConnectorPin Description="C/Q" TypeId="3" DataString="SDCI::01"/>
+            </VisualConnector>
+            <VisualConnector ImgPath=".\S-DIAS\S-DIAS Phoenix 4-polig SDCI.xaml" Description="S-DIAS Phoenix 4-polig SDCI.xaml" Width="7.86" Height="15" Left="3.7" Top="47.62">
+              <ConnectorPin Description="L+" TypeId="3" DataString="SDCI::02" />
+              <ConnectorPin Description="IQ" TypeId="3" DataString="SDCI::02" />
+              <ConnectorPin Description="L-" TypeId="3" DataString="SDCI::02" />
+              <ConnectorPin Description="C/Q" TypeId="3" DataString="SDCI::02" />
+            </VisualConnector>
+            <VisualConnector ImgPath=".\S-DIAS\S-DIAS Phoenix 4-polig SDCI.xaml" Description="S-DIAS Phoenix 4-polig SDCI.xaml" Width="7.86" Height="15" Left="3.7" Top="62.97">
+              <ConnectorPin Description="L+" TypeId="3" DataString="SDCI::03" />
+              <ConnectorPin Description="IQ" TypeId="3" DataString="SDCI::03" />
+              <ConnectorPin Description="L-" TypeId="3" DataString="SDCI::03" />
+              <ConnectorPin Description="C/Q" TypeId="3" DataString="SDCI::03" />
+            </VisualConnector>
+            <VisualConnector ImgPath=".\S-DIAS\S-DIAS Phoenix 4-polig.xaml" Description="S-DIAS Phoenix 4-polig.xaml" Width="7.86" Height="15" Left="3.7" Top="78.32">
+              <ConnectorPin Description="+24V" TypeId="0" />
+              <ConnectorPin Description="+24V" TypeId="0" />
+              <ConnectorPin Description="GND" TypeId="0" />
+              <ConnectorPin Description="GND" TypeId="0" />
+            </VisualConnector>
+          </VisualConnectors>
+        </VisualModule>
+      </VisualView>
+    </VisualData>
+  </HWDevice>
+  <Class Name="IIO041">
+    <Uplink Name="SdiasIn" BusType="SDIAS" PlaceName="Place" />
+    <Downlink Name="SdciOut_1" BusType="SDCI" Port="0" Desc="The SDCI hardware classes are connected to this server with the 'SdciIn' client" />
+    <Downlink Name="SdciOut_2" BusType="SDCI" Port="1" Desc="The SDCI hardware classes are connected to this server with the 'SdciIn' client" />
+    <Downlink Name="SdciOut_3" BusType="SDCI" Port="2" Desc="The SDCI hardware classes are connected to this server with the 'SdciIn' client" />
+    <Downlink Name="SdciOut_4" BusType="SDCI" Port="3" Desc="The SDCI hardware classes are connected to this server with the 'SdciIn' client" />
+	<Downlink Name="ClassState" Port="0" BusType="Hardwarealarme" Desc="Hardwarealarme" />
+	
+    <!-- General -->
+    <Property Name="Required" Channel="Required" Editor="Combo:1=Module is required;0=Module is not required" Desc="0=module is not required 1=module is required (CPU will crash if module is missing)" />
+    <Property Name="StartInInit" Channel="StartInInit" Editor="Combo:1=Initialization of SDCI devices in initialization phase;0=Initialization of SDCI devices in cyclic task" Desc="1=init of sensors is done in initialization  phase (default value)&#13;&#10;0=init of sensors is done in cyclic task&#13;&#10;Choose 0 to decrease the time till start of user application&#13;&#10;but keep in mind that values from the sensors are valid only after ClassState=ClassOk!" />
+....<Property Name="MaxBufferSize" Channel="MaxBufferSize" Editor="EditNumber:Signed;Dec" Desc="Size of the FIFO buffer for the asynchronous commands in byte. (As Init Value)" />
+    <IOState Name="Class State" Channel="ClassState" Desc="Shows the status of the hardware class. If the state is not equal than _ClassOK, an error has occurred " Type="" />
+    <IOState Name="Device ID" Channel="DeviceID" IsInfo="true" Type="" Desc="Shows the device ID of the hardware module" />
+    <IOState Name="FPGA Version" Channel="FPGAVersion" Format="V{5-8}.{1-4}" IsInfo="true" Desc="Shows the actual FPGA version of the module in the format x.y (e.g. 16#10 means v1.0)" />
+    <IOState Name="Hardware Version" Channel="HwVersion" IsInfo="true" Format="V{9-16}.{5-8}{1-4}" Type="" Desc="Shows the hardware version of the module" /> 
+    <IOState Name="Serial Number" Channel="SerialNo" IsInfo="true" Type="" Desc="Shows the Serial Number of the hardware module" />
+    <IOState Name="Retry Counter" Channel="RetryCounter" Desc="Is incremented in case of incorrect data transfer." />
+    <Output Name="LED Control" Channel="LEDControl" Type="Digital" Desc="Sets a LED on hardware, to detect module. (0=LED off; 1=LED on; 2=blinking slowly; 3=blinking fast)" />
+
+    <IOState Name="Firmware Version" Channel="FirmwareVersion" Desc="Shows the actual FW Version of the Module in the format xx.yy" />
+    <IOState Name="Cycle Time in µs" Channel="CycleTime" Desc="Calculated cycle time (in µs) of the SDCI system based on the SDIAS cycle time.&#13;&#10;The cycle time equals the SDIAS cylce time if it is on 1ms or higher.&#13;&#10;&#13;&#10;For example:&#13;&#10;A SDIAS cycle time of  250µs will lead to a SDCI cycle time of 1ms, &#13;&#10;while a SDIAS cycle time of 3ms leads to a SDCI cycle time of also 3ms." />
+    <IOState Name="Power Supply" Channel="PowerSupply" Desc="State of the power supply:&#13;&#10;&#13;&#10;Bit0..Port 1 Voltage Ok&#13;&#10;Bit1..Port 2 Voltage Ok&#13;&#10;Bit2..Port 3 Voltage Ok&#13;&#10;Bit3..Port 4 Voltage Ok&#13;&#10;Bit4..External Voltage Ok" />
+    <IOState Name="Number Of Available Master Events" Channel="NbrOfEventsAvailable" Desc="Number of master events available&#13;&#10;&#13;&#10;The events can be fetched one by one (beginning with the oldest) via method GetEvent()" />
+
+    <Script Name="IIO041">
+<Code>
+def compPost_IIO041(element, parameters): 
+
+  if parameters['varanBridge']:
+    parameters['AddToSDiasTime'] = True
+    
+    ReadPdoSize = 0
+    WritePdoSize = 0
+    
+    for object in element['subelements']:
+      if object['options'].has_key('ReadPdoSizeValue'):
+        BitLength = object['options']['ReadPdoSizeValue']
+        if (BitLength % 8) != 0:
+          ByteLength = (BitLength//8) + 1
+        else:
+          ByteLength = BitLength //8
+        
+        ReadPdoSize += ByteLength
+        
+      if object['options'].has_key('WritePdoSizeValue'):
+        BitLength = object['options']['WritePdoSizeValue']
+        if (BitLength % 8) != 0:
+          ByteLength = (BitLength//8) + 1
+        else:
+          ByteLength = BitLength //8
+        WritePdoSize += ByteLength
+    
+    element['result']['optional'] =  {'PDO': {'Wr':[], 'Rd':[], 'WrDyn':[], 'RdDyn':[]}}
+    SDIASPDORdAdd(ReadPdoSize,element)   
+    SDIASPDOWrAdd(WritePdoSize,element)
+        
+</Code>
+    </Script>  
+  </Class>
+</HWClassInfo>

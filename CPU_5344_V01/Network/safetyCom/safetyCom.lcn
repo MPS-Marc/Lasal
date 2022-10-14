@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<Network Name="safetyCom" Revision="0.0">
+	<!-- List of Components in this network -->
+	<Components>
+		<Object
+			Name       = "emStops"
+			GUID       = "{5D41F49E-F468-4EEB-929B-4FD0746FEB68}"
+			Class      = "statusSafety"
+			Position   = "(840,180)"
+			Visualized = "true">
+			<Channels>
+				<Server Name="ClassSvr"/>
+				<Server Name="stsInputs1"/>
+				<Server Name="stsInputs10"/>
+				<Server Name="stsInputs2"/>
+				<Server Name="stsInputs3"/>
+				<Server Name="stsInputs4"/>
+				<Server Name="stsInputs5"/>
+				<Server Name="stsInputs6"/>
+				<Server Name="stsInputs7"/>
+				<Server Name="stsInputs8"/>
+				<Server Name="stsInputs9"/>
+			</Channels>
+		</Object>
+		<Object
+			Name       = "inputsToSafety1"
+			GUID       = "{0055BBEC-462A-4E79-8768-D8ED780EC07C}"
+			Class      = "inputsToSafety"
+			Position   = "(1770,990)"
+			Visualized = "true"
+			CyclicTime = "10 ms">
+			<Channels>
+				<Server Name="ClassSvr"/>
+				<Server Name="cmdInput1"/>
+				<Server Name="cmdInput10"/>
+				<Server Name="cmdInput2"/>
+				<Server Name="cmdInput3"/>
+				<Server Name="cmdInput4"/>
+				<Server Name="cmdInput5"/>
+				<Server Name="cmdInput6"/>
+				<Server Name="cmdInput7"/>
+				<Server Name="cmdInput8"/>
+				<Server Name="cmdInput9"/>
+				<Client Name="input1"/>
+				<Client Name="input10"/>
+				<Client Name="input2"/>
+				<Client Name="input3"/>
+				<Client Name="input4"/>
+				<Client Name="input5"/>
+				<Client Name="input6"/>
+				<Client Name="input7"/>
+				<Client Name="input8"/>
+				<Client Name="input9"/>
+			</Channels>
+		</Object>
+		<Object
+			Name       = "Logic_Or_21"
+			GUID       = "{87A423AE-F425-4B99-92CB-04AB8315CED3}"
+			Class      = "Logic_Or_2"
+			Position   = "(510,990)"
+			Visualized = "true"
+			Remotely   = "true">
+			<Channels>
+				<Server Name="Result"/>
+				<Client Name="Op1"/>
+				<Client Name="Op2"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="_base" GUID="{8009179B-DE5A-11D5-B925-0010609208D7}" Class="Logic_Or_Base">
+							<Channels>
+								<Server Name="Result"/>
+							</Channels>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name       = "stopSafetyAndOpenDoor1"
+			GUID       = "{F1DC998F-6E30-4E3A-874A-4A2BA8494AE4}"
+			Class      = "stopSafetyAndOpenDoor"
+			Position   = "(870,1050)"
+			Visualized = "true"
+			CyclicTime = "10 ms">
+			<Channels>
+				<Server Name="ClassSvr"/>
+				<Server Name="openSawDoor"/>
+				<Server Name="readOpenSawDoor"/>
+				<Server Name="resetSafety"/>
+				<Server Name="sparMaxButtonTime" Value="240000"/>
+				<Server Name="stopSafety"/>
+				<Client Name="iPBresetSafety"/>
+				<Client Name="iSafetyState"/>
+				<Client Name="iStopSafetyAllowed"/>
+			</Channels>
+		</Object>
+	</Components>
+	<Comments>
+		<Comment Position="(1290,360)" Size="(510,60)" Text="emStop saw"/>
+		<Comment Position="(1290,300)" Size="(510,60)" Text="emStop Control Panel"/>
+		<Comment Position="(1290,480)" Size="(510,90)" Text="pull cord output"/>
+		<Comment Position="(1290,420)" Size="(510,60)" Text="pull cord input"/>
+		<Comment Position="(1290,600)" Size="(510,60)"/>
+		<Comment Position="(1290,540)" Size="(510,60)"/>
+		<Comment Position="(1290,660)" Size="(510,60)"/>
+		<Comment Position="(1290,720)" Size="(510,60)"/>
+		<Comment Position="(1290,780)" Size="(510,60)"/>
+		<Comment Position="(90,210)" Size="(690,180)" Text="servers in this network are written by safety (statusSafety), or readed by safety (inputsToSafety)&#13;&#10;Because safety is in another designer this can be a little bit confusing"/>
+		<Comment Position="(2220,1290)" Size="(510,60)"/>
+		<Comment Position="(2220,1110)" Size="(510,60)" Text="reset machine"/>
+		<Comment Position="(2220,1170)" Size="(510,60)" Text="reset"/>
+		<Comment Position="(2220,1230)" Size="(510,60)"/>
+		<Comment Position="(2220,1350)" Size="(510,60)"/>
+		<Comment Position="(2220,1410)" Size="(510,60)" Text="&#13;&#10;"/>
+		<Comment Position="(2220,1530)" Size="(510,60)"/>
+		<Comment Position="(2220,1650)" Size="(510,60)"/>
+		<Comment Position="(2220,1470)" Size="(510,60)"/>
+		<Comment Position="(2220,1590)" Size="(510,60)"/>
+		<Comment Position="(2250,360)" Size="(870,210)" Text="reset section 1 if the general button is pressed, or the s1 button&#13;&#10;reset section 2 (this is also the general reset) only if the general button is pressed&#13;&#10;reset section 3 if the general button or the s3 button is pressed"/>
+	</Comments>
+	<!-- List of Connections in this network -->
+	<Connections>
+		<Connection Source="inputsToSafety1.input4" Destination="stopSafetyAndOpenDoor1.openSawDoor" Vertices="(1770,1260),(1170,1260),"/>
+		<Connection Source="inputsToSafety1.input2" Destination="stopSafetyAndOpenDoor1.resetSafety" Vertices="(1770,1140),(1710,1140),(1710,1200),(1170,1200),"/>
+		<Connection Source="inputsToSafety1.input1" Destination="stopSafetyAndOpenDoor1.resetSafety" Vertices="(1770,1080),(1710,1080),(1710,1200),(1170,1200),"/>
+		<Connection Source="inputsToSafety1.input5" Destination="stopSafetyAndOpenDoor1.stopSafety" Vertices="(1770,1320),(1170,1320),"/>
+		<Connection Source="stopSafetyAndOpenDoor1.iPBresetSafety" Destination="Logic_Or_21.Result" Vertices="(870,1140),(810,1080),"/>
+		<Connection Source="Logic_Or_21.Op1" Destination="__PbControlCurrent1" Vertices="(510,1080),(450,1080)," IOObject="PbControlCurrent"/>
+		<Connection Source="stopSafetyAndOpenDoor1.iStopSafetyAllowed" Destination="mainControl1.stsStopSafetyAllowed"/>
+		<Connection Source="stopSafetyAndOpenDoor1.iSafetyState" Destination="__ControlCurrent1" Vertices="(870,1260),(690,1320)," IOObject="ControlCurrent"/>
+	</Connections>
+	<!-- List of temp data objects in this network -->
+	<IOObjects>
+		<IOObject KeyName="__ControlCurrent1" Name="ControlCurrent" Position="(390,1290)" Client="stopSafetyAndOpenDoor1.iSafetyState"/>
+		<IOObject KeyName="__PbControlCurrent1" Name="PbControlCurrent" Position="(150,1050)" Client="Logic_Or_21.Op1"/>
+	</IOObjects>
+	<!-- Headerfiles -->
+	<Options>
+	</Options>
+</Network>

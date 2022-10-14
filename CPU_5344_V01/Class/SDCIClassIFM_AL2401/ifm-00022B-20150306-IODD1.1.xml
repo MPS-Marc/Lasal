@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="utf-8"?>
+<IODevice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.io-link.com/IODD/2010/10" xsi:schemaLocation="http://www.io-link.com/IODD/2010/10 IODD1.1.xsd">
+  <DocumentInfo version="V1.2.13.006" releaseDate="2015-03-06" copyright="Copyright 2015, Builder: 2.4.4.5, Time: 02:04:12" />
+  <ProfileHeader>
+    <ProfileIdentification>IO Device Profile</ProfileIdentification>
+    <ProfileRevision>1.1</ProfileRevision>
+    <ProfileName>Device Profile for IO Devices</ProfileName>
+    <ProfileSource>IO-Link Consortium</ProfileSource>
+    <ProfileClassID>Device</ProfileClassID>
+    <ISO15745Reference>
+      <ISO15745Part>1</ISO15745Part>
+      <ISO15745Edition>1</ISO15745Edition>
+      <ProfileTechnology>IODD</ProfileTechnology>
+    </ISO15745Reference>
+  </ProfileHeader>
+  <ProfileBody>
+    <DeviceIdentity vendorId="310" vendorName="ifm electronic gmbh" deviceId="555">
+      <VendorText textId="TI_VendorText" />
+      <VendorUrl textId="TI_VendorUrl" />
+      <VendorLogo name="ifm-logo.png" />
+      <DeviceName textId="TI_DeviceName" />
+      <DeviceFamily textId="TI_DeviceFamily" />
+      <DeviceVariantCollection>
+        <DeviceVariant productId="AL2401" deviceSymbol="ifm-AL2401-pic.png" deviceIcon="ifm-AL2401-icon.png">
+          <Name textId="TI_ProductName0" />
+          <Description textId="TI_ProductDescr0" />
+        </DeviceVariant>
+      </DeviceVariantCollection>
+    </DeviceIdentity>
+    <DeviceFunction>
+      <Features blockParameter="true" dataStorage="true" profileCharacteristic="1 32768 32770 32771">
+        <SupportedAccessLocks localUserInterface="false" dataStorage="true" parameter="false" localParameterization="false" />
+      </Features>
+      <VariableCollection>
+        <StdVariableRef id="V_DirectParameters_1" />
+        <StdVariableRef id="V_DirectParameters_2" />
+        <StdVariableRef id="V_SystemCommand">
+          <StdSingleValueRef value="130" />
+          <SingleValue value="240">
+            <Name textId="TI_SysCmd240_Name" />
+          </SingleValue>
+          <SingleValue value="241">
+            <Name textId="TI_SysCmd241_Name" />
+          </SingleValue>
+          <SingleValue value="242">
+            <Name textId="TI_SysCmd242_Name" />
+          </SingleValue>
+          <SingleValue value="243">
+            <Name textId="TI_SysCmd243_Name" />
+          </SingleValue>
+          <SingleValue value="255">
+            <Name textId="TI_SysCmd255_Name" />
+          </SingleValue>
+        </StdVariableRef>
+        <StdVariableRef id="V_DeviceAccessLocks">
+          <StdRecordItemRef subindex="2" defaultValue="0" />
+        </StdVariableRef>
+        <StdVariableRef id="V_VendorName" fixedLengthRestriction="19" defaultValue="ifm electronic gmbh" />
+        <StdVariableRef id="V_VendorText" fixedLengthRestriction="11" defaultValue="www.ifm.com" />
+        <StdVariableRef id="V_ProductName" fixedLengthRestriction="6" defaultValue="AL2401" />
+        <StdVariableRef id="V_ProductID" fixedLengthRestriction="6" defaultValue="AL2401" />
+        <StdVariableRef id="V_ProductText" fixedLengthRestriction="28" defaultValue="IO-Link module 8 x 2 DI IP67" />
+        <StdVariableRef id="V_SerialNumber" fixedLengthRestriction="12" />
+        <StdVariableRef id="V_HardwareRevision" fixedLengthRestriction="2" />
+        <StdVariableRef id="V_FirmwareRevision" fixedLengthRestriction="5" />
+        <StdVariableRef id="V_ApplicationSpecificTag" fixedLengthRestriction="32" defaultValue="***" />
+        <StdVariableRef id="V_DeviceStatus" defaultValue="0" />
+        <StdVariableRef id="V_DetailedDeviceStatus" defaultValue="0x00,0x00,0x00" fixedLengthRestriction="5" />
+        <StdVariableRef id="V_ProcessDataInput" />
+        <Variable id="V_ShortCircuits" index="687" accessRights="ro" defaultValue="0" dynamic="true">
+          <Datatype xsi:type="UIntegerT" bitLength="16">
+            <ValueRange lowerValue="0" upperValue="65535" />
+          </Datatype>
+          <Name textId="TI_ShortCircuits_Name" />
+          <Description textId="TI_ShortCircuits_Description" />
+        </Variable>
+        <Variable id="V_EquipmentSpecificID" index="688" accessRights="rw" defaultValue="0">
+          <Datatype xsi:type="UIntegerT" bitLength="8">
+            <ValueRange lowerValue="0" upperValue="127" />
+          </Datatype>
+          <Name textId="TI_EquipmentSpecificID_Name" />
+          <Description textId="TI_EquipmentSpecificID_Description" />
+        </Variable>
+      </VariableCollection>
+      <ProcessDataCollection>
+        <ProcessData id="V_PdT">
+          <ProcessDataIn id="V_PdInT" bitLength="32">
+            <Datatype xsi:type="RecordT" bitLength="32" subindexAccessSupported="false">
+              <RecordItem bitOffset="31" subindex="1">
+                <SimpleDatatype xsi:type="BooleanT">
+                  <SingleValue value="false">
+                    <Name textId="TI_PD_SV_1_false" />
+                  </SingleValue>
+                  <SingleValue value="true">
+                    <Name textId="TI_PD_SV_1_true" />
+                  </SingleValue>
+                </SimpleDatatype>
+                <Name textId="TI_PD_SV_1_Name" />
+                <Description textId="TI_PD_SV_1_Descr" />
+              </RecordItem>
+              <RecordItem bitOffset="30" subindex="2">
+                <SimpleDatatype xsi:type="BooleanT">
+                  <SingleValue value="false">
+                    <Name textId="TI_PD_SV_2_false" />
+                  </SingleValue>
+                  <SingleValue value="true">
+                    <Name textId="TI_PD_SV_2_true" />
+                  </SingleValue>
+                </SimpleDatatype>
+                <Name textId="TI_PD_SV_2_Name" />
+                <Description textId="TI_PD_SV_2_Descr" />
+              </RecordItem>
+              <RecordItem bitOffset="29" subindex="3">
+                <SimpleDatatype xsi:type="BooleanT">
+                  <SingleValue value="false">
+                    <Name textId="TI_PD_SV_3_false" />
+                  </SingleValue>
+                  <SingleValue value="true">
+                    <Name textId="TI_PD_SV_3_true" />
+                  </SingleValue>
+                </SimpleDatatype>
+                <Name textId="TI_PD_SV_3_Name" />
+                <Description textId="TI_PD_SV_3_Descr" />
+              </RecordItem>
+              <RecordItem bitOffset="28" subindex="4">
+                <SimpleDatatype xsi:type="BooleanT">
+                  <SingleValue value="false">
+                    <Name textId="TI_PD_SV_4_false" />
+                  </SingleValue>
+                  <SingleValue value="true">
+                    <Name textId="TI_PD_SV_4_true" />
+                  </SingleValue>
+                </SimpleDatatype>
+                <Name textId="TI_PD_SV_4_Name" />
+                <Description textId="TI_PD_SV_4_Descr" />
+              </RecordItem>
+              <RecordItem bitOffset="27" subindex="5">
+                <SimpleDatatype xsi:type="BooleanT">
+                  <SingleValue value="false">
+                    <Name textId="TI_PD_SV_5_false" />
+                  </SingleValue>
+                  <SingleValue value="true">
+                    <Name textId="TI_PD_SV_5_true" />
+                  </SingleValue>
+                </SimpleDatatype>
+                <Name textId="TI_PD_SV_5_Name" />
+                <Description textId="TI_PD_SV_5_Descr" />
+              </RecordItem>
+              <RecordItem bitOffset="26" subindex="6">
+                <SimpleDatatype xsi:type="BooleanT">
+                  <SingleValue value="false">
+                    <Name textId="TI_PD_SV_6_false" />
+                  </SingleValue>
+                  <SingleValue value="true">
+                    <Name textId="TI_PD_SV_6_true" />
+                  </SingleValue>
+                </SimpleDatatype>
+                <Name textId="TI_PD_SV_6_Name" />
+                <Description textId="TI_PD_SV_6_Descr" />
+              </RecordItem>
+              <RecordItem bitOffset="25" subindex="7">
+                <SimpleDatatype xsi:type="BooleanT">
+                  <SingleValue value="false">
+                    <Name textId="TI_PD_SV_7_false" />
+                  </SingleValue>
+                  <SingleValue value="true">
+                    <Name textId="TI_PD_SV_7_true" />
+                  </SingleValue>
+                </SimpleDatatype>
+                <Name textId="TI_PD_SV_7_Name" />
+                <Description textId="TI_PD_SV_7_Descr" />
+              </RecordItem>
+              <RecordItem bitOffset="24" subindex="8">
+                <SimpleDatatype xsi:type="BooleanT">
+                  <SingleValue value="false">
+                    <Name textId="TI_PD_SV_8_false" />
+                  </SingleValue>
+                  <SingleValue value="true">
+                    <Name textId="TI_PD_SV_8_true" />
+                  </SingleValue>
+                </SimpleDatatype>
+                <Name textId="TI_PD_SV_8_Name" />
+                <Description textId="TI_PD_SV_8_Descr" />
+              </RecordItem>
+              <RecordItem bitOffset="23" subindex="9">
+                <SimpleDatatype xsi:type="BooleanT">
+                  <SingleValue value="false">
+                    <Name textId="TI_PD_SV_9_false" />
+                  </SingleValue>
+                  <SingleValue value="true">
+                    <Name textId="TI_PD_SV_9_true" />
+                  </SingleValue>
+                </SimpleDatatype>
+                <Name textId="TI_PD_SV_9_Name" />
+                <Description textId="TI_PD_SV_9_Descr" />
+              </RecordItem>
+              <RecordItem bitOffset="22" subindex="10">
+                <SimpleDatatype xsi:type="BooleanT">
+                  <SingleValue value="false">
+                    <Name textId="TI_PD_SV_10_false" />
+                  </SingleValue>
+                  <SingleValue value="true">
+                    <Name textId="TI_PD_SV_10_true" />
+                  </SingleValue>
+                </SimpleDatatype>
+                <Name textId="TI_PD_SV_10_Name" />
+                <Description textId="TI_PD_SV_10_Descr" />
+              </RecordItem>
+              <RecordItem bitOffset="21" subindex="11">
+                <SimpleDatatype xsi:type="BooleanT">
+                  <SingleValue value="false">
+                    <Name textId="TI_PD_SV_11_false" />
+                  </SingleValue>
+                  <SingleValue value="true">
+                    <Name textId="TI_PD_SV_11_true" />
+                  </SingleValue>
+                </SimpleDatatype>
+                <Name textId="TI_PD_SV_11_Name" />
+                <Description textId="TI_PD_SV_11_Descr" />
+              </RecordItem>
+              <RecordItem bitOffset="20" subindex="12">
+                <SimpleDatatype xsi:type="BooleanT">
+                  <SingleValue value="false">
+                    <Name textId="TI_PD_SV_12_false" />
+                  </SingleValue>
+                  <SingleValue value="true">
+                    <Name textId="TI_PD_SV_12_true" />
+                  </SingleValue>
+                </SimpleDatatype>
+                <Name textId="TI_PD_SV_12_Name" />
+                <Description textId="TI_PD_SV_12_Descr" />
+              </RecordItem>
+              <RecordItem bitOffset="19" subindex="13">
+                <SimpleDatatype xsi:type="BooleanT">
+                  <SingleValue value="false">
+                    <Name textId="TI_PD_SV_13_false" />
+                  </SingleValue>
+                  <SingleValue value="true">
+                    <Name textId="TI_PD_SV_13_true" />
+                  </SingleValue>
+                </SimpleDatatype>
+                <Name textId="TI_PD_SV_13_Name" />
+                <Description textId="TI_PD_SV_13_Descr" />
+              </RecordItem>
+              <RecordItem bitOffset="18" subindex="14">
+                <SimpleDatatype xsi:type="BooleanT">
+                  <SingleValue value="false">
+                    <Name textId="TI_PD_SV_14_false" />
+                  </SingleValue>
+                  <SingleValue value="true">
+                    <Name textId="TI_PD_SV_14_true" />
+                  </SingleValue>
+                </SimpleDatatype>
+                <Name textId="TI_PD_SV_14_Name" />
+                <Description textId="TI_PD_SV_14_Descr" />
+              </RecordItem>
+              <RecordItem bitOffset="17" subindex="15">
+                <SimpleDatatype xsi:type="BooleanT">
+                  <SingleValue value="false">
+                    <Name textId="TI_PD_SV_15_false" />
+                  </SingleValue>
+                  <SingleValue value="true">
+                    <Name textId="TI_PD_SV_15_true" />
+                  </SingleValue>
+                </SimpleDatatype>
+                <Name textId="TI_PD_SV_15_Name" />
+                <Description textId="TI_PD_SV_15_Descr" />
+              </RecordItem>
+              <RecordItem bitOffset="16" subindex="16">
+                <SimpleDatatype xsi:type="BooleanT">
+                  <SingleValue value="false">
+                    <Name textId="TI_PD_SV_16_false" />
+                  </SingleValue>
+                  <SingleValue value="true">
+                    <Name textId="TI_PD_SV_16_true" />
+                  </SingleValue>
+                </SimpleDatatype>
+                <Name textId="TI_PD_SV_16_Name" />
+                <Description textId="TI_PD_SV_16_Descr" />
+              </RecordItem>
+              <RecordItem bitOffset="15" subindex="17">
+                <SimpleDatatype xsi:type="BooleanT">
+                  <SingleValue value="false">
+                    <Name textId="TI_PD_SV_17_false" />
+                  </SingleValue>
+                  <SingleValue value="true">
+                    <Name textId="TI_PD_SV_17_true" />
+                  </SingleValue>
+                </SimpleDatatype>
+                <Name textId="TI_PD_SV_17_Name" />
+                <Description textId="TI_PD_SV_17_Descr" />
+              </RecordItem>
+              <RecordItem bitOffset="14" subindex="18">
+                <SimpleDatatype xsi:type="BooleanT">
+                  <SingleValue value="false">
+                    <Name textId="TI_PD_SV_18_false" />
+                  </SingleValue>
+                  <SingleValue value="true">
+                    <Name textId="TI_PD_SV_18_true" />
+                  </SingleValue>
+                </SimpleDatatype>
+                <Name textId="TI_PD_SV_18_Name" />
+                <Description textId="TI_PD_SV_18_Descr" />
+              </RecordItem>
+              <RecordItem bitOffset="13" subindex="19">
+                <SimpleDatatype xsi:type="BooleanT">
+                  <SingleValue value="false">
+                    <Name textId="TI_PD_SV_19_false" />
+                  </SingleValue>
+                  <SingleValue value="true">
+                    <Name textId="TI_PD_SV_19_true" />
+                  </SingleValue>
+                </SimpleDatatype>
+                <Name textId="TI_PD_SV_19_Name" />
+                <Description textId="TI_PD_SV_19_Descr" />
+              </RecordItem>
+              <RecordItem bitOffset="12" subindex="20">
+                <SimpleDatatype xsi:type="BooleanT">
+                  <SingleValue value="false">
+                    <Name textId="TI_PD_SV_20_false" />
+                  </SingleValue>
+                  <SingleValue value="true">
+                    <Name textId="TI_PD_SV_20_true" />
+                  </SingleValue>
+                </SimpleDatatype>
+                <Name textId="TI_PD_SV_20_Name" />
+                <Description textId="TI_PD_SV_20_Descr" />
+              </RecordItem>
+              <RecordItem bitOffset="11" subindex="21">
+                <SimpleDatatype xsi:type="BooleanT">
+                  <SingleValue value="false">
+                    <Name textId="TI_PD_SV_21_false" />
+                  </SingleValue>
+                  <SingleValue value="true">
+                    <Name textId="TI_PD_SV_21_true" />
+                  </SingleValue>
+                </SimpleDatatype>
+                <Name textId="TI_PD_SV_21_Name" />
+                <Description textId="TI_PD_SV_21_Descr" />
+              </RecordItem>
+              <RecordItem bitOffset="10" subindex="22">
+                <SimpleDatatype xsi:type="BooleanT">
+                  <SingleValue value="false">
+                    <Name textId="TI_PD_SV_22_false" />
+                  </SingleValue>
+                  <SingleValue value="true">
+                    <Name textId="TI_PD_SV_22_true" />
+                  </SingleValue>
+                </SimpleDatatype>
+                <Name textId="TI_PD_SV_22_Name" />
+                <Description textId="TI_PD_SV_22_Descr" />
+              </RecordItem>
+              <RecordItem bitOffset="9" subindex="23">
+                <SimpleDatatype xsi:type="BooleanT">
+                  <SingleValue value="false">
+                    <Name textId="TI_PD_SV_23_false" />
+                  </SingleValue>
+                  <SingleValue value="true">
+                    <Name textId="TI_PD_SV_23_true" />
+                  </SingleValue>
+                </SimpleDatatype>
+                <Name textId="TI_PD_SV_23_Name" />
+                <Description textId="TI_PD_SV_23_Descr" />
+              </RecordItem>
+              <RecordItem bitOffset="8" subindex="24">
+                <SimpleDatatype xsi:type="BooleanT">
+                  <SingleValue value="false">
+                    <Name textId="TI_PD_SV_24_false" />
+                  </SingleValue>
+                  <SingleValue value="true">
+                    <Name textId="TI_PD_SV_24_true" />
+                  </SingleValue>
+                </SimpleDatatype>
+                <Name textId="TI_PD_SV_24_Name" />
+                <Description textId="TI_PD_SV_24_Descr" />
+              </RecordItem>
+              <RecordItem bitOffset="0" subindex="25">
+                <SimpleDatatype xsi:type="UIntegerT" bitLength="8">
+                  <ValueRange lowerValue="0" upperValue="127" />
+                </SimpleDatatype>
+                <Name textId="TI_PD_VR_25_Name" />
+                <Description textId="TI_PD_VR_25_Descr" />
+              </RecordItem>
+            </Datatype>
+            <Name textId="TI_PdIn_Name" />
+          </ProcessDataIn>
+        </ProcessData>
+      </ProcessDataCollection>
+      <ErrorTypeCollection>
+        <StdErrorTypeRef code="128" additionalCode="0" />
+        <StdErrorTypeRef code="128" additionalCode="17" />
+        <StdErrorTypeRef code="128" additionalCode="18" />
+        <StdErrorTypeRef code="128" additionalCode="32" />
+        <StdErrorTypeRef code="128" additionalCode="35" />
+        <StdErrorTypeRef code="128" additionalCode="48" />
+        <StdErrorTypeRef code="128" additionalCode="51" />
+        <StdErrorTypeRef code="128" additionalCode="52" />
+        <StdErrorTypeRef code="128" additionalCode="53" />
+        <StdErrorTypeRef code="128" additionalCode="54" />
+        <StdErrorTypeRef code="128" additionalCode="64" />
+        <StdErrorTypeRef code="128" additionalCode="65" />
+        <StdErrorTypeRef code="128" additionalCode="130" />
+      </ErrorTypeCollection>
+      <EventCollection>
+        <StdEventRef code="20753" />
+        <StdEventRef code="25376" />
+        <StdEventRef code="30480" />
+        <Event code="36350" type="Warning">
+          <Name textId="TI_Ev_8DFE_Name" />
+          <Description textId="TI_Ev_8DFE_Descr" />
+        </Event>
+        <Event code="36351" type="Warning">
+          <Name textId="TI_Ev_8DFF_Name" />
+          <Description textId="TI_Ev_8DFF_Descr" />
+        </Event>
+      </EventCollection>
+      <UserInterface>
+        <MenuCollection>
+          <Menu id="M_MR_SR_Param">
+            <MenuRef menuId="M_MR_SR_Setup" />
+          </Menu>
+          <Menu id="M_MR_SR_Setup">
+            <Name textId="TI_M_Setup_Name" />
+            <RecordItemRef variableId="V_DeviceAccessLocks" subindex="2" />
+            <VariableRef variableId="V_EquipmentSpecificID" />
+            <VariableRef variableId="V_SystemCommand">
+              <Button buttonValue="240" />
+            </VariableRef>
+            <VariableRef variableId="V_SystemCommand">
+              <Button buttonValue="241" />
+            </VariableRef>
+            <VariableRef variableId="V_SystemCommand">
+              <Button buttonValue="242" />
+            </VariableRef>
+            <VariableRef variableId="V_SystemCommand">
+              <Button buttonValue="243" />
+            </VariableRef>
+            <VariableRef variableId="V_SystemCommand">
+              <Button buttonValue="130" />
+            </VariableRef>
+          </Menu>
+          <Menu id="M_MR_SR_Diagnosis">
+            <Name textId="TI_M_Diagnosis_Name" />
+            <VariableRef variableId="V_DeviceStatus" />
+            <VariableRef variableId="V_DetailedDeviceStatus" />
+            <VariableRef variableId="V_ShortCircuits" />
+          </Menu>
+          <Menu id="M_MR_SR_Ident">
+            <VariableRef variableId="V_VendorName" />
+            <VariableRef variableId="V_ProductName" />
+            <VariableRef variableId="V_ProductText" />
+            <VariableRef variableId="V_SerialNumber" />
+            <VariableRef variableId="V_HardwareRevision" />
+            <VariableRef variableId="V_FirmwareRevision" />
+            <VariableRef variableId="V_ApplicationSpecificTag" />
+          </Menu>
+          <Menu id="M_MR_SR_Observation">
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="1" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="2" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="3" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="4" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="5" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="6" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="7" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="8" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="9" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="10" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="11" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="12" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="13" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="14" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="15" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="16" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="17" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="18" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="19" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="20" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="21" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="22" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="23" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="24" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="25" />
+          </Menu>
+          <Menu id="M_OR_Param">
+            <MenuRef menuId="M_OR_Setup" />
+          </Menu>
+          <Menu id="M_OR_Setup">
+            <Name textId="TI_M_Setup_Name" />
+            <RecordItemRef variableId="V_DeviceAccessLocks" subindex="2" accessRightRestriction="ro" />
+            <VariableRef variableId="V_EquipmentSpecificID" accessRightRestriction="ro" />
+          </Menu>
+          <Menu id="M_OR_Diagnosis">
+            <Name textId="TI_M_Diagnosis_Name" />
+            <VariableRef variableId="V_DeviceStatus" accessRightRestriction="ro" />
+            <VariableRef variableId="V_DetailedDeviceStatus" accessRightRestriction="ro" />
+            <VariableRef variableId="V_ShortCircuits" accessRightRestriction="ro" />
+          </Menu>
+          <Menu id="M_OR_Ident">
+            <VariableRef variableId="V_VendorName" accessRightRestriction="ro" />
+            <VariableRef variableId="V_ProductName" accessRightRestriction="ro" />
+            <VariableRef variableId="V_ProductText" accessRightRestriction="ro" />
+            <VariableRef variableId="V_SerialNumber" accessRightRestriction="ro" />
+            <VariableRef variableId="V_HardwareRevision" accessRightRestriction="ro" />
+            <VariableRef variableId="V_FirmwareRevision" accessRightRestriction="ro" />
+            <VariableRef variableId="V_ApplicationSpecificTag" accessRightRestriction="ro" />
+          </Menu>
+          <Menu id="M_OR_Observation">
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="1" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="2" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="3" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="4" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="5" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="6" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="7" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="8" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="9" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="10" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="11" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="12" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="13" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="14" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="15" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="16" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="17" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="18" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="19" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="20" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="21" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="22" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="23" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="24" accessRightRestriction="ro" />
+            <RecordItemRef variableId="V_ProcessDataInput" subindex="25" accessRightRestriction="ro" />
+          </Menu>
+        </MenuCollection>
+        <ObserverRoleMenuSet>
+          <IdentificationMenu menuId="M_OR_Ident" />
+          <ParameterMenu menuId="M_OR_Param" />
+          <ObservationMenu menuId="M_OR_Observation" />
+          <DiagnosisMenu menuId="M_OR_Diagnosis" />
+        </ObserverRoleMenuSet>
+        <MaintenanceRoleMenuSet>
+          <IdentificationMenu menuId="M_MR_SR_Ident" />
+          <ParameterMenu menuId="M_MR_SR_Param" />
+          <ObservationMenu menuId="M_MR_SR_Observation" />
+          <DiagnosisMenu menuId="M_MR_SR_Diagnosis" />
+        </MaintenanceRoleMenuSet>
+        <SpecialistRoleMenuSet>
+          <IdentificationMenu menuId="M_MR_SR_Ident" />
+          <ParameterMenu menuId="M_MR_SR_Param" />
+          <ObservationMenu menuId="M_MR_SR_Observation" />
+          <DiagnosisMenu menuId="M_MR_SR_Diagnosis" />
+        </SpecialistRoleMenuSet>
+      </UserInterface>
+    </DeviceFunction>
+  </ProfileBody>
+  <CommNetworkProfile xsi:type="IOLinkCommNetworkProfileT" iolinkRevision="V1.1">
+    <TransportLayers>
+      <PhysicalLayer minCycleTime="2900" sioSupported="false" bitrate="COM2" mSequenceCapability="41">
+        <Connection xsi:type="M12-4ConnectionT" connectionSymbol="ifm-AL240x-con-pic.png">
+          <ProductRef productId="AL2401" />
+          <Wire1 />
+          <Wire2 function="NC" />
+          <Wire3 />
+          <Wire4 />
+        </Connection>
+      </PhysicalLayer>
+    </TransportLayers>
+    <Test>
+      <Config1 index="241" testValue="0xFE" />
+      <Config2 index="1000" testValue="0x01" />
+      <Config3 index="24" testValue="0x31,0x32,0x33,0x34,0x35,0x36,0x37,0x38,0x39,0x41,0x42,0x43,0x44,0x45,0x46" />
+      <Config7 index="2">
+        <EventTrigger appearValue="240" disappearValue="241" />
+        <EventTrigger appearValue="242" disappearValue="243" />
+      </Config7>
+    </Test>
+  </CommNetworkProfile>
+  <ExternalTextCollection>
+    <PrimaryLanguage xml:lang="en">
+      <Text id="TI_ProductName0" value="AL2401" />
+      <Text id="TI_ProductDescr0" value="IO-Link module 8 x 2 DI IP67, IO-Link, " />
+      <Text id="TI_VendorText" value="www.ifm.com" />
+      <Text id="TI_VendorUrl" value="http://www.ifm.com/ifmgb/web/io-link-download.htm" />
+      <Text id="TI_DeviceFamily" value="AL" />
+      <Text id="TI_DeviceName" value="AL2401" />
+      <Text id="TI_SysCmd255_Name" value="Command without effect, for internal use only" />
+      <Text id="TI_SysCmd240_Name" value="IO-Link 1.1 system test command 240, Event 8DFE appears" />
+      <Text id="TI_SysCmd241_Name" value="IO-Link 1.1 system test command 241, Event 8DFE disappears" />
+      <Text id="TI_SysCmd242_Name" value="IO-Link 1.1 system test command 242, Event 8DFF appears" />
+      <Text id="TI_SysCmd243_Name" value="IO-Link 1.1 system test command 243, Event 8DFF disappears" />
+      <Text id="TI_EquipmentSpecificID_Name" value="EquipmentSpecificID" />
+      <Text id="TI_EquipmentSpecificID_Description" value="Numerical equipment identifier" />
+      <Text id="TI_ShortCircuits_Name" value="ShortCircuits" />
+      <Text id="TI_ShortCircuits_Description" value="Shows short circuit states of power supply of subordinate devices. One bit per connector" />
+      <Text id="TI_PD_SV_1_Name" value="X1.7 I-1" />
+      <Text id="TI_PD_SV_1_true" value="On" />
+      <Text id="TI_PD_SV_1_false" value="OFF" />
+      <Text id="TI_PD_SV_1_Descr" value="Current status of the digital input [X1.7 I-1]" />
+      <Text id="TI_PD_SV_2_Name" value="X1.6 I-1" />
+      <Text id="TI_PD_SV_2_true" value="On" />
+      <Text id="TI_PD_SV_2_false" value="OFF" />
+      <Text id="TI_PD_SV_2_Descr" value="Current status of the digital input [X1.6 I-1]" />
+      <Text id="TI_PD_SV_3_Name" value="X1.5 I-1" />
+      <Text id="TI_PD_SV_3_true" value="On" />
+      <Text id="TI_PD_SV_3_false" value="OFF" />
+      <Text id="TI_PD_SV_3_Descr" value="Current status of the digital input [X1.5 I-1]" />
+      <Text id="TI_PD_SV_4_Name" value="X1.4 I-1" />
+      <Text id="TI_PD_SV_4_true" value="On" />
+      <Text id="TI_PD_SV_4_false" value="OFF" />
+      <Text id="TI_PD_SV_4_Descr" value="Current status of the digital input [X1.4 I-1]" />
+      <Text id="TI_PD_SV_5_Name" value="X1.3 I-1" />
+      <Text id="TI_PD_SV_5_true" value="On" />
+      <Text id="TI_PD_SV_5_false" value="OFF" />
+      <Text id="TI_PD_SV_5_Descr" value="Current status of the digital input [X1.3 I-1]" />
+      <Text id="TI_PD_SV_6_Name" value="X1.2 I-1" />
+      <Text id="TI_PD_SV_6_true" value="On" />
+      <Text id="TI_PD_SV_6_false" value="OFF" />
+      <Text id="TI_PD_SV_6_Descr" value="Current status of the digital input [X1.2 I-1]" />
+      <Text id="TI_PD_SV_7_Name" value="X1.1 I-1" />
+      <Text id="TI_PD_SV_7_true" value="On" />
+      <Text id="TI_PD_SV_7_false" value="OFF" />
+      <Text id="TI_PD_SV_7_Descr" value="Current status of the digital input [X1.1 I-1]" />
+      <Text id="TI_PD_SV_8_Name" value="X1.0 I-1" />
+      <Text id="TI_PD_SV_8_true" value="On" />
+      <Text id="TI_PD_SV_8_false" value="OFF" />
+      <Text id="TI_PD_SV_8_Descr" value="Current status of the digital input [X1.0 I-1]" />
+      <Text id="TI_PD_SV_9_Name" value="X1.7 I-5" />
+      <Text id="TI_PD_SV_9_true" value="On" />
+      <Text id="TI_PD_SV_9_false" value="OFF" />
+      <Text id="TI_PD_SV_9_Descr" value="Current status of the digital input [X1.7 I-5]" />
+      <Text id="TI_PD_SV_10_Name" value="X1.6 I-4" />
+      <Text id="TI_PD_SV_10_true" value="On" />
+      <Text id="TI_PD_SV_10_false" value="OFF" />
+      <Text id="TI_PD_SV_10_Descr" value="Current status of the digital input [X1.6 I-4]" />
+      <Text id="TI_PD_SV_11_Name" value="X1.5 I-3" />
+      <Text id="TI_PD_SV_11_true" value="On" />
+      <Text id="TI_PD_SV_11_false" value="OFF" />
+      <Text id="TI_PD_SV_11_Descr" value="Current status of the digital input [X1.5 I-3]" />
+      <Text id="TI_PD_SV_12_Name" value="X1.4 I-2" />
+      <Text id="TI_PD_SV_12_true" value="On" />
+      <Text id="TI_PD_SV_12_false" value="OFF" />
+      <Text id="TI_PD_SV_12_Descr" value="Current status of the digital input [X1.4 I-2]" />
+      <Text id="TI_PD_SV_13_Name" value="X1.3 I-2" />
+      <Text id="TI_PD_SV_13_true" value="On" />
+      <Text id="TI_PD_SV_13_false" value="OFF" />
+      <Text id="TI_PD_SV_13_Descr" value="Current status of the digital input [X1.3 I-2]" />
+      <Text id="TI_PD_SV_14_Name" value="X1.2 I-2" />
+      <Text id="TI_PD_SV_14_true" value="On" />
+      <Text id="TI_PD_SV_14_false" value="OFF" />
+      <Text id="TI_PD_SV_14_Descr" value="Current status of the digital input [X1.2 I-2]" />
+      <Text id="TI_PD_SV_15_Name" value="X1.1 I-2" />
+      <Text id="TI_PD_SV_15_true" value="On" />
+      <Text id="TI_PD_SV_15_false" value="OFF" />
+      <Text id="TI_PD_SV_15_Descr" value="Current status of the digital input [X1.1 I-2]" />
+      <Text id="TI_PD_SV_16_Name" value="X1.0 I-2" />
+      <Text id="TI_PD_SV_16_true" value="On" />
+      <Text id="TI_PD_SV_16_false" value="OFF" />
+      <Text id="TI_PD_SV_16_Descr" value="Current status of the digital input [X1.0 I-2]" />
+      <Text id="TI_PD_SV_17_Name" value="SC X1.7" />
+      <Text id="TI_PD_SV_17_true" value="Short circuit" />
+      <Text id="TI_PD_SV_17_false" value="OK" />
+      <Text id="TI_PD_SV_17_Descr" value="Shows a short circuit on input [X1.7]." />
+      <Text id="TI_PD_SV_18_Name" value="SC X1.6" />
+      <Text id="TI_PD_SV_18_true" value="Short circuit" />
+      <Text id="TI_PD_SV_18_false" value="OK" />
+      <Text id="TI_PD_SV_18_Descr" value="Shows a short circuit on input [X1.6]." />
+      <Text id="TI_PD_SV_19_Name" value="SC X1.5" />
+      <Text id="TI_PD_SV_19_true" value="Short circuit" />
+      <Text id="TI_PD_SV_19_false" value="OK" />
+      <Text id="TI_PD_SV_19_Descr" value="Shows a short circuit on input [X1.5]." />
+      <Text id="TI_PD_SV_20_Name" value="SC X1.4" />
+      <Text id="TI_PD_SV_20_true" value="Short circuit" />
+      <Text id="TI_PD_SV_20_false" value="OK" />
+      <Text id="TI_PD_SV_20_Descr" value="Shows a short circuit on input [X1.4]." />
+      <Text id="TI_PD_SV_21_Name" value="SC X1.3" />
+      <Text id="TI_PD_SV_21_true" value="Short circuit" />
+      <Text id="TI_PD_SV_21_false" value="OK" />
+      <Text id="TI_PD_SV_21_Descr" value="Shows a short circuit on input [X1.3]." />
+      <Text id="TI_PD_SV_22_Name" value="SC X1.2" />
+      <Text id="TI_PD_SV_22_true" value="Short circuit" />
+      <Text id="TI_PD_SV_22_false" value="OK" />
+      <Text id="TI_PD_SV_22_Descr" value="Shows a short circuit on input [X1.2]." />
+      <Text id="TI_PD_SV_23_Name" value="SC X1.1" />
+      <Text id="TI_PD_SV_23_true" value="Short circuit" />
+      <Text id="TI_PD_SV_23_false" value="OK" />
+      <Text id="TI_PD_SV_23_Descr" value="Shows a short circuit on input [X1.1]." />
+      <Text id="TI_PD_SV_24_Name" value="SC X1.0" />
+      <Text id="TI_PD_SV_24_true" value="Short circuit" />
+      <Text id="TI_PD_SV_24_false" value="OK" />
+      <Text id="TI_PD_SV_24_Descr" value="Shows a short circuit on input [X1.0]." />
+      <Text id="TI_PD_VR_25_Name" value="Equipment specific Id" />
+      <Text id="TI_PD_VR_25_Descr" value="Value shows the current numerical Id for the module, set by parameter EquipmentSpecificID" />
+      <Text id="TI_PdIn_Name" value="Process Data Input" />
+      <Text id="TI_Ev_8DFE_Name" value="Test Event 1" />
+      <Text id="TI_Ev_8DFE_Descr" value="Event appears by setting index 2 to value 240, Event disappears by setting index 2 to value 241" />
+      <Text id="TI_Ev_8DFF_Name" value="Test Event 2" />
+      <Text id="TI_Ev_8DFF_Descr" value="Event appears by setting index 2 to value 242, Event disappears by setting index 2 to value 243" />
+      <Text id="TI_M_Setup_Name" value="Setup " />
+      <Text id="TI_M_Diagnosis_Name" value="Diagnosis " />
+    </PrimaryLanguage>
+  </ExternalTextCollection>
+  <Stamp crc="378912090"><Checker name="IODD-Checker V1.1.1" version="V1.1.1.0"/></Stamp>
+</IODevice>

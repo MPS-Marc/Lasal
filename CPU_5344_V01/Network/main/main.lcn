@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<Network Name="main" Revision="0.0">
+	<!-- List of Components in this network -->
+	<Components>
+		<Object
+			Name       = "andServerClient2"
+			GUID       = "{C8B7C16B-6515-4458-8A74-21E1E770FEFA}"
+			Class      = "multipleTrigger"
+			Position   = "(3750,660)"
+			Visualized = "false"
+			CyclicTime = "10 ms">
+			<Channels>
+				<Server Name="typeAction" Value="1"/>
+				<Client Name="client1"/>
+				<Client Name="client2"/>
+				<Client Name="client3"/>
+				<Client Name="client4"/>
+				<Client Name="input" Value="0"/>
+			</Channels>
+		</Object>
+		<Object
+			Name       = "GlobalListGreat1"
+			GUID       = "{13FC6210-7344-4AF5-8183-9F866FD402BF}"
+			Class      = "GlobalListGreat"
+			Position   = "(360,360)"
+			Visualized = "false">
+			<Channels>
+				<Server Name="ClassSvr"/>
+				<Server Name="ClassSvr0"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object
+							Name           = "ListAanvoer"
+							GUID           = "{47E6FD2D-DE3C-4267-ABB9-3593C24BC3C8}"
+							Class          = "GlobalList"
+							BackgroundTime = "10 ms">
+							<Channels>
+								<Server Name="ActRegel"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="FileRegel"/>
+								<Server Name="Stepper"/>
+								<Client Name="Aanv" Value="1"/>
+								<Client Name="FileSys"/>
+								<Client Name="ram1"/>
+								<Client Name="ram10"/>
+								<Client Name="ram2"/>
+								<Client Name="ram3"/>
+								<Client Name="ram4"/>
+								<Client Name="ram5"/>
+								<Client Name="ram6"/>
+								<Client Name="ram7"/>
+								<Client Name="ram8"/>
+								<Client Name="ram9"/>
+							</Channels>
+						</Object>
+						<Object Name="RamSregels1" GUID="{1B6CADCE-FE85-413B-9A93-93F6DD51A98C}" Class="RamSregels">
+							<Channels>
+								<Server Name="ClassSvr"/>
+							</Channels>
+						</Object>
+						<Object Name="RamSregels10" GUID="{ACA4AA78-358F-4480-B83A-9100BEF1AAE3}" Class="RamSregels">
+							<Channels>
+								<Server Name="ClassSvr"/>
+							</Channels>
+						</Object>
+						<Object Name="RamSregels11" GUID="{88028F12-FE1B-42EC-9A4D-24DF99F77FA7}" Class="RamSregels">
+							<Channels>
+								<Server Name="ClassSvr"/>
+							</Channels>
+						</Object>
+						<Object Name="RamSregels12" GUID="{62EBC617-C2C2-4AB6-A663-EDB66D70F9FF}" Class="RamSregels">
+							<Channels>
+								<Server Name="ClassSvr"/>
+							</Channels>
+						</Object>
+						<Object Name="RamSregels13" GUID="{A4EF7771-8274-4AE2-AF1B-C7CDB1BAF8BB}" Class="RamSregels">
+							<Channels>
+								<Server Name="ClassSvr"/>
+							</Channels>
+						</Object>
+						<Object Name="RamSregels14" GUID="{ABE2E7C1-3B78-473D-9CCE-FB7FC2202F38}" Class="RamSregels">
+							<Channels>
+								<Server Name="ClassSvr"/>
+							</Channels>
+						</Object>
+						<Object Name="RamSregels15" GUID="{C8CE85F8-CBDE-4E93-8418-825447298CE7}" Class="RamSregels">
+							<Channels>
+								<Server Name="ClassSvr"/>
+							</Channels>
+						</Object>
+						<Object Name="RamSregels16" GUID="{28C41192-3F19-4052-B3B0-22AE961ACE1D}" Class="RamSregels">
+							<Channels>
+								<Server Name="ClassSvr"/>
+							</Channels>
+						</Object>
+						<Object Name="RamSregels17" GUID="{F638CBB2-3312-4A07-BCF7-2C843DDB6573}" Class="RamSregels">
+							<Channels>
+								<Server Name="ClassSvr"/>
+							</Channels>
+						</Object>
+						<Object Name="RamSregels18" GUID="{0377C7F0-98AD-47B5-906C-F0C22322D2C1}" Class="RamSregels">
+							<Channels>
+								<Server Name="ClassSvr"/>
+							</Channels>
+						</Object>
+						<Object Name="RamSregels19" GUID="{E7A1C8BE-4A6F-47AE-8D6A-75B42AA48B1F}" Class="RamSregels">
+							<Channels>
+								<Server Name="ClassSvr"/>
+							</Channels>
+						</Object>
+						<Object Name="RamSregels2" GUID="{198552FE-C69F-4290-8C7E-552475326C17}" Class="RamSregels">
+							<Channels>
+								<Server Name="ClassSvr"/>
+							</Channels>
+						</Object>
+						<Object Name="RamSregels20" GUID="{0C444470-C95F-4B81-92ED-4F6EE7EB5CAC}" Class="RamSregels">
+							<Channels>
+								<Server Name="ClassSvr"/>
+							</Channels>
+						</Object>
+						<Object Name="RamSregels21" GUID="{0044EFF1-739E-4AA1-9051-F96BF9D24791}" Class="RamSregels">
+							<Channels>
+								<Server Name="ClassSvr"/>
+							</Channels>
+						</Object>
+						<Object Name="RamSregels22" GUID="{60E35AB4-61A7-457C-A71D-5CDB8BF19EB3}" Class="RamSregels">
+							<Channels>
+								<Server Name="ClassSvr"/>
+							</Channels>
+						</Object>
+						<Object Name="RamSregels23" GUID="{BD0D179B-11FA-4AAC-AEF1-132B319898C2}" Class="RamSregels">
+							<Channels>
+								<Server Name="ClassSvr"/>
+							</Channels>
+						</Object>
+						<Object Name="RamSregels24" GUID="{5D9307BE-A035-4306-AE3F-3D362F68AA83}" Class="RamSregels">
+							<Channels>
+								<Server Name="ClassSvr"/>
+							</Channels>
+						</Object>
+						<Object Name="RamSregels25" GUID="{BA5D83BE-9B74-4EC7-910C-E42FFCEA8FB4}" Class="RamSregels">
+							<Channels>
+								<Server Name="ClassSvr"/>
+							</Channels>
+						</Object>
+						<Object Name="RamSregels26" GUID="{CE5D7D9F-711F-45F0-98EF-75CD3F2AD12E}" Class="RamSregels">
+							<Channels>
+								<Server Name="ClassSvr"/>
+							</Channels>
+						</Object>
+						<Object Name="RamSregels27" GUID="{1AE5C78B-5338-4DAB-9059-EB0A71C9D460}" Class="RamSregels">
+							<Channels>
+								<Server Name="ClassSvr"/>
+							</Channels>
+						</Object>
+						<Object Name="RamSregels28" GUID="{AB37C0F0-AF5D-4497-9ACA-0E98AB3CE90B}" Class="RamSregels">
+							<Channels>
+								<Server Name="ClassSvr"/>
+							</Channels>
+						</Object>
+						<Object Name="RamSregels29" GUID="{7DB564A9-6625-4BEE-A26B-98FECDEA983D}" Class="RamSregels">
+							<Channels>
+								<Server Name="ClassSvr"/>
+							</Channels>
+						</Object>
+						<Object Name="RamSregels3" GUID="{F3387191-AC0D-4AC7-A807-3235D5923803}" Class="RamSregels">
+							<Channels>
+								<Server Name="ClassSvr"/>
+							</Channels>
+						</Object>
+						<Object Name="RamSregels30" GUID="{4643A016-04C5-4235-88F2-01848D8132DA}" Class="RamSregels">
+							<Channels>
+								<Server Name="ClassSvr"/>
+							</Channels>
+						</Object>
+						<Object Name="RamSregels31" GUID="{3685A507-BD0D-4FB2-8D3E-0339B43749FF}" Class="RamSregels">
+							<Channels>
+								<Server Name="ClassSvr"/>
+							</Channels>
+						</Object>
+						<Object Name="RamSregels32" GUID="{FBDE79CF-D7EB-4349-9263-32976E88F060}" Class="RamSregels">
+							<Channels>
+								<Server Name="ClassSvr"/>
+							</Channels>
+						</Object>
+						<Object Name="RamSregels4" GUID="{B651FBD9-B66E-4C8A-89F0-976E77424F46}" Class="RamSregels">
+							<Channels>
+								<Server Name="ClassSvr"/>
+							</Channels>
+						</Object>
+						<Object Name="RamSregels5" GUID="{F3C81ACC-2B67-448C-8B6F-399BD4C8818D}" Class="RamSregels">
+							<Channels>
+								<Server Name="ClassSvr"/>
+							</Channels>
+						</Object>
+						<Object Name="RamSregels6" GUID="{1D7BF8E9-7E99-451D-963F-A51D4E9C4B0D}" Class="RamSregels">
+							<Channels>
+								<Server Name="ClassSvr"/>
+							</Channels>
+						</Object>
+						<Object Name="RamSregels7" GUID="{C97BEC14-17DE-45A5-BC31-F545439497F0}" Class="RamSregels">
+							<Channels>
+								<Server Name="ClassSvr"/>
+							</Channels>
+						</Object>
+						<Object Name="RamSregels8" GUID="{7C1D293F-C20D-4CAF-B2A2-48BAAFF26F45}" Class="RamSregels">
+							<Channels>
+								<Server Name="ClassSvr"/>
+							</Channels>
+						</Object>
+						<Object Name="RamSregels9" GUID="{20740DA9-5A07-47F8-8BA6-6F18E5EC56F0}" Class="RamSregels">
+							<Channels>
+								<Server Name="ClassSvr"/>
+							</Channels>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name           = "mainControl1"
+			GUID           = "{D1DFE78F-9C3B-44CE-B692-023716E1E4BA}"
+			Class          = "mainControl"
+			Position       = "(1380,600)"
+			Visualized     = "true"
+			BackgroundTime = "10 ms">
+			<Channels>
+				<Server Name="actLengthInInput"/>
+				<Server Name="actRnrInputToPC"/>
+				<Server Name="actRnrOutputToPC"/>
+				<Server Name="amountDone"/>
+				<Server Name="amountToDo"/>
+				<Server Name="BackOffMaterial"/>
+				<Server Name="buttonHold"/>
+				<Server Name="buttonReset"/>
+				<Server Name="buttonResetAlarm"/>
+				<Server Name="buttonStart"/>
+				<Server Name="buttonStop"/>
+				<Server Name="buttonSuspend"/>
+				<Server Name="buttonUnhold"/>
+				<Server Name="buttonUnsuspend"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="FrontOffMaterial"/>
+				<Server Name="idStartFromPC"/>
+				<Server Name="lineNrInput"/>
+				<Server Name="LineNrInputFromScreen"/>
+				<Server Name="lineNrOutput"/>
+				<Server Name="MaxRnrInputToPC"/>
+				<Server Name="oActSimuMode"/>
+				<Server Name="parActLength"/>
+				<Server Name="parManualLengthActive"/>
+				<Server Name="parNrWindowLength"/>
+				<Server Name="progChangesAllowed"/>
+				<Server Name="readyForNewFileToPC"/>
+				<Server Name="reReadAmountToDo"/>
+				<Server Name="ResetBackOffMaterial"/>
+				<Server Name="ResetFrontOffMaterialToTakeIn"/>
+				<Server Name="ResumeProgram"/>
+				<Server Name="ScreenAssemNrAllowed"/>
+				<Server Name="ScreenAxisSettingsAllowed"/>
+				<Server Name="ScreenCommonSettingsAllowed"/>
+				<Server Name="ScreenManualControlAllowed"/>
+				<Server Name="ScreenProgChangesAllowed"/>
+				<Server Name="ScreenProgChangesMillAllowed"/>
+				<Server Name="ScreenPuchOnOffAllowed"/>
+				<Server Name="sParMinLevelCom" Value="3"/>
+				<Server Name="sParMinLevelManual" Value="1"/>
+				<Server Name="sParMinLevelProg" Value="2"/>
+				<Server Name="sParMinLevelServos" Value="4"/>
+				<Server Name="startFromPC"/>
+				<Server Name="stateToPC"/>
+				<Server Name="stopAfterLength"/>
+				<Server Name="stopFromPC"/>
+				<Server Name="stprInputSide"/>
+				<Server Name="stprOutputSide"/>
+				<Server Name="stprStart"/>
+				<Server Name="stsStopSafetyAllowed"/>
+				<Client Name="ctrlAssembly"/>
+				<Client Name="ctrlCalc"/>
+				<Client Name="ctrlMain"/>
+				<Client Name="ctrlScreen"/>
+				<Client Name="ctrlUnit1"/>
+				<Client Name="ctrlUnit2"/>
+				<Client Name="ctrlUnit3"/>
+				<Client Name="ctrlUnit4"/>
+				<Client Name="ctrlUnit5"/>
+				<Client Name="fileName"/>
+				<Client Name="folderName"/>
+				<Client Name="iActMathHeigth"/>
+				<Client Name="iActMathWidth"/>
+				<Client Name="iAmountToDo" Value="0"/>
+				<Client Name="iBlinkFast"/>
+				<Client Name="iBlinkSlow"/>
+				<Client Name="iInputLength" Value="0"/>
+				<Client Name="iLiveXPos" Value="0"/>
+				<Client Name="iOffsetInputMaterial"/>
+				<Client Name="iStprActionSaw"/>
+				<Client Name="listSLines0"/>
+				<Client Name="nwEmOrUnit"/>
+				<Client Name="oAlarmLamp"/>
+				<Client Name="oAmountDone" Value="0"/>
+				<Client Name="oAmountDoneOutput" Value="0"/>
+				<Client Name="oCycleLamp" Value="0"/>
+				<Client Name="oLineNrInput" Value="0"/>
+				<Client Name="oLineNrOutput" Value="0"/>
+				<Client Name="oResetAlarm"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="FileBase1" GUID="{0CE6209C-9951-497B-AC17-0305EF0C2E35}" Class="FileBase">
+							<Channels>
+								<Server Name="ErrorNr"/>
+								<Server Name="Server0"/>
+								<Client Name="FileOs"/>
+								<Client Name="System"/>
+							</Channels>
+						</Object>
+						<Object
+							Name           = "readInGlobalList1"
+							GUID           = "{764E8B30-CDEE-41DC-BE22-F3126640E6AC}"
+							Class          = "readInGlobalList"
+							CyclicTime     = "10 ms"
+							BackgroundTime = "10 ms">
+							<Channels>
+								<Server Name="BU2used"/>
+								<Server Name="BU3used"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="cmdHMI"/>
+								<Server Name="ErrorNr"/>
+								<Server Name="mode"/>
+								<Server Name="state"/>
+								<Server Name="stprReadIn"/>
+								<Server Name="stsActInputHeigth"/>
+								<Server Name="stsActInputLength"/>
+								<Server Name="stsActInputWidth"/>
+								<Server Name="stsHMI_RunsAllowed"/>
+								<Server Name="stsInAlarm"/>
+								<Server Name="stsIsInterlocked"/>
+								<Server Name="stsReadInDoneUntilEnd"/>
+								<Server Name="testUnits"/>
+								<Client Name="fileBase"/>
+								<Client Name="fileName"/>
+								<Client Name="fileSys"/>
+								<Client Name="folderName"/>
+								<Client Name="globalList"/>
+								<Client Name="nwEmOrUnit"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object Name="_base" GUID="{CCDB630D-D2E4-4FF5-BAA8-04D9BC4760B8}" Class="cmBase">
+											<Channels>
+												<Server Name="ClassSvr"/>
+												<Server Name="cmdHMI"/>
+												<Server Name="ErrorNr"/>
+												<Server Name="mode"/>
+												<Server Name="state"/>
+												<Server Name="stsHMI_RunsAllowed"/>
+												<Server Name="stsInAlarm"/>
+												<Server Name="stsIsInterlocked"/>
+												<Client Name="id"/>
+												<Client Name="nwEmOrUnit"/>
+											</Channels>
+											<!-- List of Networks in this component -->
+											<Networks>
+												<Network>
+													<!-- List of Components in this network -->
+													<Components>
+														<Object
+															Name           = "_Alarm"
+															GUID           = "{28C9E53D-A6FB-4830-96BF-D8CA93851830}"
+															Class          = "_AlarmX3ParaDer"
+															BackgroundTime = "100 ms">
+															<Channels>
+																<Server Name="AlarmActief"/>
+																<Server Name="ClassSvr"/>
+																<Server Name="ErrorNr"/>
+																<Client Name="Acknow"/>
+																<Client Name="Config" Value="0"/>
+																<Client Name="Group"/>
+																<Client Name="Para1"/>
+																<Client Name="Para2"/>
+																<Client Name="Para3"/>
+															</Channels>
+															<!-- List of Networks in this component -->
+															<Networks>
+																<Network>
+																	<!-- List of Components in this network -->
+																	<Components>
+																		<Object Name="_base" GUID="{5785EB27-1BCB-4BFE-95D3-58366FCEBDFF}" Class="_AlarmX3Para">
+																			<Channels>
+																				<Server Name="ClassSvr"/>
+																				<Client Name="Acknow"/>
+																				<Client Name="Config" Value="0"/>
+																				<Client Name="Group"/>
+																				<Client Name="Para1"/>
+																				<Client Name="Para2"/>
+																				<Client Name="Para3"/>
+																			</Channels>
+																			<!-- List of Networks in this component -->
+																			<Networks>
+																				<Network>
+																					<!-- List of Components in this network -->
+																					<Components>
+																						<Object Name="_base" GUID="{FF1586E3-7510-4496-B4A8-3A308EFCD780}" Class="_AlarmX0Para">
+																							<Channels>
+																								<Server Name="ClassSvr"/>
+																								<Client Name="Acknow"/>
+																								<Client Name="Config" Value="0"/>
+																								<Client Name="Group"/>
+																							</Channels>
+																						</Object>
+																					</Components>
+																					<Connections>
+																					</Connections>
+																				</Network>
+																			</Networks>
+																		</Object>
+																	</Components>
+																	<Connections>
+																	</Connections>
+																</Network>
+															</Networks>
+														</Object>
+													</Components>
+													<Connections>
+													</Connections>
+												</Network>
+											</Networks>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+						<Object
+							Name       = "sLineHandler1"
+							GUID       = "{AB43F224-012D-4A87-A362-0C09014B77BB}"
+							Class      = "sLineHandler"
+							CyclicTime = "10 ms">
+							<Channels>
+								<Server Name="actLengthInInput"/>
+								<Server Name="actMathHeigth"/>
+								<Server Name="actMathWidth"/>
+								<Server Name="amountDone"/>
+								<Server Name="amountToDo"/>
+								<Server Name="BackOffMaterial"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="FrontOffMaterial"/>
+								<Server Name="lineNrInput"/>
+								<Server Name="lineNrOutput"/>
+								<Server Name="reReadAmountToDo"/>
+								<Server Name="ResetBackOffMaterial"/>
+								<Server Name="ResetFrontOffMaterialToTakeIn"/>
+								<Server Name="rnrInput"/>
+								<Server Name="rnrOutput"/>
+								<Server Name="sSetBackOffMaterialAfterSawing"/>
+								<Server Name="stopAfterLength"/>
+								<Server Name="stprInputSide"/>
+								<Server Name="stprOutputSide"/>
+								<Server Name="stsCompleted"/>
+								<Server Name="stsStartedFromPC"/>
+								<Server Name="thisUnitIsSaw"/>
+								<Client Name="ctrlMain"/>
+								<Client Name="ctrlReadIn"/>
+								<Client Name="iActMathHeigth"/>
+								<Client Name="iActMathWidth"/>
+								<Client Name="iAmountToDo" Value="0"/>
+								<Client Name="iInputLength" Value="0"/>
+								<Client Name="iLiveXPos" Value="0"/>
+								<Client Name="iOffsetInputMaterial"/>
+								<Client Name="listSLines"/>
+								<Client Name="oAmountDone" Value="0"/>
+								<Client Name="oAmountDoneOutput" Value="0"/>
+								<Client Name="oLineNrInput" Value="0"/>
+								<Client Name="oLineNrOutput" Value="0"/>
+							</Channels>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name       = "multipleTrigger2"
+			GUID       = "{63816B94-75C8-4B8D-B736-35E2E1CD9521}"
+			Class      = "multipleTrigger"
+			Position   = "(3480,1050)"
+			Visualized = "false"
+			CyclicTime = "10 ms">
+			<Channels>
+				<Server Name="typeAction" Value="1"/>
+				<Client Name="client1"/>
+				<Client Name="client2"/>
+				<Client Name="client3"/>
+				<Client Name="client4"/>
+				<Client Name="input" Value="0"/>
+			</Channels>
+		</Object>
+		<Object
+			Name       = "StringRAMFileName"
+			GUID       = "{C99D657A-7CD2-4E8B-8CBF-239CAAF4D01F}"
+			Class      = "StringRAM"
+			Position   = "(270,2220)"
+			Visualized = "true"
+			Remotely   = "true">
+			<Channels>
+				<Server Name="Data" Value="&quot;C:\control\list.txt&quot;"/>
+				<Client Name="SingleRealloc" Value="1"/>
+				<Client Name="UseFile"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="_base" GUID="{1F69B880-FAA2-42FA-9D00-85265E1C4A69}" Class="StringInternal">
+							<Channels>
+								<Server Name="Data"/>
+								<Client Name="DataBuffer"/>
+								<Client Name="SingleRealloc" Value="1"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object Name="_base" GUID="{6CBDDE57-D222-420A-BC45-D2266096244E}" Class="VirtualBaseInit">
+											<Channels>
+												<Server Name="Data"/>
+											</Channels>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+						<Object Name="DataBuffer" GUID="{167807E4-6D9F-4D9F-A980-81FF93F0EFE0}" Class="RAMex">
+							<Channels>
+								<Server Name="m_udLength"/>
+								<Client Name="MultiTask"/>
+								<Client Name="ThreadSafe" Value="0"/>
+								<Client Name="UseFile"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object Name="_base" GUID="{69FA3C23-B049-4F83-B4BC-D30F993C8C98}" Class="MerkerEx">
+											<Channels>
+												<Server Name="m_udLength"/>
+												<Client Name="ThreadSafe" Value="0"/>
+											</Channels>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name       = "StringRAMFolderName"
+			GUID       = "{F77BA479-2958-4CA1-B225-50F4A56CEF8E}"
+			Class      = "StringRAM"
+			Position   = "(270,2400)"
+			Visualized = "true"
+			Remotely   = "true">
+			<Channels>
+				<Server Name="Data" Value="&quot;C:\control\list.txt&quot;"/>
+				<Client Name="SingleRealloc" Value="1"/>
+				<Client Name="UseFile"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="_base" GUID="{1F69B880-FAA2-42FA-9D00-85265E1C4A69}" Class="StringInternal">
+							<Channels>
+								<Server Name="Data"/>
+								<Client Name="DataBuffer"/>
+								<Client Name="SingleRealloc" Value="1"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object Name="_base" GUID="{6CBDDE57-D222-420A-BC45-D2266096244E}" Class="VirtualBaseInit">
+											<Channels>
+												<Server Name="Data"/>
+											</Channels>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+						<Object Name="DataBuffer" GUID="{167807E4-6D9F-4D9F-A980-81FF93F0EFE0}" Class="RAMex">
+							<Channels>
+								<Server Name="m_udLength"/>
+								<Client Name="MultiTask"/>
+								<Client Name="ThreadSafe" Value="0"/>
+								<Client Name="UseFile"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object Name="_base" GUID="{69FA3C23-B049-4F83-B4BC-D30F993C8C98}" Class="MerkerEx">
+											<Channels>
+												<Server Name="m_udLength"/>
+												<Client Name="ThreadSafe" Value="0"/>
+											</Channels>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+	</Components>
+	<Comments>
+	</Comments>
+	<!-- List of Connections in this network -->
+	<Connections>
+		<Connection Source="mainControl1.ctrlMain" Destination="mainControl1.ClassSvr" Vertices="(1380,690),(960,690),(960,360),(2730,360),(2730,690),(2566,690),"/>
+		<Connection Source="andServerClient2.input" Destination="__S1_PbStartCyclus1" Vertices="(3750,750),(3300,750)," IOObject="PbStartCyclus"/>
+		<Connection Source="mainControl1.ctrlAssembly" Destination="AssemblyDb.ClassSvr"/>
+		<Connection Source="mainControl1.ctrlCalc" Destination="calcComplete1.ClassSvr"/>
+		<Connection Source="mainControl1.listSLines0" Destination="GlobalListGreat1.ClassSvr0" Vertices="(1380,1290),(840,1290),(840,690),(840,690),(840,510),(660,510),"/>
+		<Connection Source="mainControl1.iOffsetInputMaterial" Destination="dbSettings1.offsetTakeIn"/>
+		<Connection Source="multipleTrigger2.input" Destination="__S1_PbStopCyclus1" Vertices="(3480,1140),(3360,1140)," IOObject="PbStopCyclus"/>
+		<Connection Source="multipleTrigger2.client2" Destination="mainControl1.buttonReset" Vertices="(3480,1260),(3390,1260),(3390,1470),(4110,1470),(4110,570),(2760,570),(2760,930),(2566,930),"/>
+		<Connection Source="mainControl1.oLineNrInput" Destination="Uitv_Regel1.ClassSvr0"/>
+		<Connection Source="mainControl1.oLineNrOutput" Destination="Afv_Regel1.ClassSvr0"/>
+		<Connection Source="mainControl1.fileName" Destination="StringRAMFileName.Data" Vertices="(1380,2370),(796,2310),"/>
+		<Connection Source="mainControl1.oCycleLamp" Destination="__S1_LampStartCyclus1" Vertices="(1380,2010),(660,2010)," IOObject="LampStartCycle"/>
+		<Connection Source="mainControl1.oResetAlarm" Destination="CtrlCheckMachineReadyMain.ResetAlarms"/>
+		<Connection Source="andServerClient2.client2" Destination="mainControl1.buttonUnsuspend" Vertices="(3750,870),(2880,870),(2880,1050),(2566,1050),"/>
+		<Connection Source="andServerClient2.client1" Destination="mainControl1.buttonStart" Vertices="(3750,810),(2566,810),"/>
+		<Connection Source="andServerClient2.client3" Destination="mainControl1.buttonUnhold" Vertices="(3750,930),(2970,930),(2970,1020),(2970,1020),(2970,1170),(2566,1170),"/>
+		<Connection Source="multipleTrigger2.client1" Destination="mainControl1.buttonSuspend" Vertices="(3480,1200),(2730,1200),(2730,990),(2566,990),"/>
+		<Connection Source="mainControl1.iAmountToDo" Destination="AssemblyDb.AmountToDo"/>
+		<Connection Source="mainControl1.oAmountDone" Destination="AssemblyDb.AmountDone"/>
+		<Connection Source="mainControl1.iBlinkFast" Destination="BlinkLampFast.ClassSvr"/>
+		<Connection Source="mainControl1.iBlinkSlow" Destination="BlinkLampSlow.ClassSvr"/>
+		<Connection Source="mainControl1.iLiveXPos" Destination="cmServoX1.stsPos"/>
+		<Connection Source="mainControl1.ctrlScreen" Destination="ScreenCtrl1.ClassSvr"/>
+		<Connection Source="mainControl1.ctrlUnit1" Destination="unitMachine.ClassSvr"/>
+		<Connection Source="multipleTrigger2.client3" Destination="mainControl1.buttonResetAlarm" Vertices="(3480,1320),(2670,1320),(2670,1230),(2566,1230),"/>
+		<Connection Source="mainControl1.iActMathWidth" Destination="calcOperationList1.stsActProductWidth"/>
+		<Connection Source="mainControl1.iActMathHeigth" Destination="calcOperationList1.stsActProductHeigth"/>
+		<Connection Source="mainControl1.folderName" Destination="StringRAMFolderName.Data" Vertices="(1380,2430),(796,2490),"/>
+		<Connection Source="mainControl1.iStprActionSaw" Destination="emOperationSawUnit.stprAction"/>
+		<Connection Source="mainControl1.oAlarmLamp" Destination="__IO_Element3" Vertices="(1380,2070),(660,2070)," IOObject="LampAlarm"/>
+	</Connections>
+	<!-- List of temp data objects in this network -->
+	<IOObjects>
+		<IOObject KeyName="__IO_Element3" Name="LampAlarm" Position="(360,2040)" Client="mainControl1.oAlarmLamp"/>
+		<IOObject KeyName="__S1_LampStartCyclus1" Name="LampStartCycle" Position="(360,1980)" Client="mainControl1.oCycleLamp"/>
+		<IOObject KeyName="__S1_PbStartCyclus1" Name="PbStartCyclus" Position="(3000,720)" Client="andServerClient2.input"/>
+		<IOObject KeyName="__S1_PbStopCyclus1" Name="PbStopCyclus" Position="(3060,1110)" Client="multipleTrigger2.input"/>
+	</IOObjects>
+	<!-- Headerfiles -->
+	<Options>
+	</Options>
+</Network>

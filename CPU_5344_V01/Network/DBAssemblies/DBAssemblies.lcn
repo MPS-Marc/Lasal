@@ -1,0 +1,854 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<Network Name="DBAssemblies" Revision="0.0">
+	<!-- List of Components in this network -->
+	<Components>
+		<Object
+			Name           = "AssemblyDb"
+			GUID           = "{B7538F17-B8F6-4A0B-89CE-0231394FF1CA}"
+			Class          = "AssemblyDbV2"
+			Position       = "(1680,150)"
+			Visualized     = "true"
+			Remotely       = "true"
+			RealTime       = "3 ms"
+			CyclicTime     = "10 ms"
+			BackgroundTime = "10 ms">
+			<Channels>
+				<Server Name="AmountDone"/>
+				<Server Name="AmountToDo"/>
+				<Server Name="ClassSvr"/>
+				<Server Name="cmdHMI"/>
+				<Server Name="csDeleting"/>
+				<Server Name="ErrorNr"/>
+				<Server Name="firstIDX"/>
+				<Server Name="HmiDeleteRecipe"/>
+				<Server Name="HmiReloadRecipe"/>
+				<Server Name="HmiSaveRecipe"/>
+				<Server Name="inputLength"/>
+				<Server Name="InputPackId"/>
+				<Server Name="MeasureInputProfiles"/>
+				<Server Name="mode"/>
+				<Server Name="parAutoSave"/>
+				<Server Name="ProfileId"/>
+				<Server Name="RecipeId"/>
+				<Server Name="reserve2"/>
+				<Server Name="state"/>
+				<Server Name="strDescription"/>
+				<Server Name="strProductCode"/>
+				<Server Name="stsHMI_RunsAllowed"/>
+				<Server Name="stsInAlarm"/>
+				<Server Name="stsIsInterlocked"/>
+				<Server Name="stsUnsafeChanges"/>
+				<Client Name="FB"/>
+				<Client Name="FileSys"/>
+				<Client Name="id"/>
+				<Client Name="iStartDelete" Value="0"/>
+				<Client Name="nwEmOrUnit"/>
+				<Client Name="ProductDb"/>
+				<Client Name="RamEx"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="_base" GUID="{6ACE3937-3338-4E75-862C-7A88469D1502}" Class="cmBase">
+							<Channels>
+								<Server Name="ClassSvr"/>
+								<Server Name="cmdHMI"/>
+								<Server Name="ErrorNr"/>
+								<Server Name="mode"/>
+								<Server Name="state"/>
+								<Server Name="stsHMI_RunsAllowed"/>
+								<Server Name="stsInAlarm"/>
+								<Server Name="stsIsInterlocked"/>
+								<Client Name="id"/>
+								<Client Name="nwEmOrUnit"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object
+											Name           = "_Alarm"
+											GUID           = "{28C9E53D-A6FB-4830-96BF-D8CA93851830}"
+											Class          = "_AlarmX3ParaDer"
+											BackgroundTime = "100 ms">
+											<Channels>
+												<Server Name="AlarmActief"/>
+												<Server Name="ClassSvr"/>
+												<Server Name="ErrorNr"/>
+												<Client Name="Acknow"/>
+												<Client Name="Config" Value="0"/>
+												<Client Name="Group"/>
+												<Client Name="Para1"/>
+												<Client Name="Para2"/>
+												<Client Name="Para3"/>
+											</Channels>
+											<!-- List of Networks in this component -->
+											<Networks>
+												<Network>
+													<!-- List of Components in this network -->
+													<Components>
+														<Object Name="_base" GUID="{5785EB27-1BCB-4BFE-95D3-58366FCEBDFF}" Class="_AlarmX3Para">
+															<Channels>
+																<Server Name="ClassSvr"/>
+																<Client Name="Acknow"/>
+																<Client Name="Config" Value="0"/>
+																<Client Name="Group"/>
+																<Client Name="Para1"/>
+																<Client Name="Para2"/>
+																<Client Name="Para3"/>
+															</Channels>
+															<!-- List of Networks in this component -->
+															<Networks>
+																<Network>
+																	<!-- List of Components in this network -->
+																	<Components>
+																		<Object Name="_base" GUID="{FF1586E3-7510-4496-B4A8-3A308EFCD780}" Class="_AlarmX0Para">
+																			<Channels>
+																				<Server Name="ClassSvr"/>
+																				<Client Name="Acknow"/>
+																				<Client Name="Config" Value="0"/>
+																				<Client Name="Group"/>
+																			</Channels>
+																		</Object>
+																	</Components>
+																	<Connections>
+																	</Connections>
+																</Network>
+															</Networks>
+														</Object>
+													</Components>
+													<Connections>
+													</Connections>
+												</Network>
+											</Networks>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+						<Object
+							Name           = "AssemRule_1"
+							GUID           = "{5D99868A-D69C-4F10-91D7-59EE86EC4328}"
+							Class          = "AssemblyOneProdRuleV2"
+							BackgroundTime = "1000 ms">
+							<Channels>
+								<Server Name="Amount"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="Length"/>
+								<Server Name="ProductId"/>
+								<Server Name="rnr"/>
+								<Server Name="strDescription"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object Name="str_Description" GUID="{F6600431-5E19-472D-AA48-C436715ABF58}" Class="EditString">
+											<Channels>
+												<Server Name="Data"/>
+												<Server Name="Handle"/>
+												<Server Name="NewData"/>
+											</Channels>
+											<!-- List of Networks in this component -->
+											<Networks>
+												<Network>
+													<!-- List of Components in this network -->
+													<Components>
+														<Object Name="_base" GUID="{F7A97E93-E2E6-4D87-8777-9D5F82287F0F}" Class="StringDll">
+															<Channels>
+																<Server Name="Data"/>
+																<Server Name="Handle"/>
+															</Channels>
+															<!-- List of Networks in this component -->
+															<Networks>
+																<Network>
+																	<!-- List of Components in this network -->
+																	<Components>
+																		<Object Name="_base" GUID="{6A3702C2-D2B1-48F6-AB3B-FAAD5A8DEC9D}" Class="String">
+																			<Channels>
+																				<Server Name="Data"/>
+																				<Client Name="SingleRealloc" Value="1"/>
+																			</Channels>
+																			<!-- List of Networks in this component -->
+																			<Networks>
+																				<Network>
+																					<!-- List of Components in this network -->
+																					<Components>
+																						<Object Name="_base" GUID="{B9D2D328-1416-469A-BE13-9F6CBBB1958D}" Class="StringInternal">
+																							<Channels>
+																								<Server Name="Data"/>
+																								<Client Name="DataBuffer"/>
+																								<Client Name="SingleRealloc"/>
+																							</Channels>
+																							<!-- List of Networks in this component -->
+																							<Networks>
+																								<Network>
+																									<!-- List of Components in this network -->
+																									<Components>
+																										<Object Name="_base" GUID="{6CBDDE57-D222-420A-BC45-D2266096244E}" Class="VirtualBaseInit">
+																											<Channels>
+																												<Server Name="Data"/>
+																											</Channels>
+																										</Object>
+																									</Components>
+																									<Connections>
+																									</Connections>
+																								</Network>
+																							</Networks>
+																						</Object>
+																						<Object Name="MerkerEx0" GUID="{53955FF7-8ABE-4B49-B914-227100C3FDEF}" Class="MerkerEx">
+																							<Channels>
+																								<Server Name="m_udLength"/>
+																								<Client Name="ThreadSafe" Value="0"/>
+																							</Channels>
+																						</Object>
+																					</Components>
+																					<Connections>
+																					</Connections>
+																				</Network>
+																			</Networks>
+																		</Object>
+																	</Components>
+																	<Connections>
+																	</Connections>
+																</Network>
+															</Networks>
+														</Object>
+													</Components>
+													<Connections>
+													</Connections>
+												</Network>
+											</Networks>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+						<Object
+							Name           = "AssemRule_2"
+							GUID           = "{23274C36-0E66-4DF9-991C-0BD98ED70887}"
+							Class          = "AssemblyOneProdRuleV2"
+							BackgroundTime = "1000 ms">
+							<Channels>
+								<Server Name="Amount"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="Length"/>
+								<Server Name="ProductId"/>
+								<Server Name="rnr"/>
+								<Server Name="strDescription"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object Name="str_Description" GUID="{F6600431-5E19-472D-AA48-C436715ABF58}" Class="EditString">
+											<Channels>
+												<Server Name="Data"/>
+												<Server Name="Handle"/>
+												<Server Name="NewData"/>
+											</Channels>
+											<!-- List of Networks in this component -->
+											<Networks>
+												<Network>
+													<!-- List of Components in this network -->
+													<Components>
+														<Object Name="_base" GUID="{F7A97E93-E2E6-4D87-8777-9D5F82287F0F}" Class="StringDll">
+															<Channels>
+																<Server Name="Data"/>
+																<Server Name="Handle"/>
+															</Channels>
+															<!-- List of Networks in this component -->
+															<Networks>
+																<Network>
+																	<!-- List of Components in this network -->
+																	<Components>
+																		<Object Name="_base" GUID="{6A3702C2-D2B1-48F6-AB3B-FAAD5A8DEC9D}" Class="String">
+																			<Channels>
+																				<Server Name="Data"/>
+																				<Client Name="SingleRealloc" Value="1"/>
+																			</Channels>
+																			<!-- List of Networks in this component -->
+																			<Networks>
+																				<Network>
+																					<!-- List of Components in this network -->
+																					<Components>
+																						<Object Name="_base" GUID="{B9D2D328-1416-469A-BE13-9F6CBBB1958D}" Class="StringInternal">
+																							<Channels>
+																								<Server Name="Data"/>
+																								<Client Name="DataBuffer"/>
+																								<Client Name="SingleRealloc" Value="1"/>
+																							</Channels>
+																							<!-- List of Networks in this component -->
+																							<Networks>
+																								<Network>
+																									<!-- List of Components in this network -->
+																									<Components>
+																										<Object Name="_base" GUID="{6CBDDE57-D222-420A-BC45-D2266096244E}" Class="VirtualBaseInit">
+																											<Channels>
+																												<Server Name="Data"/>
+																											</Channels>
+																										</Object>
+																									</Components>
+																									<Connections>
+																									</Connections>
+																								</Network>
+																							</Networks>
+																						</Object>
+																						<Object Name="MerkerEx0" GUID="{53955FF7-8ABE-4B49-B914-227100C3FDEF}" Class="MerkerEx">
+																							<Channels>
+																								<Server Name="m_udLength"/>
+																								<Client Name="ThreadSafe" Value="0"/>
+																							</Channels>
+																						</Object>
+																					</Components>
+																					<Connections>
+																					</Connections>
+																				</Network>
+																			</Networks>
+																		</Object>
+																	</Components>
+																	<Connections>
+																	</Connections>
+																</Network>
+															</Networks>
+														</Object>
+													</Components>
+													<Connections>
+													</Connections>
+												</Network>
+											</Networks>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+						<Object
+							Name           = "AssemRule_3"
+							GUID           = "{31BE7015-7FAE-4C23-A1D6-3365378CD800}"
+							Class          = "AssemblyOneProdRuleV2"
+							BackgroundTime = "1000 ms">
+							<Channels>
+								<Server Name="Amount"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="Length"/>
+								<Server Name="ProductId"/>
+								<Server Name="rnr"/>
+								<Server Name="strDescription"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object Name="str_Description" GUID="{F6600431-5E19-472D-AA48-C436715ABF58}" Class="EditString">
+											<Channels>
+												<Server Name="Data"/>
+												<Server Name="Handle"/>
+												<Server Name="NewData"/>
+											</Channels>
+											<!-- List of Networks in this component -->
+											<Networks>
+												<Network>
+													<!-- List of Components in this network -->
+													<Components>
+														<Object Name="_base" GUID="{F7A97E93-E2E6-4D87-8777-9D5F82287F0F}" Class="StringDll">
+															<Channels>
+																<Server Name="Data"/>
+																<Server Name="Handle"/>
+															</Channels>
+															<!-- List of Networks in this component -->
+															<Networks>
+																<Network>
+																	<!-- List of Components in this network -->
+																	<Components>
+																		<Object Name="_base" GUID="{6A3702C2-D2B1-48F6-AB3B-FAAD5A8DEC9D}" Class="String">
+																			<Channels>
+																				<Server Name="Data"/>
+																				<Client Name="SingleRealloc" Value="1"/>
+																			</Channels>
+																			<!-- List of Networks in this component -->
+																			<Networks>
+																				<Network>
+																					<!-- List of Components in this network -->
+																					<Components>
+																						<Object Name="_base" GUID="{B9D2D328-1416-469A-BE13-9F6CBBB1958D}" Class="StringInternal">
+																							<Channels>
+																								<Server Name="Data"/>
+																								<Client Name="DataBuffer"/>
+																								<Client Name="SingleRealloc" Value="1"/>
+																							</Channels>
+																							<!-- List of Networks in this component -->
+																							<Networks>
+																								<Network>
+																									<!-- List of Components in this network -->
+																									<Components>
+																										<Object Name="_base" GUID="{6CBDDE57-D222-420A-BC45-D2266096244E}" Class="VirtualBaseInit">
+																											<Channels>
+																												<Server Name="Data"/>
+																											</Channels>
+																										</Object>
+																									</Components>
+																									<Connections>
+																									</Connections>
+																								</Network>
+																							</Networks>
+																						</Object>
+																						<Object Name="MerkerEx0" GUID="{53955FF7-8ABE-4B49-B914-227100C3FDEF}" Class="MerkerEx">
+																							<Channels>
+																								<Server Name="m_udLength"/>
+																								<Client Name="ThreadSafe" Value="0"/>
+																							</Channels>
+																						</Object>
+																					</Components>
+																					<Connections>
+																					</Connections>
+																				</Network>
+																			</Networks>
+																		</Object>
+																	</Components>
+																	<Connections>
+																	</Connections>
+																</Network>
+															</Networks>
+														</Object>
+													</Components>
+													<Connections>
+													</Connections>
+												</Network>
+											</Networks>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+						<Object
+							Name           = "AssemRule_4"
+							GUID           = "{2D43CEE7-2C88-4A12-AC45-3E56674B3497}"
+							Class          = "AssemblyOneProdRuleV2"
+							BackgroundTime = "1000 ms">
+							<Channels>
+								<Server Name="Amount"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="Length"/>
+								<Server Name="ProductId"/>
+								<Server Name="rnr"/>
+								<Server Name="strDescription"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object Name="str_Description" GUID="{F6600431-5E19-472D-AA48-C436715ABF58}" Class="EditString">
+											<Channels>
+												<Server Name="Data"/>
+												<Server Name="Handle"/>
+												<Server Name="NewData"/>
+											</Channels>
+											<!-- List of Networks in this component -->
+											<Networks>
+												<Network>
+													<!-- List of Components in this network -->
+													<Components>
+														<Object Name="_base" GUID="{F7A97E93-E2E6-4D87-8777-9D5F82287F0F}" Class="StringDll">
+															<Channels>
+																<Server Name="Data"/>
+																<Server Name="Handle"/>
+															</Channels>
+															<!-- List of Networks in this component -->
+															<Networks>
+																<Network>
+																	<!-- List of Components in this network -->
+																	<Components>
+																		<Object Name="_base" GUID="{6A3702C2-D2B1-48F6-AB3B-FAAD5A8DEC9D}" Class="String">
+																			<Channels>
+																				<Server Name="Data"/>
+																				<Client Name="SingleRealloc" Value="1"/>
+																			</Channels>
+																			<!-- List of Networks in this component -->
+																			<Networks>
+																				<Network>
+																					<!-- List of Components in this network -->
+																					<Components>
+																						<Object Name="_base" GUID="{B9D2D328-1416-469A-BE13-9F6CBBB1958D}" Class="StringInternal">
+																							<Channels>
+																								<Server Name="Data"/>
+																								<Client Name="DataBuffer"/>
+																								<Client Name="SingleRealloc" Value="1"/>
+																							</Channels>
+																							<!-- List of Networks in this component -->
+																							<Networks>
+																								<Network>
+																									<!-- List of Components in this network -->
+																									<Components>
+																										<Object Name="_base" GUID="{6CBDDE57-D222-420A-BC45-D2266096244E}" Class="VirtualBaseInit">
+																											<Channels>
+																												<Server Name="Data"/>
+																											</Channels>
+																										</Object>
+																									</Components>
+																									<Connections>
+																									</Connections>
+																								</Network>
+																							</Networks>
+																						</Object>
+																						<Object Name="MerkerEx0" GUID="{53955FF7-8ABE-4B49-B914-227100C3FDEF}" Class="MerkerEx">
+																							<Channels>
+																								<Server Name="m_udLength"/>
+																								<Client Name="ThreadSafe" Value="0"/>
+																							</Channels>
+																						</Object>
+																					</Components>
+																					<Connections>
+																					</Connections>
+																				</Network>
+																			</Networks>
+																		</Object>
+																	</Components>
+																	<Connections>
+																	</Connections>
+																</Network>
+															</Networks>
+														</Object>
+													</Components>
+													<Connections>
+													</Connections>
+												</Network>
+											</Networks>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+						<Object
+							Name           = "AssemRule_5"
+							GUID           = "{8D7244B4-38C1-42AD-9B28-8D0F7AE385B6}"
+							Class          = "AssemblyOneProdRuleV2"
+							BackgroundTime = "1000 ms">
+							<Channels>
+								<Server Name="Amount"/>
+								<Server Name="ClassSvr"/>
+								<Server Name="Length"/>
+								<Server Name="ProductId"/>
+								<Server Name="rnr"/>
+								<Server Name="strDescription"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object Name="str_Description" GUID="{F6600431-5E19-472D-AA48-C436715ABF58}" Class="EditString">
+											<Channels>
+												<Server Name="Data"/>
+												<Server Name="Handle"/>
+												<Server Name="NewData"/>
+											</Channels>
+											<!-- List of Networks in this component -->
+											<Networks>
+												<Network>
+													<!-- List of Components in this network -->
+													<Components>
+														<Object Name="_base" GUID="{F7A97E93-E2E6-4D87-8777-9D5F82287F0F}" Class="StringDll">
+															<Channels>
+																<Server Name="Data"/>
+																<Server Name="Handle"/>
+															</Channels>
+															<!-- List of Networks in this component -->
+															<Networks>
+																<Network>
+																	<!-- List of Components in this network -->
+																	<Components>
+																		<Object Name="_base" GUID="{6A3702C2-D2B1-48F6-AB3B-FAAD5A8DEC9D}" Class="String">
+																			<Channels>
+																				<Server Name="Data"/>
+																				<Client Name="SingleRealloc" Value="1"/>
+																			</Channels>
+																			<!-- List of Networks in this component -->
+																			<Networks>
+																				<Network>
+																					<!-- List of Components in this network -->
+																					<Components>
+																						<Object Name="_base" GUID="{B9D2D328-1416-469A-BE13-9F6CBBB1958D}" Class="StringInternal">
+																							<Channels>
+																								<Server Name="Data"/>
+																								<Client Name="DataBuffer"/>
+																								<Client Name="SingleRealloc" Value="1"/>
+																							</Channels>
+																							<!-- List of Networks in this component -->
+																							<Networks>
+																								<Network>
+																									<!-- List of Components in this network -->
+																									<Components>
+																										<Object Name="_base" GUID="{6CBDDE57-D222-420A-BC45-D2266096244E}" Class="VirtualBaseInit">
+																											<Channels>
+																												<Server Name="Data"/>
+																											</Channels>
+																										</Object>
+																									</Components>
+																									<Connections>
+																									</Connections>
+																								</Network>
+																							</Networks>
+																						</Object>
+																						<Object Name="MerkerEx0" GUID="{53955FF7-8ABE-4B49-B914-227100C3FDEF}" Class="MerkerEx">
+																							<Channels>
+																								<Server Name="m_udLength"/>
+																								<Client Name="ThreadSafe" Value="0"/>
+																							</Channels>
+																						</Object>
+																					</Components>
+																					<Connections>
+																					</Connections>
+																				</Network>
+																			</Networks>
+																		</Object>
+																	</Components>
+																	<Connections>
+																	</Connections>
+																</Network>
+															</Networks>
+														</Object>
+													</Components>
+													<Connections>
+													</Connections>
+												</Network>
+											</Networks>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+						<Object Name="str_Description" GUID="{167C7E90-3A4F-46DA-A0E0-F80D3ADFA61C}" Class="EditString">
+							<Channels>
+								<Server Name="Data"/>
+								<Server Name="Handle"/>
+								<Server Name="NewData"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object Name="_base" GUID="{F7A97E93-E2E6-4D87-8777-9D5F82287F0F}" Class="StringDll">
+											<Channels>
+												<Server Name="Data"/>
+												<Server Name="Handle"/>
+											</Channels>
+											<!-- List of Networks in this component -->
+											<Networks>
+												<Network>
+													<!-- List of Components in this network -->
+													<Components>
+														<Object Name="_base" GUID="{6A3702C2-D2B1-48F6-AB3B-FAAD5A8DEC9D}" Class="String">
+															<Channels>
+																<Server Name="Data"/>
+																<Client Name="SingleRealloc" Value="1"/>
+															</Channels>
+															<!-- List of Networks in this component -->
+															<Networks>
+																<Network>
+																	<!-- List of Components in this network -->
+																	<Components>
+																		<Object Name="_base" GUID="{B9D2D328-1416-469A-BE13-9F6CBBB1958D}" Class="StringInternal">
+																			<Channels>
+																				<Server Name="Data"/>
+																				<Client Name="DataBuffer"/>
+																				<Client Name="SingleRealloc" Value="1"/>
+																			</Channels>
+																			<!-- List of Networks in this component -->
+																			<Networks>
+																				<Network>
+																					<!-- List of Components in this network -->
+																					<Components>
+																						<Object Name="_base" GUID="{6CBDDE57-D222-420A-BC45-D2266096244E}" Class="VirtualBaseInit">
+																							<Channels>
+																								<Server Name="Data"/>
+																							</Channels>
+																						</Object>
+																					</Components>
+																					<Connections>
+																					</Connections>
+																				</Network>
+																			</Networks>
+																		</Object>
+																		<Object Name="MerkerEx0" GUID="{53955FF7-8ABE-4B49-B914-227100C3FDEF}" Class="MerkerEx">
+																			<Channels>
+																				<Server Name="m_udLength"/>
+																				<Client Name="ThreadSafe" Value="0"/>
+																			</Channels>
+																		</Object>
+																	</Components>
+																	<Connections>
+																	</Connections>
+																</Network>
+															</Networks>
+														</Object>
+													</Components>
+													<Connections>
+													</Connections>
+												</Network>
+											</Networks>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+						<Object Name="str_ProductCode" GUID="{66B0B602-6AE4-40B9-BE09-4EA37BAE2109}" Class="EditString">
+							<Channels>
+								<Server Name="Data"/>
+								<Server Name="Handle"/>
+								<Server Name="NewData"/>
+							</Channels>
+							<!-- List of Networks in this component -->
+							<Networks>
+								<Network>
+									<!-- List of Components in this network -->
+									<Components>
+										<Object Name="_base" GUID="{F7A97E93-E2E6-4D87-8777-9D5F82287F0F}" Class="StringDll">
+											<Channels>
+												<Server Name="Data"/>
+												<Server Name="Handle"/>
+											</Channels>
+											<!-- List of Networks in this component -->
+											<Networks>
+												<Network>
+													<!-- List of Components in this network -->
+													<Components>
+														<Object Name="_base" GUID="{6A3702C2-D2B1-48F6-AB3B-FAAD5A8DEC9D}" Class="String">
+															<Channels>
+																<Server Name="Data"/>
+																<Client Name="SingleRealloc" Value="1"/>
+															</Channels>
+															<!-- List of Networks in this component -->
+															<Networks>
+																<Network>
+																	<!-- List of Components in this network -->
+																	<Components>
+																		<Object Name="_base" GUID="{B9D2D328-1416-469A-BE13-9F6CBBB1958D}" Class="StringInternal">
+																			<Channels>
+																				<Server Name="Data"/>
+																				<Client Name="DataBuffer"/>
+																				<Client Name="SingleRealloc" Value="1"/>
+																			</Channels>
+																			<!-- List of Networks in this component -->
+																			<Networks>
+																				<Network>
+																					<!-- List of Components in this network -->
+																					<Components>
+																						<Object Name="_base" GUID="{6CBDDE57-D222-420A-BC45-D2266096244E}" Class="VirtualBaseInit">
+																							<Channels>
+																								<Server Name="Data"/>
+																							</Channels>
+																						</Object>
+																					</Components>
+																					<Connections>
+																					</Connections>
+																				</Network>
+																			</Networks>
+																		</Object>
+																		<Object Name="MerkerEx0" GUID="{53955FF7-8ABE-4B49-B914-227100C3FDEF}" Class="MerkerEx">
+																			<Channels>
+																				<Server Name="m_udLength"/>
+																				<Client Name="ThreadSafe" Value="0"/>
+																			</Channels>
+																		</Object>
+																	</Components>
+																	<Connections>
+																	</Connections>
+																</Network>
+															</Networks>
+														</Object>
+													</Components>
+													<Connections>
+													</Connections>
+												</Network>
+											</Networks>
+										</Object>
+									</Components>
+									<Connections>
+									</Connections>
+								</Network>
+							</Networks>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+		<Object
+			Name       = "FileBase3"
+			GUID       = "{746A0A95-223A-4E09-9BD7-38B8826963D2}"
+			Class      = "FileBase"
+			Position   = "(420,570)"
+			Visualized = "true">
+			<Channels>
+				<Server Name="ErrorNr"/>
+				<Server Name="Server0"/>
+				<Client Name="FileOs"/>
+				<Client Name="System"/>
+			</Channels>
+		</Object>
+		<Object
+			Name       = "RAMexAssemblyDb"
+			GUID       = "{D06C6205-E4A1-464A-A993-EF0C51A1E988}"
+			Class      = "RAMex"
+			Position   = "(480,270)"
+			Visualized = "true"
+			Remotely   = "true">
+			<Channels>
+				<Server Name="m_udLength"/>
+				<Client Name="MultiTask"/>
+				<Client Name="ThreadSafe" Value="0"/>
+				<Client Name="UseFile" Value="1"/>
+			</Channels>
+			<!-- List of Networks in this component -->
+			<Networks>
+				<Network>
+					<!-- List of Components in this network -->
+					<Components>
+						<Object Name="_base" GUID="{69FA3C23-B049-4F83-B4BC-D30F993C8C98}" Class="MerkerEx">
+							<Channels>
+								<Server Name="m_udLength"/>
+								<Client Name="ThreadSafe" Value="0"/>
+							</Channels>
+						</Object>
+					</Components>
+					<Connections>
+					</Connections>
+				</Network>
+			</Networks>
+		</Object>
+	</Components>
+	<Comments>
+	</Comments>
+	<!-- List of Connections in this network -->
+	<Connections>
+		<Connection Source="AssemblyDb.RamEx" Destination="RAMexAssemblyDb.m_udLength" Vertices="(1680,360),(886,360),"/>
+		<Connection Source="AssemblyDb.FB" Destination="FileBase3.Server0" Vertices="(1680,540),(886,660),"/>
+		<Connection Source="AssemblyDb.ProductDb" Destination="ProductsDb.ClassSvr"/>
+	</Connections>
+	<!-- Headerfiles -->
+	<Options>
+	</Options>
+</Network>

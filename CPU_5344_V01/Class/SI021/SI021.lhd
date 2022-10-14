@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HWClassInfo>
+  <HWDevice ModuleID="1041" SubModuleID="0x0" ModType="M_SDIAS" Desc="SDIAS SSI module" OrderNr="20-022-021">
+    <Types>
+      <Device Name="SI021" ClassName="SI021" DisplayGroup="Special" Default="true" PowerLoss="2500">
+        <Power Voltage="5000" Supply="0" Drain="0"/>
+        <Power Voltage="24000" Supply="0" Drain="32"/> 
+      </Device>
+    </Types>
+    <VisualData>
+      <VisualView TypeId="0" Size="10,120">
+        <VisualModule ImgPath=".\S-Dias\S-DIAS Grundmodul.xaml" Position="0,0" Width="12.5" Height="101.8">
+          <!-- Texte -->
+          <VisualTexts>
+            <VisualText Text="SI 021" FontFamily="ARIAL" Italic="true" FontSize="12" ClrForeground="4294967295" FontWeight="1" LineHeight="10" Width="7.94" Height="5.82" Left="4.76" Top="10.05" />
+            <VisualText Text="S" FontFamily="ARIAL" ClrForeground="4294967295" Width="1.59" Height="2.65" Left="0.26" Top="9" />
+            <VisualText Text="U" FontFamily="ARIAL" ClrForeground="4294967295" Width="1.59" Height="2.65" Left="0.26" Top="11.64" />
+            <VisualText Text="X1" FontFamily="ARIAL" ClrForeground="4291330563" ClrBackground="4294967295" Width="3.17" Height="2.38" Left="0.26" Top="15.61" />
+            <VisualText Text="C+" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.17" Height="2.65" Left="0.26" Top="17.99" />
+            <VisualText Text="C-" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.17" Height="2.65" Left="0.26" Top="21.17" />
+            <VisualText Text="D+" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.17" Height="2.65" Left="0.26" Top="24.34" />
+            <VisualText Text="D-" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.17" Height="2.65" Left="0.26" Top="27.52" />
+            <VisualText Text="X2" FontFamily="ARIAL" ClrForeground="4291330563" ClrBackground="4294967295" Width="3.17" Height="2.38" Left="0.26" Top="30.96" />
+            <VisualText Text="C+" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.17" Height="2.65" Left="0.26" Top="33.34" />
+            <VisualText Text="C-" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.17" Height="2.65" Left="0.26" Top="36.51" />
+            <VisualText Text="D+" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.17" Height="2.65" Left="0.26" Top="39.69" />
+            <VisualText Text="D-" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.17" Height="2.65" Left="0.26" Top="42.86" />
+          </VisualTexts>
+          <!-- Leds -->
+          <VisualLeds>
+            <VisualLed Description="Module state" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="10.32">
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="4">
+                  <Activator TypeId="1" Value="1" />
+                  <Activator TypeId="3" DataString="SI021.ClassState" Value="0" />
+                </Activator>
+              </Behaviour>
+              <Behaviour ClrForeground="4278255360" Interval="200">
+                <Activator TypeId="4">
+                  <Activator TypeId="1" Value="1" />
+                  <Activator TypeId="3" Negate="true" DataString="SI021.ClassState" Value="0" />
+                </Activator>
+              </Behaviour>
+            </VisualLed>
+            <VisualLed DataString="SI021.LedControl" Description="User" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342216703" Width="1.32" Height="1.32" Left="2.12" Top="12.96">
+              <Behaviour ClrForeground="4278229503">
+                <Activator TypeId="3" DataString="SI021.LedControl" Value="1" />
+              </Behaviour>
+              <Behaviour ClrForeground="4278229503" Interval="500">
+                <Activator TypeId="3" DataString="SI021.LedControl" Value="2" />
+              </Behaviour>
+              <Behaviour ClrForeground="4278229503" Interval="250">
+                <Activator TypeId="3" DataString="SI021.LedControl" Value="3" />
+              </Behaviour>
+            </VisualLed>
+            <!-- X1-->
+            <VisualLed Description="Error Channel 1" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="19.31">
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="3" DataString="SI021.Ch1_Error" Value="0" />
+              </Behaviour>
+            </VisualLed>
+            <!-- X2-->
+            <VisualLed Description="Error Channel 2" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="34.66">
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="3" DataString="SI021.Ch2_Error" Value="0" />
+              </Behaviour>
+            </VisualLed>
+            <!-- X3-->
+            <!-- X4-->
+            <!-- X5-->
+          </VisualLeds>
+          <!-- Stecker -->
+          <VisualConnectors>
+            <VisualConnector Description="X1" ImgPath=".\S-Dias\S-DIAS Phoenix 4-polig.xaml" Width="7.86" Height="15" Left="3.7" Top="16.93">
+              <ConnectorPin DataString="SI021.Ch1_Data" Description="CLK+ Encoder 1" TypeId="1" />
+              <ConnectorPin DataString="SI021.Ch1_Data" Description="CLK- Encoder 1" TypeId="1" />
+              <ConnectorPin DataString="SI021.Ch1_Data" Description="Data+ Encoder 1" TypeId="1" />
+              <ConnectorPin DataString="SI021.Ch1_Data" Description="Data- Encoder 1" TypeId="1" />
+            </VisualConnector>
+            <VisualConnector Description="X2" ImgPath=".\S-Dias\S-DIAS Phoenix 4-polig.xaml" Width="7.86" Height="15" Left="3.7" Top="32.28">
+              <ConnectorPin DataString="SI021.Ch2_Data" Description="CLK+ Encoder 2" TypeId="1" />
+              <ConnectorPin DataString="SI021.Ch2_Data" Description="CLK- Encoder 2" TypeId="1" />
+              <ConnectorPin DataString="SI021.Ch2_Data" Description="Data+ Encoder 2" TypeId="1" />
+              <ConnectorPin DataString="SI021.Ch2_Data" Description="Data- Encoder 2" TypeId="1" />
+            </VisualConnector>
+          </VisualConnectors>
+        </VisualModule>
+      </VisualView>
+    </VisualData>
+  </HWDevice>
+  <Class Name="SI021">
+    <Uplink Name="SdiasIn" BusType="SDIAS" PlaceName="Place" />
+	<Downlink Name="ClassState" Port="0" BusType="Hardwarealarme" Desc="Hardwarealarme" />
+    <!-- General -->
+    <Property Name="Required" Channel="Required" Editor="Combo:1=Module is required;0=Module is not required" Desc="0=module is not required 1=module is required (CPU will crash if module is missing)" />
+    <IOState Name="Class State" Channel="ClassState" Desc="This server shows the status of the hardware class. If the state is not equal than _ClassOK, an error has occurred " Type="" />
+    <IOState Name="Device ID" Channel="DeviceID" IsInfo="true" Type="" Desc="This server shows the device ID  of the hardware module" />
+    <IOState Name="FPGA Version" Channel="FPGAVersion" Format="V{5-8}.{1-4}" IsInfo="true" Desc="Shows the actual FPGA version of the module in the format x.y (e.g. 16#10 means v1.0)" />
+    <IOState Name="Hardware Version" Channel="HwVersion" IsInfo="true" Format="V{9-16}.{5-8}{1-4}" Type="" Desc="Shows the hardware version of the module" /> 
+    <IOState Name="Serial Number" Channel="SerialNo" IsInfo="true" Type="" Desc="This server shows the Serial Number of the hardware module" />
+    <IOState Name="Retry Counter" Channel="RetryCounter" Desc="Is incremented in case of incorrect data transfer." />
+    <Output Name="LED Control" Channel="LEDControl" Type="Digital" Desc="Sets a LED on hardware, to detect module. (0=LED off; 1=LED on; 2=blinking slowly; 3=blinking fast)" />
+    <!-- Digital Input 1 -->
+    <Input Name="Data Channel 1" Channel="Ch1_Data" IsConfig="true" Type="Analog" Desc="This server shows the actual value. (scaled to 32Bit)">
+      <Property Name="Number of data bits" Channel="Ch1_SSIBitSize" Editor="Range:1..32" Desc="Length of SSI shift register (1..32 Bit)" />
+      <Property Name="Use double read" Channel="Ch1_SSIDoubleRead" Editor="Combo:0=false;1=true" Desc="Double readout of SSI-Data can be activated to detect readout errors (Not all SSI devices support this.)" />
+      <Property Name="Frequency of SSI" Channel="Ch1_Frequency" Editor="Combo:0=125kHz;1=250kHz;2=500kHz;3=1Mhz" Desc="Select the Frequenzy of SSI transfer: 0=125 kHz, 1=250 kHz, 2=500 kHz, 3=1 MHz" />
+      <Property Name="Use graycode encoding" Channel="Ch1_UseGraycode" Editor="Combo:0=false;1=true" Desc="Select if SSI data should be decoded with graycode or not." />
+      <Property Name="Raw Value" Channel="Ch1_RawValue" Editor="Combo:0=false;1=true" Desc="must be set with an Initial value! &#xD;&#xA;0 = calculated position set on Ch_Data &#xD;&#xA;1 = rawvalue set on Ch_Data." />
+    </Input>
+    <Input Name="Error Channel 1" Channel="Ch1_Error" Type="Digital" Desc="This server shows 0 if the data is valid" />
+    <!-- Digital Input 2 -->
+    <Input Name="Data Channel 2" Channel="Ch2_Data" IsConfig="true" Type="Analog" Desc="This server shows the actual value. (scaled to 32Bit)">
+      <Property Name="Number of data bits" Channel="Ch2_SSIBitSize" Editor="Range:1..32" Desc="Length of SSI shift register (1..32 Bit)" />
+      <Property Name="Use double read" Channel="Ch2_SSIDoubleRead" Editor="Combo:0=false;1=true" Desc="Double readout of SSI-Data can be activated to detect readout errors (Not all SSI devices support this.)" />
+      <Property Name="Frequency of SSI" Channel="Ch2_Frequency" Editor="Combo:0=125kHz;1=250kHz;2=500kHz;3=1Mhz" Desc="Select the Frequenzy of SSI transfer: 0=125 kHz, 1=250 kHz, 2=500 kHz, 3=1 MHz" />
+      <Property Name="Use graycode encoding" Channel="Ch2_UseGraycode" Editor="Combo:0=false;1=true" Desc="Select if SSI data should be decoded with graycode or not." />
+      <Property Name="Raw Value" Channel="Ch2_RawValue" Editor="Combo:0=false;1=true" Desc="must be set with an Initial value! &#xD;&#xA;0 = calculated position set on Ch_Data &#xD;&#xA;1 = rawvalue set on Ch_Data." />
+    </Input>
+    <Input Name="Error Channel 2" Channel="Ch2_Error" Type="Digital" Desc="This server shows 0 if the data is valid" />
+    <!-- General Setting -->
+    <Property Name="Sample Multiplier" Channel="SampleMultiplier" Type="Analog" Editor="EditNumber:Unsigned;Dec" Desc="Multiplier for sampling the SSI data in relation to the bus time (default=1).&#xD;&#xA;If a SSI encoder needs more time to get a new value than the bus time this client has to be set." />
+    
+    <Script Name="SI021">
+<Code>
+def compPost_SI021(element, parameters):
+  
+  if parameters['varanBridge']:
+    parameters['AddToSDiasTime'] = True
+    element['result']['optional'] =  {'PDO': {'Wr':[], 'Rd':[], 'WrDyn':[], 'RdDyn':[]}}    
+    SDIASPDORdAdd(0xA,element)
+    SDIASPDOWrAdd(0x1,element)
+
+</Code>
+    </Script>    
+  </Class>
+</HWClassInfo>

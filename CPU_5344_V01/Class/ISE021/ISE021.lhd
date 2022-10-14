@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HWClassInfo>
+  <HWDevice ModuleID="1036" SubModuleID="0x0" ModType="M_SDIAS" Desc="SDIAS module with 3 serial interfaces (RS232 1 / 2 and RS485)" OrderNr="20-101-021">
+    <Types>
+      <Device Name="ISE021" ClassName="ISE021" DisplayGroup="Communication" Default="true" PowerLoss="2500">
+        <Power Voltage="5000" Supply="0" Drain="50" />
+        <Power Voltage="24000" Supply="0" Drain="15" />
+      </Device>
+    </Types>
+    <VisualData>
+      <VisualView TypeId="0" Size="10,120">
+        <VisualModule ImgPath=".\S-Dias\S-DIAS Grundmodul.xaml" Position="0,0" Width="12.5" Height="101.8">
+          <!-- Texte -->
+          <VisualTexts>
+            <VisualText Text="ISE 021" FontFamily="ARIAL" Italic="true" FontSize="12" ClrForeground="4294967295" FontWeight="700" LineHeight="10" Width="7.94" Height="5.82" Left="4.76" Top="10.05" ClrBackground="16777215" />
+            <VisualText Text="S" FontFamily="ARIAL" ClrForeground="4294967295" Width="1.59" Height="2.65" Left="0.26" Top="9" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="U" FontFamily="ARIAL" ClrForeground="4294967295" Width="1.59" Height="2.65" Left="0.26" Top="11.64" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.01" Height="2.65" Left="0.26" Top="18.18" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.01" Height="2.65" Left="0.26" Top="20.12" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.01" Height="2.65" Left="0.26" Top="24.86" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.01" Height="2.65" Left="0.26" Top="28.2" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.01" Height="2.65" Left="0.26" Top="30.44" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.01" Height="2.65" Left="0.26" Top="34.88" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="X1" FontFamily="ARIAL" ClrForeground="4291330563" ClrBackground="4294967295" Width="3.17" Height="2.38" Left="0.26" Top="38.06" FontWeight="400" />
+            <VisualText Text="Rx" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.01" Height="2.65" Left="0.26" Top="40.78" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="Tx" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.01" Height="2.65" Left="0.26" Top="44.12" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.01" Height="2.65" Left="0.26" Top="47.46" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.01" Height="2.65" Left="0.26" Top="50.8" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.01" Height="2.65" Left="0.26" Top="54.14" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="X2" FontFamily="ARIAL" ClrForeground="4291330563" ClrBackground="4294967295" Width="3.17" Height="2.38" Left="0.26" Top="57.2" FontWeight="400" />
+            <VisualText Text="Rx" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.01" Height="2.65" Left="0.26" Top="59.91" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="Tx" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.01" Height="2.65" Left="0.26" Top="63.25" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.01" Height="2.65" Left="0.26" Top="66.59" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.01" Height="2.65" Left="0.26" Top="69.93" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.01" Height="2.65" Left="0.26" Top="73.27" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.01" Height="2.65" Left="0.26" Top="76.61" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.01" Height="2.65" Left="0.26" Top="82.55" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.01" Height="2.65" Left="0.26" Top="85.89" ClrBackground="16777215" FontWeight="400" />
+            <VisualText Text="" FontFamily="ARIAL" ClrForeground="4294967295" Width="3.01" Height="2.65" Left="0.26" Top="89.23" ClrBackground="16777215" FontWeight="400" />
+          </VisualTexts>
+          <!-- Leds -->
+          <VisualLeds>
+            <VisualLed Description="Module state" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="10.32">
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="4">
+                  <Activator TypeId="1" Value="1" />
+                  <Activator TypeId="3" DataString="ISE021.ClassState" Value="0" />
+                </Activator>
+              </Behaviour>
+              <Behaviour ClrForeground="4278255360" Interval="200">
+                <Activator TypeId="4">
+                  <Activator TypeId="1" Value="1" />
+                  <Activator TypeId="3" DataString="ISE021.ClassState" Value="0" Negate="true" />
+                </Activator>
+              </Behaviour>
+            </VisualLed>
+            <VisualLed DataString="ISE021.LedControl" Description="User" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342216703" Width="1.32" Height="1.32" Left="2.12" Top="12.96">
+              <Behaviour ClrForeground="4278229503">
+                <Activator TypeId="3" DataString="ISE021.LedControl" Value="1" />
+              </Behaviour>
+              <Behaviour ClrForeground="4278229503" Interval="500">
+                <Activator TypeId="3" DataString="ISE021.LedControl" Value="2" />
+              </Behaviour>
+              <Behaviour ClrForeground="4278229503" Interval="250">
+                <Activator TypeId="3" DataString="ISE021.LedControl" Value="3" />
+              </Behaviour>
+            </VisualLed>
+            <!-- X1-->
+            <VisualLed Description="Receive RS232" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342216703" Width="1.32" Height="1.32" Left="2.12" Top="41.64">
+              <Behaviour ClrForeground="4278229503">
+                <Activator TypeId="3" DataString="ISE021" Value="1" />
+              </Behaviour>
+            </VisualLed>
+            <VisualLed Description="Transmit RS232" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="44.81">
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="3" DataString="ISE021" Value="1" />
+              </Behaviour>
+            </VisualLed>
+            <!-- X2-->
+            <VisualLed Description="Receive RS485" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342216703" Width="1.32" Height="1.32" Left="2.12" Top="60.83">
+              <Behaviour ClrForeground="4278229503">
+                <Activator TypeId="3" DataString="ISE021" Value="1" />
+              </Behaviour>
+            </VisualLed>
+            <VisualLed Description="Transmit RS485" ImgPath=".\S-Dias\S-DIAS Led.xaml" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="64.05">
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="3" DataString="ISE021" Value="1" />
+              </Behaviour>
+            </VisualLed>
+            <!-- X3-->
+            <!-- X4-->
+            <!-- X5-->
+            <VisualLed ImgPath=".\S-Dias\S-DIAS Led.xaml" Description="VoltageOK" ClrForeground="1342242560" Width="1.32" Height="1.32" Left="2.12" Top="83.58">
+              <Behaviour ClrForeground="4278255360">
+                <Activator TypeId="1" Value="1" />
+              </Behaviour>
+            </VisualLed>
+          </VisualLeds>
+          <!-- Stecker -->
+          <VisualConnectors>
+            <VisualConnector ImgPath=".\S-DIAS\S-DIAS Phoenix 5-polig.xaml" Description="S-DIAS Phoenix 5-polig.xaml" Width="7.86" Height="18.54" Left="3.7" Top="39.57">
+              <ConnectorPin Description="RS232 RxD1" TypeId="0" />
+              <ConnectorPin Description="RS232 TxD1" TypeId="0" />
+              <ConnectorPin Description="RS232 RTS1 / TxD2" TypeId="0" />
+              <ConnectorPin Description="RS232 CTS1 / RxD2" TypeId="0" />
+              <ConnectorPin Description="RS232 GND" TypeId="0" />
+            </VisualConnector>
+            <VisualConnector ImgPath=".\S-DIAS\S-DIAS Phoenix 6-polig.xaml" Description="S-DIAS Phoenix 6-polig.xaml" Width="7.86" Height="22.03" Left="3.7" Top="58.85">
+              <ConnectorPin Description="RS485 A" TypeId="0" />
+              <ConnectorPin Description="RS485 B" TypeId="0" />
+              <ConnectorPin Description="RS485 GND" TypeId="0" />
+              <ConnectorPin Description="RS485 A" TypeId="0" />
+              <ConnectorPin Description="RS485 B" TypeId="0" />
+              <ConnectorPin Description="RS485 GND" TypeId="0" />
+            </VisualConnector>
+          </VisualConnectors>
+        </VisualModule>
+      </VisualView>
+    </VisualData>
+  </HWDevice>
+  <Class Name="ISE021">
+    <Uplink Name="SdiasIn" BusType="SDIAS" PlaceName="Place" />
+	<Downlink Name="ClassState" Port="0" BusType="Hardwarealarme" Desc="Hardwarealarme" />
+    <!-- General -->
+    <Property Name="Required" Channel="Required" Editor="Combo:1=Module is required;0=Module is not required" Desc="0=module is not required 1=module is required (CPU will crash if module is missing)" />
+    <IOState Name="Class State" Channel="ClassState" Desc="This server shows the status of the hardware class. If the state is not equal than _ClassOK, an error has occurred " Type="" />
+    <IOState Name="Device ID" Channel="DeviceID" IsInfo="true" Type="" Desc="This server shows the device ID  of the hardware module" />
+    <IOState Name="FPGA Version" Channel="FPGAVersion" Format="V{5-8}.{1-4}" IsInfo="true" Desc="Shows the actual FPGA version of the module in the format x.y (e.g. 16#10 means v1.0)" />
+    <IOState Name="Hardware Version" Channel="HwVersion" IsInfo="true" Format="V{9-16}.{5-8}{1-4}" Type="" Desc="Shows the hardware version of the module" />
+    <IOState Name="Serial Number" Channel="SerialNo" IsInfo="true" Type="" Desc="This server shows the Serial Number of the hardware module" />
+    <IOState Name="Retry Counter" Channel="RetryCounter" Desc="Is incremented in case of incorrect data transfer." />
+    <Output Name="LED Control" Channel="LEDControl" Type="Digital" Desc="Sets a LED on hardware, to detect module. (0=LED off; 1=LED on; 2=blinking slowly; 3=blinking fast)" />
+    <!-- Module State -->
+    
+    <IOComment Name="---------------- Serial Interface 1: RS232 1 -----------------" IsInfo="true" Desc="" />
+    <Input Name="Serial Interface 1 (RS232 1)" Channel="SerInterface1" IsConfig="true" Type="Digital" Desc="RS232 Interface for calling global methods">
+      <!-- RS232 1 Setting -->
+      <Property Name="Maximal Read Length" Channel="MaxRdLenIF1" Desc="Maximum byte to receive via SDIAS per cycle (the rest of the receive data is stored in the ringbuffer of the module).&#xD;&#xA;Must be set as initial value.&#xD;&#xA;0: Off (interface disabled)...16: Default...120: Maximum" Editor="Range:0..120" />
+      <Property Name="Maximal Write Length" Channel="MaxWrLenIF1" Desc="Maximum byte to receive via SDIAS per cycle (the rest of the receive data is stored in the ringbuffer of the module).&#xD;&#xA;Must be set as initial value.&#xD;&#xA;0: Off (interface disabled)...16: Default...120: Maximum" Editor="Range:0..120" />
+    </Input>
+    <Input Name="Invalid Data Error Counter 1" Channel="InvalidDataErrorCnt1" Type="Digital" Desc="This server counts up if a framing or parity error occurs." />
+    <Input Name="Receive Buffer Overflow Error Counter 1" Channel="RecBufOverflowErrorCnt1" Type="Digital" Desc="This server counts up if the receive buffer is overflowed." />
+    <IOComment Name="---------------- Serial Interface 2: RS485 -----------------" IsInfo="true" Desc="" />
+    
+    <Input Name="Serial Interface 2 (RS485)" Channel="SerInterface2" IsConfig="true" Type="Digital" Desc="RS485 Interface for calling global methods">
+      <!-- RS485 Setting -->
+      <Property Name="Maximal Read Length" Channel="MaxRdLenIF2" Desc="Maximum byte to receive via SDIAS per cycle (the rest of the receive data is stored in the ringbuffer of the module).&#xD;&#xA;Must be set as initial value.&#xD;&#xA;0: Off (interface disabled)...16: Default...120: Maximum" Editor="Range:0..120" />
+      <Property Name="Maximal Write Length" Channel="MaxWrLenIF2" Desc="Maximum byte to receive via SDIAS per cycle (the rest of the receive data is stored in the ringbuffer of the module).&#xD;&#xA;Must be set as initial value.&#xD;&#xA;0: Off (interface disabled)...16: Default...120: Maximum" Editor="Range:0..120" />
+      <!-- Resistor Setting -->
+      <Property Name="RS485 Termination" Channel="RS485_Term" Desc="Settings of the internal termination (Only available if hardware version is 3.0 or higher) 0: Off (internal termination disabled) 1: On (Internal Termination activated) -1: Feature not available at this hardware" Editor="Combo:1=Termination active;0=Termination not active" />
+      <Property Name="RS485 Spread" Channel="RS485_Spread" Desc="Settings of the internal spread Only available if hardware version is 3.0 or higher) 0: Off (internal Spread disabled) 1: On (Internal Spread activated) -1: Feature not available at this hardware" Editor="Combo:1=Spread active;0=Spread not active" />
+    </Input>
+    <Input Name="Invalid Data Error Counter 2" Channel="InvalidDataErrorCnt2" Type="Digital" Desc="This server counts up if a framing or parity error occurs." />
+    <Input Name="Receive Buffer Overflow Error Counter 2" Channel="RecBufOverflowErrorCnt2" Type="Digital" Desc="This server counts up if the receive buffer is overflowed." />
+    
+    <IOComment Name="---------------- Serial Interface 3: RS232 2 -----------------" IsInfo="true" Desc="" />
+    <Input Name="Serial Interface 3 (RS232 2)" Channel="SerInterface3" IsConfig="true" Type="Digital" Desc="Second RS232 Interface for calling global methods if function is available and activated with Activate Interface 3.">
+      <!-- RS232 2 Setting -->
+      <Property Name="Maximal Read Length" Channel="MaxRdLenIF3" Desc="Maximum byte to receive via SDIAS per cycle (the rest of the receive data is stored in the ringbuffer of the module).&#xD;&#xA;Must be set as initial value.&#xD;&#xA;0: Off (interface disabled)...16: Default...120: Maximum" Editor="Range:0..120" />
+      <Property Name="Maximal Write Length" Channel="MaxWrLenIF3" Desc="Maximum byte to receive via SDIAS per cycle (the rest of the receive data is stored in the ringbuffer of the module).&#xD;&#xA;Must be set as initial value.&#xD;&#xA;0: Off (interface disabled)...16: Default...120: Maximum" Editor="Range:0..120" />
+      <Property Name="Activate Interface 3" Channel="ActivateIF3" Desc="Can be activate to use second RS232 interface, if it is supported by hardware (FPGA >= v2.0).&#xD;&#xA;Must be set as initial value.&#xD;&#xA;0 .. deactivated&#xD;&#xA;1 .. activated&#xD;&#xA;&#xD;&#xA;-1 .. not supported or deactivated" Editor="Combo:0=deactivate;1=activate" />
+    </Input>
+    <Input Name="Invalid Data Error Counter 3" Channel="InvalidDataErrorCnt3" Type="Digital" Desc="This server counts up if a framing or parity error occurs." />
+    <Input Name="Receive Buffer Overflow Error Counter 3" Channel="RecBufOverflowErrorCnt3" Type="Digital" Desc="This server counts up if the receive buffer is overflowed." />
+        
+    <Script Name="ISE021">
+      <Parameter Name="MaxRdLenIF1" Type="Client" Channel="MaxRdLenIF1" Desc="" />
+      <Parameter Name="MaxWrLenIF1" Type="Client" Channel="MaxWrLenIF1" Desc="" />
+      <Parameter Name="MaxRdLenIF2" Type="Client" Channel="MaxRdLenIF2" Desc="" />
+      <Parameter Name="MaxWrLenIF2" Type="Client" Channel="MaxWrLenIF2" Desc="" />
+      <Parameter Name="MaxRdLenIF3" Type="Client" Channel="MaxRdLenIF3" Desc="" />
+      <Parameter Name="MaxWrLenIF3" Type="Client" Channel="MaxWrLenIF3" Desc="" />
+      <Parameter Name="ActivateIF3" Type="Client" Channel="ActivateIF3" Desc="" />
+      <Code>
+def compPost_ISE021(element, parameters):  
+  
+  if parameters['varanBridge']:
+    parameters['AddToSDiasTime'] = True
+    element['result']['optional'] =  {'PDO': {'Wr':[], 'Rd':[], 'WrDyn':[], 'RdDyn':[]}}    
+    
+    # Limit to 120
+    if operator.gt(element['options']['MaxRdLenIF1'], 120):
+      element['options']['MaxRdLenIF1'] = 120
+    if operator.gt(element['options']['MaxWrLenIF1'], 120):
+      element['options']['MaxWrLenIF1'] = 120
+    if operator.gt(element['options']['MaxRdLenIF2'], 120):
+      element['options']['MaxRdLenIF2'] = 120
+    if operator.gt(element['options']['MaxWrLenIF2'], 120):
+      element['options']['MaxWrLenIF2'] = 120
+    if operator.gt(element['options']['MaxRdLenIF3'], 120):
+      element['options']['MaxRdLenIF2'] = 120
+    if operator.gt(element['options']['MaxWrLenIF3'], 120):
+      element['options']['MaxWrLenIF2'] = 120
+          
+    if element['options']['MaxRdLenIF1'] > 0 or element['options']['MaxWrLenIF1'] > 0:
+      SDIASPDORdDynAdd(6+element['options']['MaxRdLenIF1'],element)
+      SDIASPDOWrDynAdd(6+element['options']['MaxWrLenIF1'],element)
+      
+    if element['options']['MaxRdLenIF2'] > 0 or element['options']['MaxWrLenIF2'] > 0:
+      SDIASPDORdDynAdd(6+element['options']['MaxRdLenIF2'],element)
+      SDIASPDOWrDynAdd(6+element['options']['MaxWrLenIF2'],element)
+      
+    if element['options']['MaxRdLenIF3'] > 0 or element['options']['MaxWrLenIF3'] > 0:
+      if operator.eq(element['options']['ActivateIF3'], 1):
+        SDIASPDORdDynAdd(6+element['options']['MaxRdLenIF3'],element)
+        SDIASPDOWrDynAdd(6+element['options']['MaxWrLenIF3'],element)
+      
+</Code>
+    </Script>
+  </Class>
+</HWClassInfo>
