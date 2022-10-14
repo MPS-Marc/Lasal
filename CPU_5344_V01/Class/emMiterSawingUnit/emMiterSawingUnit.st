@@ -566,6 +566,8 @@ END_FUNCTION
 //        11: angle servo didn't reach position, and becomes idle
 //        12: saw not ready during reset
 //        13: Can not connect with the screen
+// TEST
+
 
 // in manual we can run the manual sawing, it's runned by start, of course only in half automatic mode, only possible if clamps are manually put in the right position
 

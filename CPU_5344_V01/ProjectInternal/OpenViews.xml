@@ -14,6 +14,7 @@
 	<View Key="settings" Type="0"/>
 	<View Key="DBAssemblies" Type="0"/>
 	<View Key="DBProducts" Type="0"/>
-	<View Key="emMiterSawingUnit" Type="2" LineNr="1"/>
+	<View Key="emMiterSawingUnit" Type="2" LineNr="23"/>
+	<View Key="emMiterSawingUnit" Type="2" LineNr="23"/>
 	<Setting Variable="OutputDebugger" Value="0"/>
 </OpenViews>

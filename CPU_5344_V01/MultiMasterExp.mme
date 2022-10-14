@@ -6,7 +6,7 @@
 	Project_DESC  = "Name of the project"
 	IP            = "10.195.0.10"
 	IP_DESC       = "IP address of this station"
-	Filename      = "C:\Local\Projecten\5344\CPU_5344_V01\CPU_5344_V01.lcp"
+	Filename      = "C:\Local\Git\Lasal\CPU_5344_V01\CPU_5344_V01.lcp"
 	Filename_DESC = "File name to project">
 	<RemoteServers>
 		<RemoteServer Name="profileInfo1.length1" Name_DESC="Name" GUID_Svr="{6CDAED49-153D-4640-9E70-059DB12FFC22}" GUID_Svr_DESC="GUID of the server" DataType="DINT" DataType_DESC="DataType" GUID_Obj="{8AAE17D2-AD82-45C4-A85E-2E51B96355D4}" GUID_Obj_DESC="GUID of the object" WriteProtected="true" WriteProtected_DESC="Write protection of multimaster server"/>
